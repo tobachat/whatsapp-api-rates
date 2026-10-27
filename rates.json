@@ -8,67 +8,83 @@
   "currencies": [
     {
       "code": "AED",
-      "latest": "data/latest/AED.csv"
+      "latest": "data/latest/AED.csv",
+      "latest_json": "data/latest/AED.json"
     },
     {
       "code": "ARS",
-      "latest": "data/latest/ARS.csv"
+      "latest": "data/latest/ARS.csv",
+      "latest_json": "data/latest/ARS.json"
     },
     {
       "code": "AUD",
-      "latest": "data/latest/AUD.csv"
+      "latest": "data/latest/AUD.csv",
+      "latest_json": "data/latest/AUD.json"
     },
     {
       "code": "BRL",
-      "latest": "data/latest/BRL.csv"
+      "latest": "data/latest/BRL.csv",
+      "latest_json": "data/latest/BRL.json"
     },
     {
       "code": "CLP",
-      "latest": "data/latest/CLP.csv"
+      "latest": "data/latest/CLP.csv",
+      "latest_json": "data/latest/CLP.json"
     },
     {
       "code": "COP",
-      "latest": "data/latest/COP.csv"
+      "latest": "data/latest/COP.csv",
+      "latest_json": "data/latest/COP.json"
     },
     {
       "code": "EUR",
-      "latest": "data/latest/EUR.csv"
+      "latest": "data/latest/EUR.csv",
+      "latest_json": "data/latest/EUR.json"
     },
     {
       "code": "GBP",
-      "latest": "data/latest/GBP.csv"
+      "latest": "data/latest/GBP.csv",
+      "latest_json": "data/latest/GBP.json"
     },
     {
       "code": "IDR",
-      "latest": "data/latest/IDR.csv"
+      "latest": "data/latest/IDR.csv",
+      "latest_json": "data/latest/IDR.json"
     },
     {
       "code": "INR",
-      "latest": "data/latest/INR.csv"
+      "latest": "data/latest/INR.csv",
+      "latest_json": "data/latest/INR.json"
     },
     {
       "code": "MXN",
-      "latest": "data/latest/MXN.csv"
+      "latest": "data/latest/MXN.csv",
+      "latest_json": "data/latest/MXN.json"
     },
     {
       "code": "MYR",
-      "latest": "data/latest/MYR.csv"
+      "latest": "data/latest/MYR.csv",
+      "latest_json": "data/latest/MYR.json"
     },
     {
       "code": "PEN",
-      "latest": "data/latest/PEN.csv"
+      "latest": "data/latest/PEN.csv",
+      "latest_json": "data/latest/PEN.json"
     },
     {
       "code": "SAR",
-      "latest": "data/latest/SAR.csv"
+      "latest": "data/latest/SAR.csv",
+      "latest_json": "data/latest/SAR.json"
     },
     {
       "code": "SGD",
-      "latest": "data/latest/SGD.csv"
+      "latest": "data/latest/SGD.csv",
+      "latest_json": "data/latest/SGD.json"
     },
     {
       "code": "USD",
-      "latest": "data/latest/USD.csv"
+      "latest": "data/latest/USD.csv",
+      "latest_json": "data/latest/USD.json"
     }
   ],
   "country_market": "data/country_market.csv",

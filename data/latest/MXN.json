@@ -1,0 +1,899 @@
+{
+ "currency": "MXN",
+ "effective_date": "2026-10-01",
+ "checked_on": "2026-10-27",
+ "source": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+ "license": "CC-BY-4.0",
+ "attribution": "Data: Meta rate cards, compiled by Tobachat (https://tobachat.nl/en/whatsapp-api-pricing-by-country/)",
+ "unit": "per delivered message, excluding VAT",
+ "markets": [
+  {
+   "market": "Argentina",
+   "type": "country",
+   "iso_codes": [
+    "AR"
+   ],
+   "calling_codes": [
+    "54"
+   ],
+   "marketing": 1.1375,
+   "utility": 0.4786,
+   "authentication": 0.4786,
+   "authentication_international": null,
+   "service": 0.4786
+  },
+  {
+   "market": "Bangladesh",
+   "type": "country",
+   "iso_codes": [
+    "BD"
+   ],
+   "calling_codes": [
+    "880"
+   ],
+   "marketing": 1.3473,
+   "utility": 0.0681,
+   "authentication": 0.0681,
+   "authentication_international": 1.7671,
+   "service": 0.0681
+  },
+  {
+   "market": "Brazil",
+   "type": "country",
+   "iso_codes": [
+    "BR"
+   ],
+   "calling_codes": [
+    "55"
+   ],
+   "marketing": 1.1504,
+   "utility": 0.1252,
+   "authentication": 0.1252,
+   "authentication_international": null,
+   "service": 0.1252
+  },
+  {
+   "market": "Chile",
+   "type": "country",
+   "iso_codes": [
+    "CL"
+   ],
+   "calling_codes": [
+    "56"
+   ],
+   "marketing": 1.6363,
+   "utility": 0.3681,
+   "authentication": 0.3681,
+   "authentication_international": null,
+   "service": 0.3681
+  },
+  {
+   "market": "Colombia",
+   "type": "country",
+   "iso_codes": [
+    "CO"
+   ],
+   "calling_codes": [
+    "57"
+   ],
+   "marketing": 0.2301,
+   "utility": 0.0147,
+   "authentication": 0.0147,
+   "authentication_international": null,
+   "service": 0.0147
+  },
+  {
+   "market": "Egypt",
+   "type": "country",
+   "iso_codes": [
+    "EG"
+   ],
+   "calling_codes": [
+    "20"
+   ],
+   "marketing": 1.1853,
+   "utility": 0.0663,
+   "authentication": 0.0663,
+   "authentication_international": 1.1964,
+   "service": 0.0663
+  },
+  {
+   "market": "France",
+   "type": "country",
+   "iso_codes": [
+    "FR"
+   ],
+   "calling_codes": [
+    "33"
+   ],
+   "marketing": 1.5811,
+   "utility": 0.5522,
+   "authentication": 0.5522,
+   "authentication_international": null,
+   "service": 0.5522
+  },
+  {
+   "market": "Germany",
+   "type": "country",
+   "iso_codes": [
+    "DE"
+   ],
+   "calling_codes": [
+    "49"
+   ],
+   "marketing": 2.5124,
+   "utility": 1.0123,
+   "authentication": 1.0123,
+   "authentication_international": null,
+   "service": 1.0123
+  },
+  {
+   "market": "Hong Kong",
+   "type": "country",
+   "iso_codes": [
+    "HK"
+   ],
+   "calling_codes": [
+    "852"
+   ],
+   "marketing": 1.3473,
+   "utility": 0.4786,
+   "authentication": 0.4786,
+   "authentication_international": null,
+   "service": 0.4786
+  },
+  {
+   "market": "Hungary",
+   "type": "country",
+   "iso_codes": [
+    "HU"
+   ],
+   "calling_codes": [
+    "36"
+   ],
+   "marketing": 1.5829,
+   "utility": 0.6442,
+   "authentication": 0.6442,
+   "authentication_international": null,
+   "service": 0.6442
+  },
+  {
+   "market": "India",
+   "type": "country",
+   "iso_codes": [
+    "IN"
+   ],
+   "calling_codes": [
+    "91"
+   ],
+   "marketing": 0.2172,
+   "utility": 0.0258,
+   "authentication": 0.0258,
+   "authentication_international": 0.5596,
+   "service": 0.0258
+  },
+  {
+   "market": "Indonesia",
+   "type": "country",
+   "iso_codes": [
+    "ID"
+   ],
+   "calling_codes": [
+    "62"
+   ],
+   "marketing": 0.7565,
+   "utility": 0.4602,
+   "authentication": 0.4602,
+   "authentication_international": 2.5032,
+   "service": 0.4602
+  },
+  {
+   "market": "Iraq",
+   "type": "country",
+   "iso_codes": [
+    "IQ"
+   ],
+   "calling_codes": [
+    "964"
+   ],
+   "marketing": 0.6276,
+   "utility": 0.1454,
+   "authentication": 0.1454,
+   "authentication_international": 2.356,
+   "service": 0.1454
+  },
+  {
+   "market": "Israel",
+   "type": "country",
+   "iso_codes": [
+    "IL"
+   ],
+   "calling_codes": [
+    "972"
+   ],
+   "marketing": 0.6497,
+   "utility": 0.0976,
+   "authentication": 0.0976,
+   "authentication_international": null,
+   "service": 0.0976
+  },
+  {
+   "market": "Italy",
+   "type": "country",
+   "iso_codes": [
+    "IT"
+   ],
+   "calling_codes": [
+    "39"
+   ],
+   "marketing": 1.4627,
+   "utility": 0.5522,
+   "authentication": 0.5522,
+   "authentication_international": null,
+   "service": 0.5522
+  },
+  {
+   "market": "Kazakhstan",
+   "type": "country",
+   "iso_codes": [
+    "KZ"
+   ],
+   "calling_codes": [
+    "7"
+   ],
+   "marketing": 1.1117,
+   "utility": 0.3312,
+   "authentication": 0.3312,
+   "authentication_international": 2.9444,
+   "service": 0.3312
+  },
+  {
+   "market": "Kuwait",
+   "type": "country",
+   "iso_codes": [
+    "KW"
+   ],
+   "calling_codes": [
+    "965"
+   ],
+   "marketing": 1.4579,
+   "utility": 0.8099,
+   "authentication": 0.8099,
+   "authentication_international": 2.2088,
+   "service": 0.8099
+  },
+  {
+   "market": "Malaysia",
+   "type": "country",
+   "iso_codes": [
+    "MY"
+   ],
+   "calling_codes": [
+    "60"
+   ],
+   "marketing": 1.5829,
+   "utility": 0.2577,
+   "authentication": 0.2577,
+   "authentication_international": 0.7694,
+   "service": 0.2577
+  },
+  {
+   "market": "Mexico",
+   "type": "country",
+   "iso_codes": [
+    "MX"
+   ],
+   "calling_codes": [
+    "52"
+   ],
+   "marketing": 0.7298,
+   "utility": 0.1565,
+   "authentication": 0.1565,
+   "authentication_international": null,
+   "service": 0.1565
+  },
+  {
+   "market": "Morocco",
+   "type": "country",
+   "iso_codes": [
+    "MA"
+   ],
+   "calling_codes": [
+    "212"
+   ],
+   "marketing": 0.7619,
+   "utility": 0.4232,
+   "authentication": 0.4232,
+   "authentication_international": 1.4922,
+   "service": 0.4232
+  },
+  {
+   "market": "Netherlands",
+   "type": "country",
+   "iso_codes": [
+    "NL"
+   ],
+   "calling_codes": [
+    "31"
+   ],
+   "marketing": 2.9394,
+   "utility": 0.9203,
+   "authentication": 0.9203,
+   "authentication_international": null,
+   "service": 0.9203
+  },
+  {
+   "market": "Nepal",
+   "type": "country",
+   "iso_codes": [
+    "NP"
+   ],
+   "calling_codes": [
+    "977"
+   ],
+   "marketing": 1.3473,
+   "utility": 0.0626,
+   "authentication": 0.0626,
+   "authentication_international": 2.0616,
+   "service": 0.0626
+  },
+  {
+   "market": "Nigeria",
+   "type": "country",
+   "iso_codes": [
+    "NG"
+   ],
+   "calling_codes": [
+    "234"
+   ],
+   "marketing": 0.9497,
+   "utility": 0.1233,
+   "authentication": 0.1233,
+   "authentication_international": 1.3805,
+   "service": 0.1233
+  },
+  {
+   "market": "Oman",
+   "type": "country",
+   "iso_codes": [
+    "OM"
+   ],
+   "calling_codes": [
+    "968"
+   ],
+   "marketing": 0.6276,
+   "utility": 0.4546,
+   "authentication": 0.4546,
+   "authentication_international": 1.1044,
+   "service": 0.4546
+  },
+  {
+   "market": "Pakistan",
+   "type": "country",
+   "iso_codes": [
+    "PK"
+   ],
+   "calling_codes": [
+    "92"
+   ],
+   "marketing": 0.8706,
+   "utility": 0.2762,
+   "authentication": 0.2762,
+   "authentication_international": 1.3805,
+   "service": 0.2762
+  },
+  {
+   "market": "Peru",
+   "type": "country",
+   "iso_codes": [
+    "PE"
+   ],
+   "calling_codes": [
+    "51"
+   ],
+   "marketing": 1.2939,
+   "utility": 0.5522,
+   "authentication": 0.5522,
+   "authentication_international": null,
+   "service": 0.5522
+  },
+  {
+   "market": "Poland",
+   "type": "country",
+   "iso_codes": [
+    "PL"
+   ],
+   "calling_codes": [
+    "48"
+   ],
+   "marketing": 0.6735,
+   "utility": 0.2245,
+   "authentication": 0.2245,
+   "authentication_international": null,
+   "service": 0.2245
+  },
+  {
+   "market": "Qatar",
+   "type": "country",
+   "iso_codes": [
+    "QA"
+   ],
+   "calling_codes": [
+    "974"
+   ],
+   "marketing": 0.6276,
+   "utility": 0.2209,
+   "authentication": 0.2209,
+   "authentication_international": null,
+   "service": 0.2209
+  },
+  {
+   "market": "Romania",
+   "type": "country",
+   "iso_codes": [
+    "RO"
+   ],
+   "calling_codes": [
+    "40"
+   ],
+   "marketing": 1.5829,
+   "utility": 0.5338,
+   "authentication": 0.5338,
+   "authentication_international": null,
+   "service": 0.5338
+  },
+  {
+   "market": "Russia",
+   "type": "country",
+   "iso_codes": [
+    "RU"
+   ],
+   "calling_codes": [
+    "7"
+   ],
+   "marketing": 1.4762,
+   "utility": 0.7362,
+   "authentication": 0.7362,
+   "authentication_international": null,
+   "service": 0.7362
+  },
+  {
+   "market": "Saudi Arabia",
+   "type": "country",
+   "iso_codes": [
+    "SA"
+   ],
+   "calling_codes": [
+    "966"
+   ],
+   "marketing": 1.0595,
+   "utility": 0.1969,
+   "authentication": 0.1969,
+   "authentication_international": 1.1007,
+   "service": 0.1969
+  },
+  {
+   "market": "Singapore",
+   "type": "country",
+   "iso_codes": [
+    "SG"
+   ],
+   "calling_codes": [
+    "65"
+   ],
+   "marketing": 1.3473,
+   "utility": 0.2945,
+   "authentication": 0.2945,
+   "authentication_international": null,
+   "service": 0.2945
+  },
+  {
+   "market": "South Africa",
+   "type": "country",
+   "iso_codes": [
+    "ZA"
+   ],
+   "calling_codes": [
+    "27"
+   ],
+   "marketing": 0.6976,
+   "utility": 0.1749,
+   "authentication": 0.1749,
+   "authentication_international": 0.3681,
+   "service": 0.1749
+  },
+  {
+   "market": "Spain",
+   "type": "country",
+   "iso_codes": [
+    "ES"
+   ],
+   "calling_codes": [
+    "34"
+   ],
+   "marketing": 1.3018,
+   "utility": 0.3681,
+   "authentication": 0.3681,
+   "authentication_international": null,
+   "service": 0.3681
+  },
+  {
+   "market": "Sri Lanka",
+   "type": "country",
+   "iso_codes": [
+    "LK"
+   ],
+   "calling_codes": [
+    "94"
+   ],
+   "marketing": 1.3473,
+   "utility": 0.0368,
+   "authentication": 0.0368,
+   "authentication_international": 2.6506,
+   "service": 0.0368
+  },
+  {
+   "market": "Turkey",
+   "type": "country",
+   "iso_codes": [
+    "TR"
+   ],
+   "calling_codes": [
+    "90"
+   ],
+   "marketing": 0.2006,
+   "utility": 0.0166,
+   "authentication": 0.0166,
+   "authentication_international": null,
+   "service": 0.0166
+  },
+  {
+   "market": "Ukraine",
+   "type": "country",
+   "iso_codes": [
+    "UA"
+   ],
+   "calling_codes": [
+    "380"
+   ],
+   "marketing": 1.5829,
+   "utility": 0.5485,
+   "authentication": 0.5485,
+   "authentication_international": 1.3731,
+   "service": 0.5485
+  },
+  {
+   "market": "United Arab Emirates",
+   "type": "country",
+   "iso_codes": [
+    "AE"
+   ],
+   "calling_codes": [
+    "971"
+   ],
+   "marketing": 1.0595,
+   "utility": 0.289,
+   "authentication": 0.289,
+   "authentication_international": 0.9387,
+   "service": 0.289
+  },
+  {
+   "market": "United Kingdom",
+   "type": "country",
+   "iso_codes": [
+    "GB"
+   ],
+   "calling_codes": [
+    "44"
+   ],
+   "marketing": 1.1684,
+   "utility": 0.4049,
+   "authentication": 0.4049,
+   "authentication_international": null,
+   "service": 0.4049
+  },
+  {
+   "market": "North America",
+   "type": "region",
+   "iso_codes": [
+    "CA",
+    "US"
+   ],
+   "calling_codes": [
+    "1"
+   ],
+   "marketing": 0.4602,
+   "utility": 0.0626,
+   "authentication": 0.0626,
+   "authentication_international": null,
+   "service": 0.0626
+  },
+  {
+   "market": "Rest of Africa",
+   "type": "region",
+   "iso_codes": [
+    "AO",
+    "BF",
+    "BI",
+    "BJ",
+    "BW",
+    "CG",
+    "CI",
+    "CM",
+    "DZ",
+    "ER",
+    "ET",
+    "GA",
+    "GH",
+    "GM",
+    "GW",
+    "KE",
+    "LR",
+    "LS",
+    "LY",
+    "MG",
+    "ML",
+    "MR",
+    "MW",
+    "MZ",
+    "NA",
+    "NE",
+    "RW",
+    "SD",
+    "SL",
+    "SN",
+    "SO",
+    "SS",
+    "SZ",
+    "TD",
+    "TG",
+    "TN",
+    "TZ",
+    "UG",
+    "ZM",
+    "ZW"
+   ],
+   "calling_codes": [
+    "211",
+    "213",
+    "216",
+    "218",
+    "220",
+    "221",
+    "222",
+    "223",
+    "225",
+    "226",
+    "227",
+    "228",
+    "229",
+    "231",
+    "232",
+    "233",
+    "235",
+    "237",
+    "241",
+    "242",
+    "244",
+    "245",
+    "249",
+    "250",
+    "251",
+    "252",
+    "254",
+    "255",
+    "256",
+    "257",
+    "258",
+    "260",
+    "261",
+    "263",
+    "264",
+    "265",
+    "266",
+    "267",
+    "268",
+    "291"
+   ],
+   "marketing": 0.4141,
+   "utility": 0.0736,
+   "authentication": 0.0736,
+   "authentication_international": null,
+   "service": 0.0736
+  },
+  {
+   "market": "Rest of Asia Pacific",
+   "type": "region",
+   "iso_codes": [
+    "AF",
+    "AU",
+    "CN",
+    "JP",
+    "KH",
+    "LA",
+    "MN",
+    "NZ",
+    "PG",
+    "PH",
+    "TH",
+    "TJ",
+    "TM",
+    "TW",
+    "UZ",
+    "VN"
+   ],
+   "calling_codes": [
+    "61",
+    "63",
+    "64",
+    "66",
+    "81",
+    "84",
+    "86",
+    "93",
+    "675",
+    "855",
+    "856",
+    "886",
+    "976",
+    "992",
+    "993",
+    "998"
+   ],
+   "marketing": 1.5494,
+   "utility": 0.208,
+   "authentication": 0.208,
+   "authentication_international": null,
+   "service": 0.208
+  },
+  {
+   "market": "Rest of Central & Eastern Europe",
+   "type": "region",
+   "iso_codes": [
+    "AL",
+    "AM",
+    "AZ",
+    "BG",
+    "BY",
+    "CZ",
+    "GE",
+    "GR",
+    "HR",
+    "LT",
+    "LV",
+    "MD",
+    "MK",
+    "RS",
+    "SI",
+    "SK"
+   ],
+   "calling_codes": [
+    "30",
+    "355",
+    "359",
+    "370",
+    "371",
+    "373",
+    "374",
+    "375",
+    "381",
+    "385",
+    "386",
+    "389",
+    "420",
+    "421",
+    "994",
+    "995"
+   ],
+   "marketing": 1.5829,
+   "utility": 0.3902,
+   "authentication": 0.3902,
+   "authentication_international": null,
+   "service": 0.3902
+  },
+  {
+   "market": "Rest of Latin America",
+   "type": "region",
+   "iso_codes": [
+    "BO",
+    "CR",
+    "DO",
+    "EC",
+    "GT",
+    "HN",
+    "HT",
+    "JM",
+    "NI",
+    "PA",
+    "PR",
+    "PY",
+    "SV",
+    "UY",
+    "VE"
+   ],
+   "calling_codes": [
+    "1",
+    "58",
+    "502",
+    "503",
+    "504",
+    "505",
+    "506",
+    "507",
+    "509",
+    "591",
+    "593",
+    "595",
+    "598"
+   ],
+   "marketing": 1.362,
+   "utility": 0.208,
+   "authentication": 0.208,
+   "authentication_international": null,
+   "service": 0.208
+  },
+  {
+   "market": "Rest of Middle East",
+   "type": "region",
+   "iso_codes": [
+    "BH",
+    "JO",
+    "LB",
+    "YE"
+   ],
+   "calling_codes": [
+    "961",
+    "962",
+    "967",
+    "973"
+   ],
+   "marketing": 0.7217,
+   "utility": 0.1675,
+   "authentication": 0.1675,
+   "authentication_international": null,
+   "service": 0.1675
+  },
+  {
+   "market": "Rest of Western Europe",
+   "type": "region",
+   "iso_codes": [
+    "AT",
+    "BE",
+    "CH",
+    "DK",
+    "FI",
+    "IE",
+    "NO",
+    "PT",
+    "SE"
+   ],
+   "calling_codes": [
+    "32",
+    "41",
+    "43",
+    "45",
+    "46",
+    "47",
+    "351",
+    "353",
+    "358"
+   ],
+   "marketing": 1.0896,
+   "utility": 0.3147,
+   "authentication": 0.3147,
+   "authentication_international": null,
+   "service": 0.3147
+  },
+  {
+   "market": "Other",
+   "type": "other",
+   "iso_codes": [],
+   "calling_codes": [],
+   "marketing": 1.1117,
+   "utility": 0.1417,
+   "authentication": 0.1417,
+   "authentication_international": null,
+   "service": 0.1417
+  }
+ ]
+}

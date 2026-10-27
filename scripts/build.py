@@ -27,6 +27,8 @@ CATS = ["marketing", "utility", "authentication", "authentication_international"
 LIST_COLS = {"marketing": 2, "utility": 3, "authentication": 4, "authentication_international": 5, "service": 6}
 TIER_BLOCKS = {"utility": 2, "authentication": 7, "authentication_international": 12}
 SOURCE = ms.PAGE
+LICENSE = "CC-BY-4.0"
+ATTRIBUTION = "Data: Meta rate cards, compiled by Tobachat (https://tobachat.nl/en/whatsapp-api-pricing-by-country/)"
 
 
 def dec(v):
@@ -108,6 +110,15 @@ def fields(spec):
     return {"fields": [{"name": n, "type": t, "description": d} for n, t, d in spec]}
 
 
+def write_latest_json(path, cur, eff, checked, rows):
+    """Same rows as data/latest/<CUR>.csv; codes as lists, rates as numbers (null = not published)."""
+    markets = [{"market": r[4], "type": r[5], "iso_codes": r[6].split(), "calling_codes": r[7].split(),
+                **{c: (float(v) if v else None) for c, v in zip(CATS, r[8:])}} for r in rows]
+    doc = {"currency": cur, "effective_date": eff, "checked_on": checked, "source": SOURCE, "license": LICENSE,
+           "attribution": ATTRIBUTION, "unit": "per delivered message, excluding VAT", "markets": markets}
+    path.write_text(json.dumps(doc, indent=1, ensure_ascii=False) + "\n", encoding="utf8", newline="\n")
+
+
 def write_datapackage(out, index, curs):
     """datapackage.json (Frictionless) describing every file; regenerated on each build."""
     rate_f = [("effective_date", "date", "First day the rates apply (Meta Messaging account timezone)"),
@@ -139,6 +150,10 @@ def write_datapackage(out, index, curs):
     for c in curs:
         res.append({"name": f"latest-{c.lower()}", "path": f"data/latest/{c}.csv", "format": "csv",
                     "mediatype": "text/csv", "schema": fields(wide_f)})
+    for c in curs:
+        res.append({"name": f"latest-{c.lower()}-json", "path": f"data/latest/{c}.json", "format": "json",
+                    "mediatype": "application/json",
+                    "description": f"Same rows as data/latest/{c}.csv; codes as lists, rates as numbers or null"})
     res.append({"name": "country-market", "path": "data/country_market.csv", "format": "csv",
                 "mediatype": "text/csv", "schema": fields(cm_f)})
     pkg = {"name": "whatsapp-api-rates", "title": "WhatsApp Business Platform per-message rates",
@@ -149,7 +164,7 @@ def write_datapackage(out, index, curs):
            "contributors": [{"title": "Tobachat", "role": "author"}],
            "sources": [{"title": "Meta, Pricing on the WhatsApp Business Platform", "path": SOURCE}],
            "resources": res}
-    (out / "datapackage.json").write_text(json.dumps(pkg, indent=2) + chr(10), encoding="utf8")
+    (out / "datapackage.json").write_text(json.dumps(pkg, indent=2) + chr(10), encoding="utf8", newline=chr(10))
 
 
 def main():
@@ -219,6 +234,7 @@ def main():
             write_csv(data / "latest" / f"{cur}.csv",
                       ["currency", "effective_date", "checked_on", "source", "market", "type", "iso_codes",
                        "calling_code", *CATS], rows)
+            write_latest_json(data / "latest" / f"{cur}.json", cur, eff, a.checked, rows)
 
     versions = []
     for p in sorted((data / "rates").glob("*.csv")):
@@ -227,9 +243,10 @@ def main():
                          "tiers": f"data/tiers/{p.name}", "tiers_sha256": sha(t)})
     index = {"name": "whatsapp-api-rates", "publisher": "Tobachat", "license": "CC-BY-4.0", "source": SOURCE,
              "latest_effective_date": newest, "checked_on": a.checked,
-             "currencies": [{"code": c, "latest": f"data/latest/{c}.csv"} for c in curs],
+             "currencies": [{"code": c, "latest": f"data/latest/{c}.csv", "latest_json": f"data/latest/{c}.json"}
+                            for c in curs],
              "country_market": "data/country_market.csv", "versions": versions}
-    (out / "rates.json").write_text(json.dumps(index, indent=2) + "\n", encoding="utf8")
+    (out / "rates.json").write_text(json.dumps(index, indent=2) + "\n", encoding="utf8", newline="\n")
     write_datapackage(out, index, curs)
     if a.archive_raw:
         dest = out / "raw" / eff

@@ -74,6 +74,15 @@ for c in idx["currencies"]:
             if long_latest.get((c["code"], r["market"], cat), "") != r[cat]:
                 err(f"{c['code']} {r['market']} {cat}: latest differs from long file")
 
+    j = json.loads((ROOT / c["latest_json"]).read_text(encoding="utf8"))
+    if (j["currency"], j["effective_date"], len(j["markets"])) != (c["code"], latest, len(ws)):
+        err(f"{c['latest_json']}: header or market count differs from the CSV")
+    for r, m in zip(ws, j["markets"]):
+        cats = ("marketing", "utility", "authentication", "authentication_international", "service")
+        if m["market"] != r["market"] or m["iso_codes"] != r["iso_codes"].split() \
+                or any((float(r[k]) if r[k] else None) != m[k] for k in cats):
+            err(f"{c['latest_json']} {r['market']}: differs from the CSV")
+
 for p in (ROOT / "data").rglob("*.csv"):
     text = p.read_text(encoding="utf8")
     if re.search(r"(^|,)n/a(,|$)|\d[eE][-+]?\d|&amp;|\\n", text, re.M):

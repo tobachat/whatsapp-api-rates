@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23710440.svg)](https://doi.org/10.5281/zenodo.23710440)
 
-Meta's per-message rates for the WhatsApp Business Platform as clean, versioned CSV, in all 16 currencies Meta publishes.
+Meta's per-message rates for the WhatsApp Business Platform as clean, versioned CSV and JSON, in all 16 currencies Meta publishes.
 Rate card in effect: **2026-10-01**, last compared with Meta's files on 2026-10-27.
 
 - **Country to market table.** 141 countries with ISO and calling codes, each mapped to the rate-card market it is billed
@@ -21,6 +21,28 @@ They work from any client and send `Access-Control-Allow-Origin: *`, so a browse
 the same data to browsers, curl and Node, but refuses Python's default urllib user agent.)
 `rates.json` lists every file, version and hash. A bundled, dependency-free estimator is in `packages/` (EUR only).
 
+## JSON
+
+Every `data/latest/<CUR>.csv` has a JSON twin with the same rows, at a stable URL:
+
+```
+curl -s https://raw.githubusercontent.com/tobachat/whatsapp-api-rates/main/data/latest/USD.json
+```
+
+```json
+{
+ "currency": "USD", "effective_date": "2026-10-01", "checked_on": "2026-10-27",
+ "source": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+ "license": "CC-BY-4.0", "attribution": "Data: Meta rate cards, compiled by Tobachat (...)",
+ "unit": "per delivered message, excluding VAT",
+ "markets": [{"market": "Argentina", "type": "country", "iso_codes": ["AR"], "calling_codes": ["54"],
+              "marketing": 0.0618, "utility": 0.026, "authentication": 0.026,
+              "authentication_international": null, "service": 0.026}, ...]
+}
+```
+
+Rates are numbers; `null` means Meta does not publish that rate for the market. The CSV keeps the exact decimal strings.
+
 ## Files
 
 | File | Contents |
@@ -28,6 +50,7 @@ the same data to browsers, curl and Node, but refuses Python's default urllib us
 | `data/rates/2026-10-01.csv` | Long format, all currencies: `effective_date, currency, market, category, rate`. One file per rate card. Categories: `marketing`, `utility`, `authentication`, `authentication_international`, `service`. Rates are decimal strings per delivered message, excluding VAT. A row is absent where Meta lists "n/a" (for example authentication-international outside the markets that have it). |
 | `data/tiers/2026-10-01.csv` | Volume tiers (utility, authentication, authentication-international): `effective_date, currency, market, category, tier_from, tier_to, rate_type, rate, pct_vs_list`. `tier_to` is empty for the open-ended last tier; `rate_type` is `list_rate` or `tier_rate`; `pct_vs_list` is a decimal fraction such as `-0.05`. Tiers are per calendar month. |
 | `data/latest/<CUR>.csv` | One wide file per currency, one row per market (47): `currency, effective_date, checked_on, source, market, type, iso_codes, calling_code, marketing, utility, authentication, authentication_international, service`. Empty cell = not published. `type` is `country`, `region` or `other`. |
+| `data/latest/<CUR>.json` | The same rows as JSON (see [JSON](#json)). |
 | `data/country_market.csv` | Which market a country is priced under: `iso2, country, market, market_type, calling_code, extra_area_codes`. 141 countries: 39 with their own rate, 102 in a "Rest of ..." group or North America. A country that is not listed is priced as `Other`. Source: the "Pricing regions on the rate card" section of [Meta's pricing page](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing). |
 | `rates.json` | Index: latest effective date, currencies, every version with SHA-256 hashes. |
 | `datapackage.json` | Frictionless Data Package with a schema for each file. |

@@ -1315,6 +1315,118 @@
       }
     },
     {
+      "name": "latest-aed-json",
+      "path": "data/latest/AED.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/AED.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-ars-json",
+      "path": "data/latest/ARS.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/ARS.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-aud-json",
+      "path": "data/latest/AUD.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/AUD.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-brl-json",
+      "path": "data/latest/BRL.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/BRL.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-clp-json",
+      "path": "data/latest/CLP.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/CLP.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-cop-json",
+      "path": "data/latest/COP.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/COP.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-eur-json",
+      "path": "data/latest/EUR.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/EUR.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-gbp-json",
+      "path": "data/latest/GBP.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/GBP.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-idr-json",
+      "path": "data/latest/IDR.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/IDR.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-inr-json",
+      "path": "data/latest/INR.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/INR.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-mxn-json",
+      "path": "data/latest/MXN.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/MXN.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-myr-json",
+      "path": "data/latest/MYR.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/MYR.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-pen-json",
+      "path": "data/latest/PEN.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/PEN.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-sar-json",
+      "path": "data/latest/SAR.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/SAR.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-sgd-json",
+      "path": "data/latest/SGD.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/SGD.csv; codes as lists, rates as numbers or null"
+    },
+    {
+      "name": "latest-usd-json",
+      "path": "data/latest/USD.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Same rows as data/latest/USD.csv; codes as lists, rates as numbers or null"
+    },
+    {
       "name": "country-market",
       "path": "data/country_market.csv",
       "format": "csv",
