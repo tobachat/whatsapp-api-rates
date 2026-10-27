@@ -1,15 +1,23 @@
 # Maintaining this repository
 
 Meta changes rates only on 1 Jan, 1 Apr, 1 Jul and 1 Oct, announced at least a month ahead. The weekly watcher
-(`.github/workflows/watch-meta.yml`) opens an issue labelled `meta-change` when Meta's files differ from
-`data/latest`, or `watcher-broken` when the page can no longer be read. About 15 minutes per quarter for the
-data, plus the package release when you want one.
+(`.github/workflows/watch-meta.yml`) compares Meta's files with `data/latest`. On a difference it opens a pull
+request on the branch `watcher/rates-<date>` with the rebuilt data, Meta's workbooks in `raw/<date>/`, a draft
+`CHANGELOG.md` entry, the `CITATION.cff` date and, in the PR body, a draft social post (nothing is published), plus
+an issue labelled `meta-change` that links the PR. When the page can no longer be read it opens `watcher-broken`.
+Weekly reruns update the same PR and only push again when the rates differ. About 15 minutes per quarter.
+
+The PR needs the repository setting "Allow GitHub Actions to create and approve pull requests" (Settings, Actions,
+General, Workflow permissions). Without it the branch is still pushed and the issue carries a compare link.
 
 ## Quarterly data update
 
-1. Wait for the effective date (or the issue). Meta's files are already live a month early; do not build before
-   the new card is effective unless you want it in a branch.
-2. Fetch and build (needs `pip install openpyxl`):
+1. Review the watcher's PR: tick its checklist, compare the number of changed USD rates with Meta's changelog,
+   edit the draft CHANGELOG entry (remove the draft line, name markets that left a "Rest of" region). Merge on or
+   after the effective date; Meta's files are live a month early. Then publish the release (step 5).
+   To test the change path offline: `python -m unittest scripts/test_watch.py` (a fixture of the archived workbooks
+   with one bumped rate; covers a new card and a mid-quarter correction).
+2. Without the watcher, fetch and build by hand (needs `pip install openpyxl`):
    ```
    python scripts/fetch.py /tmp/meta-raw
    python scripts/build.py --raw /tmp/meta-raw --country-map /tmp/meta-raw/page.md --checked YYYY-MM-DD --archive-raw
@@ -41,6 +49,28 @@ Optional, only when the rates changed (the packages bundle EUR only):
    The tests pin cost rules, not rate values.
 5. Publish: `cd packages/js && npm publish`; `cd packages/python && python -m build && twine upload dist/*`
    (needs an npm token and a PyPI API token).
+
+## MCP server (`mcp/`)
+
+`whatsapp-rates-mcp` bundles `data/latest/*.json`, the country table, the rate cards and the CHANGELOG notes at build
+time, so a new rate card needs a new release (minor bump), nothing else. Not yet published: npm and the MCP Registry
+both wait for a token.
+
+1. `cd mcp && npm install && npm test` (regenerates `src/data.generated.ts`, compiles, runs the tests).
+2. Bump the version in three places that a test keeps equal: `mcp/package.json`, `VERSION` in `mcp/src/server.ts`,
+   and both `version` fields in `mcp/server.json`.
+3. npm: an npm account for Tobachat with an automation or granular publish token, stored in Google Secret Manager.
+   `cd mcp && npm publish --access public` (runs the tests first). Check https://www.npmjs.com/package/whatsapp-rates-mcp.
+4. MCP Registry (namespace `io.github.tobachat`, `mcpName` in `package.json` proves the npm package): install
+   `mcp-publisher` (https://github.com/modelcontextprotocol/registry/releases), then in `mcp/`:
+   `mcp-publisher login github --token <PAT>` and `mcp-publisher publish`. The org namespace needs a token that can
+   read the organisation role of an owner of `tobachat`: a classic PAT with `read:org`, or a fine-grained PAT with
+   Organization permissions, Members, read-only. The interactive `mcp-publisher login github` only grants the
+   personal namespace. Alternative without a PAT: a workflow with `id-token: write` that runs
+   `mcp-publisher login github-oidc` (registry docs, "GitHub Actions"), with the npm token as a repository secret.
+   Validate first with `mcp-publisher validate`.
+5. Listings after the first publish: awesome-mcp-servers (PR), Glama and mcp.so (they index public GitHub servers;
+   mcp.so has a submit form).
 
 ## n8n templates (`examples/n8n`)
 
