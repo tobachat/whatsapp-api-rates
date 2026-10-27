@@ -57,7 +57,7 @@ Rates are numbers; `null` means Meta does not publish that rate for the market. 
 | `datapackage.json` | Frictionless Data Package with a schema for each file. |
 | `raw/<date>/` | Meta's original workbooks for that rate card, kept because Meta's links expire. |
 | `CHANGELOG.md` | What changed per rate card. |
-| `scripts/` | `fetch.py`, `build.py`, `validate.py`, `watch.py`. |
+| `scripts/` | `fetch.py`, `build.py`, `validate.py`, `watch.py`, `propose.py` (watcher update), `test_watch.py`. |
 | `packages/js`, `packages/python` | `whatsapp-pricing`: lookup and monthly cost estimator (EUR). |
 | `examples/n8n/` | Five n8n workflow templates. |
 | `mcp/` | `whatsapp-rates-mcp`: read-only MCP server (rates, markets, cost estimate, rate changes) with the data bundled. |
@@ -98,8 +98,10 @@ its dated files and the original workbooks.
 ## Staying in sync
 
 A weekly GitHub Action (`.github/workflows/watch-meta.yml`) downloads Meta's current files, keeps them as a workflow
-artifact, compares them with `data/latest` and opens an issue when anything differs. If Meta changes the page so that the
-files cannot be found, it opens a "Watcher broken" issue instead of failing silently. See `MAINTAINING.md`.
+artifact and compares them with `data/latest`. When anything differs it opens a pull request with the rebuilt data,
+the archived workbooks and a draft CHANGELOG entry, and an issue that links it; a person reviews and merges. If Meta
+changes the page so that the files cannot be found, it opens a "Watcher broken" issue instead of failing silently.
+Watch this repository's releases to hear about each new rate card. See `MAINTAINING.md`.
 
 ## Licence and citation
 

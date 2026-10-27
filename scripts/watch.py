@@ -1,11 +1,15 @@
 """Compare Meta's live rate cards with this repo's data/latest and write a report.
 
-    python scripts/watch.py WORKDIR
+    python scripts/watch.py WORKDIR [--offline DIR] [--repo DIR]
 
 Writes WORKDIR/raw/*.xlsx (+ page.md), WORKDIR/report.md and prints a status line. When $GITHUB_OUTPUT is set it
 also writes status=ok|changed|broken. Exit code is always 0 for ok/changed/broken so the workflow can open the
 right issue; a crash of this script itself is the only failure.
+
+--offline DIR compares the workbooks (and page.md, if present) in DIR instead of downloading them: for re-running
+on a workflow artifact and for the fixture test in scripts/test_watch.py. --repo compares with another checkout.
 """
+import argparse
 import csv
 import os
 import shutil
@@ -18,7 +22,6 @@ HERE = Path(__file__).parent
 REPO = HERE.parent
 sys.path.insert(0, str(HERE))
 import meta_source as ms  # noqa: E402
-from fetch import fetch_all  # noqa: E402
 
 
 def rows(path):
@@ -59,17 +62,29 @@ def emit(work, status, text):
 
 
 def main():
-    work = Path(sys.argv[1])
+    ap = argparse.ArgumentParser()
+    ap.add_argument("work")
+    ap.add_argument("--offline")
+    ap.add_argument("--repo", default=str(REPO))
+    a = ap.parse_args()
+    work, repo = Path(a.work), Path(a.repo)
     work.mkdir(parents=True, exist_ok=True)
     raw = work / "raw"
     try:
-        links = ms.rate_card_links()
         raw.mkdir(exist_ok=True)
-        for (cur, kind), url in sorted(links.items()):
-            (raw / f"{cur}_{kind}.xlsx").write_bytes(ms.download(url))
+        if a.offline:
+            for f in Path(a.offline).glob("*.xlsx"):
+                shutil.copy2(f, raw / f.name)
+        else:
+            links = ms.rate_card_links()
+            for (cur, kind), url in sorted(links.items()):
+                (raw / f"{cur}_{kind}.xlsx").write_bytes(ms.download(url))
         have_map = True
         try:
-            (raw / "page.md").write_text(ms.country_map_markdown(), encoding="utf8")
+            if a.offline:
+                shutil.copy2(Path(a.offline) / "page.md", raw / "page.md")
+            else:
+                (raw / "page.md").write_text(ms.country_map_markdown(), encoding="utf8")
             ms.parse_country_map((raw / "page.md").read_text(encoding="utf8"))
         except Exception as e:  # country map is secondary: report it, keep comparing rates
             have_map = False
@@ -77,7 +92,7 @@ def main():
         tmp = work / "build"
         if tmp.exists():
             shutil.rmtree(tmp)
-        shutil.copytree(REPO / "data", tmp / "data")
+        shutil.copytree(repo / "data", tmp / "data")
         cmd = [sys.executable, str(HERE / "build.py"), "--raw", str(raw), "--out", str(tmp)]
         if have_map:
             cmd += ["--country-map", str(raw / "page.md")]
@@ -92,20 +107,20 @@ def main():
     new_rates = sorted((tmp / "data" / "rates").glob("*.csv"))[-1]
     eff = new_rates.stem
     lines = []
-    old_rates = REPO / "data" / "rates" / new_rates.name
+    old_rates = repo / "data" / "rates" / new_rates.name
     if not old_rates.exists():
-        known = sorted(p.stem for p in (REPO / "data" / "rates").glob("*.csv"))
+        known = sorted(p.stem for p in (repo / "data" / "rates").glob("*.csv"))
         lines.append(f"## New rate card: effective {eff} (repo has up to {known[-1] if known else 'nothing'})")
-        lines.append("Run the quarterly update in MAINTAINING.md.")
+        lines.append("The workflow proposes the update as a pull request; review it as described in MAINTAINING.md.")
     else:
         lines += diff(keyed(old_rates, ["currency", "market", "category"], "rate"),
                       keyed(new_rates, ["currency", "market", "category"], "rate"), "List rates")
         tk = ["currency", "market", "category", "tier_from"]
-        t_old, t_new = REPO / "data" / "tiers" / new_rates.name, tmp / "data" / "tiers" / new_rates.name
+        t_old, t_new = repo / "data" / "tiers" / new_rates.name, tmp / "data" / "tiers" / new_rates.name
         lines += diff(keyed(t_old, tk, "rate"), keyed(t_new, tk, "rate"), "Volume tiers")
         if have_map:
             ck = ["iso2"]
-            lines += diff(keyed(REPO / "data" / "country_market.csv", ck, "market"),
+            lines += diff(keyed(repo / "data" / "country_market.csv", ck, "market"),
                           keyed(tmp / "data" / "country_market.csv", ck, "market"), "Country to market")
         if lines:
             lines.insert(0, f"## Meta changed the rate card that is effective {eff}")

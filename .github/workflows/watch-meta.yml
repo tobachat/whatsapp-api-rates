@@ -1,20 +1,23 @@
 name: watch-meta
 
-# Weekly: download Meta's current rate-card files, compare with data/latest, open an issue on any change.
-# Meta's download links are signed and expire, so the page is scraped every run. No secrets needed.
+# Weekly: download Meta's current rate-card files and compare them with data/latest. On a change: a pull request
+# with the rebuilt data, archived workbooks, a draft CHANGELOG entry and a draft social post (nothing is published),
+# plus an issue. On a broken scraper: an issue. Meta's download links are signed and expire, so the page is scraped
+# every run. No secrets: GITHUB_TOKEN only.
 on:
   schedule:
     - cron: "17 6 * * 1"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   issues: write
+  pull-requests: write
 
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -33,11 +36,44 @@ jobs:
             work/report.md
           retention-days: 90
           if-no-files-found: ignore
+      - name: Build the proposed update
+        id: propose
+        if: steps.watch.outputs.status == 'changed'
+        run: python scripts/propose.py work
+      - name: Open or update the pull request
+        id: pr
+        if: steps.propose.outputs.status == 'ready'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ steps.propose.outputs.branch }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q -B "$BRANCH"
+          git add -A data raw rates.json datapackage.json CHANGELOG.md CITATION.cff
+          git commit -q -m "$(cat work/pr-title.txt)"
+          # Weekly reruns only move checked_on; push again only when the rates themselves differ.
+          if git fetch -q origin "$BRANCH" 2>/dev/null && git diff --quiet FETCH_HEAD HEAD -- data/rates data/tiers data/country_market.csv raw; then
+            echo "Branch $BRANCH already holds this rate card"
+          else
+            git push -q --force origin "HEAD:$BRANCH"
+          fi
+          url="$(gh pr list --head "$BRANCH" --state open --json url --jq '.[0].url')"
+          if [ -n "$url" ]; then
+            gh pr edit "$url" --body-file work/pr-body.md >/dev/null
+          else
+            url="$(gh pr create --base main --head "$BRANCH" --title "$(cat work/pr-title.txt)" --body-file work/pr-body.md)" || url=""
+          fi
+          if [ -z "$url" ]; then
+            url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/compare/main...${BRANCH} (the pull request could not be opened: allow GitHub Actions to create pull requests in Settings, Actions, General)"
+          fi
+          echo "url=$url" >> "$GITHUB_OUTPUT"
       - name: Open or update an issue
         if: steps.watch.outputs.status == 'changed' || steps.watch.outputs.status == 'broken'
         env:
           GH_TOKEN: ${{ github.token }}
           STATUS: ${{ steps.watch.outputs.status }}
+          PR_URL: ${{ steps.pr.outputs.url }}
         run: |
           if [ "$STATUS" = "broken" ]; then
             title="Watcher broken: Meta page could not be read"
@@ -46,7 +82,12 @@ jobs:
             title="Meta changed its WhatsApp rate card"
             label="meta-change"
           fi
+          extra=""
+          if [ -n "$PR_URL" ]; then extra="Proposed update: $PR_URL"; fi
+          if [ -f work/propose-error.md ]; then extra="$(cat work/propose-error.md)"; fi
           body="$(cat work/report.md)
+
+          $extra
 
           Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID} (raw files attached as artifact)"
           gh label create "$label" --force >/dev/null 2>&1 || true
