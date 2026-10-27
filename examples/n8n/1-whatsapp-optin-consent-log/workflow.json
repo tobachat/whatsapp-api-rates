@@ -11,26 +11,10 @@
         -60
       ],
       "parameters": {
-        "content": "## WhatsApp opt-in capture with consent log\n\nStores a provable opt-in record and sends a confirmation template.\n\n### How it works\n1. Your web form (any form tool, or your own site) POSTs name, phone, consent and consent_text to the webhook.\n2. A Code node checks the number (international format) and that consent is explicitly true.\n3. The consent is appended to a Google Sheet with timestamp, source, wording shown and IP.\n4. A WhatsApp template message confirms the sign-up.\n5. Second branch: a customer who replies STOP is marked as opted out in the same sheet.\n\n### Setup steps\n1. Create a sheet with tab \"Opt-ins\" and columns: phone, name, consent, consent_text, source, ip, opted_in_at, opted_out_at.\n2. Add Google Sheets, WhatsApp Business Cloud and WhatsApp Trigger credentials. Pick your document in both Sheets nodes and your phone number id in both WhatsApp nodes.\n3. Create an approved template named optin_confirmation (one body variable: the name) and select it in the WhatsApp node.\n4. Point your form to the Production URL of the webhook.",
-        "height": 600,
+        "content": "## WhatsApp opt-in capture with consent log\n\n### How it works\nThis workflow gives businesses that send WhatsApp notifications a provable opt-in record before the first message. Your web form POSTs name, phone, consent and the exact consent text to a webhook. A Code node checks the number (international format) and that consent is explicitly true. The record (timestamp, source, wording shown, IP) is appended to Google Sheets and an approved template confirms the sign-up. A second branch listens for replies: a customer who sends STOP is marked as opted out in the same sheet and gets a short confirmation, which is allowed as free-form text because it answers inside the 24 hour window.\n\nMeta requires opt-in before you message someone, and every message outside a 24 hour window must be an approved template. This stores the evidence; it is not legal advice.\n\n### Setup\n1. Create a sheet with tab \"Opt-ins\" and columns: phone, name, consent, consent_text, source, ip, opted_in_at, opted_out_at.\n2. Add Google Sheets, WhatsApp Business Cloud and WhatsApp Trigger credentials. Pick your document in both Sheets nodes and your phone number id in both WhatsApp nodes.\n3. Create an approved template named optin_confirmation with one body variable (the name).\n4. Point your form to the webhook Production URL.\n\n### Customization\nOnly one WhatsApp Trigger can exist per Meta app; merge this branch with your other WhatsApp workflows if needed. Check opted_out_at before every send.",
+        "height": 760,
         "width": 560,
-        "color": 4
-      }
-    },
-    {
-      "id": "69907c5b-0a93-4206-9376-cdf953e5f9a2",
-      "name": "Meta rules",
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        -760,
-        560
-      ],
-      "parameters": {
-        "content": "## Meta rules this workflow follows\n- **Opt-in is required** before you message someone on WhatsApp. It can be collected on a web form, but it must be clear that the person wants messages from your business on WhatsApp, and you must be able to show it. Keep the exact text you showed (consent_text).\n- **Templates need approval.** A message sent outside a customer service window must be a pre-approved template. Create it in WhatsApp Manager and wait for Approved. Meta assigns the category.\n- **24 hour window:** a customer message opens a 24 hour window in which free-form replies are allowed. The STOP confirmation is a reply inside that window, so plain text is fine.\n- Respect opt-outs: stop all sends to numbers with opted_out_at filled in.",
-        "height": 340,
-        "width": 560,
-        "color": 3
+        "color": 1
       }
     },
     {
@@ -43,9 +27,10 @@
         -40
       ],
       "parameters": {
-        "content": "### 1. Capture and log consent",
+        "content": "## Capture and log consent",
         "height": 60,
-        "width": 1480
+        "width": 1480,
+        "color": 7
       }
     },
     {
@@ -218,9 +203,10 @@
         420
       ],
       "parameters": {
-        "content": "### 2. Opt-out by replying STOP",
+        "content": "## Opt-out by replying STOP",
         "height": 60,
-        "width": 1480
+        "width": 1480,
+        "color": 7
       }
     },
     {

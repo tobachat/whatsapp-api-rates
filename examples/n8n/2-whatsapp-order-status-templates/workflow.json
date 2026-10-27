@@ -11,26 +11,10 @@
         -60
       ],
       "parameters": {
-        "content": "## Order status updates via WhatsApp templates, with delivery log\n\nSends the right approved template when an order changes status and records whether it was delivered or read.\n\n### How it works\n1. Your shop or backend POSTs {order_id, status, phone, name, tracking_url} to the webhook.\n2. A Code node picks the template for the status (confirmed, shipped, delivered).\n3. The WhatsApp node sends the template; the message id is logged in Google Sheets.\n4. A second branch listens to WhatsApp status webhooks (sent, delivered, read, failed) and updates the log row.\n\n### Setup steps\n1. Create three templates named order_confirmed, order_shipped, order_delivered, each with two body variables (name, order id), and wait for approval. Names can be changed in the Code node.\n2. Sheet tab \"Order messages\": order_id, status, phone, message_id, delivery_status, updated_at, error.\n3. Add credentials: WhatsApp Business Cloud, WhatsApp Trigger, Google Sheets. Set your phone number id and spreadsheet.\n4. Call the webhook Production URL from your shop.",
-        "height": 600,
+        "content": "## Order status updates via WhatsApp templates, with delivery log\n\n### How it works\nThis workflow helps shops send the right approved template when an order changes status and see whether it arrived. Your shop or backend POSTs order_id, status, phone, name and tracking_url to the webhook. A Code node picks the template for the status (confirmed, shipped, delivered), the WhatsApp node sends it and the message id is logged in Google Sheets. A second branch listens to WhatsApp status webhooks (sent, delivered, read, failed) and updates the log row, including the error code of a failed send.\n\nOrder updates usually go out outside a 24 hour window, so they must be approved templates sent only to customers who opted in. Meta assigns the category: keep promotion out of them or they can be billed as marketing. Template variables cannot be empty.\n\n### Setup\n1. Create three templates named order_confirmed, order_shipped and order_delivered, each with two body variables (name, order id), and wait for approval.\n2. Sheet tab \"Order messages\": order_id, status, phone, message_id, delivery_status, updated_at, error.\n3. Add WhatsApp Business Cloud, WhatsApp Trigger and Google Sheets credentials. Set your phone number id and spreadsheet.\n4. Call the webhook Production URL from your shop.\n\n### Customization\nChange template names or add statuses in the Pick template node. Only one WhatsApp Trigger can exist per Meta app.",
+        "height": 760,
         "width": 560,
-        "color": 4
-      }
-    },
-    {
-      "id": "29a13696-9f1f-4fe4-9008-ecbe512a535f",
-      "name": "Meta rules",
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        -760,
-        560
-      ],
-      "parameters": {
-        "content": "## Meta rules to know\n- Order updates usually go out outside a 24 hour window, so they **must be approved templates**. Only send to customers who gave **opt-in** for order updates.\n- Meta decides the category. Order, shipping and delivery updates are normally utility. Promotion inside them can get a template recategorised as marketing, which is billed higher.\n- Template variables cannot be empty.\n- A failed status carries an error code; review failed rows rather than retrying blindly.\n- Cost is per delivered template message, by recipient country and category.",
-        "height": 300,
-        "width": 560,
-        "color": 3
+        "color": 1
       }
     },
     {
@@ -43,9 +27,10 @@
         -40
       ],
       "parameters": {
-        "content": "### 1. Send the template",
+        "content": "## Send the template",
         "height": 60,
-        "width": 1580
+        "width": 1580,
+        "color": 7
       }
     },
     {
@@ -235,9 +220,10 @@
         420
       ],
       "parameters": {
-        "content": "### 2. Track delivery status",
+        "content": "## Track delivery status",
         "height": 60,
-        "width": 1580
+        "width": 1580,
+        "color": 7
       }
     },
     {

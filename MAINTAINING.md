@@ -74,21 +74,26 @@ both wait for a token.
 
 ## n8n templates (`examples/n8n`)
 
-Five templates; nothing is submitted until someone does the steps below. The details of what was verified:
+Five templates. The details of what was verified:
 
 - Node types and typeVersions checked against n8n-io/n8n master on 2026-10-27: whatsApp 1.1, whatsAppTrigger 1,
   webhook 2, respondToWebhook 1.4, code 2, if 2.2, googleSheets 4.7, slack 2.3, httpRequest 4.2, wait 1.1,
-  manualTrigger 1, stickyNote 1. Not tested: a real import into an n8n instance and real Meta sends (needs credentials).
+  manualTrigger 1, stickyNote 1. Template 4 was imported into n8n Cloud and run successfully on 2026-10-28.
+  Templates 1, 2, 3 and 5 are not yet tested end to end (need a Meta test number and Google Sheets).
+- Sticky notes follow n8n's "Add sticky notes to templates" page (2026-10-28): one yellow overview note (color 1) top
+  left, 100 to 300 words, headings `### How it works`, `### Setup`, `### Customization`; white section notes (color 7)
+  with a `##` heading, under 50 words; red (color 3) only for a critical warning on a single node.
 - Upkeep: review once per quarter (about 30 minutes): re-import all five into the current n8n, check there are no
   deprecated-node warnings, re-run the estimator. Breakage sources are n8n typeVersion bumps, WhatsApp node changes,
   Meta API changes (template component format, status webhook payload) and Google Sheets node schema changes.
 - Template 4 reads `data/latest/EUR.csv` from raw.githubusercontent.com and depends on the columns `market`, `iso_codes`,
-  `marketing`, `utility`, `authentication`, `effective_date`. Do not rename them without updating that template.
-- Only one WhatsApp Trigger can exist per Meta app; templates 1, 2 and 3 each include one (said in their descriptions).
-- Submission (owner clicks): sign up at https://creators.n8n.io as "Tobachat", read the Creator hub guidelines once,
-  import each `workflow.json` into n8n, take the screenshot per `screenshot-instructions.md`, submit with `description.md`
-  as a free template, answer review comments. Published guidelines summarised: sticky notes mandatory, no hardcoded
-  keys, original work, Markdown description with H2 headings.
+  `marketing`, `utility`, `authentication`, `effective_date`. Do not rename them without updating that template. The copy
+  submitted to the n8n library reads https://tobachat.nl/data/whatsapp-api-rates-eur.csv with the same columns.
+- Only one WhatsApp Trigger can exist per Meta app; templates 1, 2 and 3 each include one (said in their overview notes).
+- Submission: the creator portal (https://creators.n8n.io, account "tobachat") takes only the workflow JSON, runs an AI
+  check, generates the title and description for you to edit, then a human review (3 to 5 business days). No screenshot
+  upload. New creators can have one template in review at a time. Template 4 was submitted on 2026-10-28.
+  Guidelines: Creator hub, "Template submission guidelines" and "Add sticky notes to templates" on n8n.notion.site.
 
 ## If the watcher says "broken"
 

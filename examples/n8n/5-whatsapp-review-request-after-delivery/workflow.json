@@ -11,26 +11,10 @@
         -60
       ],
       "parameters": {
-        "content": "## Ask for a review on WhatsApp after delivery\n\nWaits a few days after an order is delivered and sends one approved template with a review link button, only if the customer opted in.\n\n### How it works\n1. Your shop POSTs {order_id, phone, name, marketing_opt_in} when an order is delivered.\n2. A Code node validates the event and the opt-in flag; the webhook answers at once.\n3. The workflow waits (default 3 days).\n4. A WhatsApp template with a URL button is sent and the request is logged in Google Sheets.\n\n### Setup steps\n1. Create a template review_request with one body variable (name) and a URL button with a variable suffix, e.g. https://example.com/review/{{1}}. Wait for approval.\n2. Credentials: WhatsApp Business Cloud and Google Sheets. Set phone number id and spreadsheet (tab \"Review requests\": order_id, phone, sent_at, message_id).\n3. Change the wait time in the Wait node if needed.",
-        "height": 520,
+        "content": "## Ask for a review on WhatsApp after delivery\n\n### How it works\nThis workflow helps shops ask for one review a few days after an order is delivered, only when the customer opted in. Your shop POSTs order_id, phone, name and marketing_opt_in when an order is delivered. A Code node validates the event and the opt-in flag and the webhook answers at once. The workflow waits (default 3 days), sends an approved template with a review link button and logs the request in Google Sheets.\n\nA request days later is outside the 24 hour window, so it must be an approved template. Meta may classify it as marketing, which costs more than utility and needs marketing opt-in: ask for that at checkout. Send once per order, honour opt-outs, and do not reward only positive reviews.\n\n### Setup\n1. Create a template review_request with one body variable (name) and a URL button with a variable suffix, for example https://example.com/review/{{1}}. Wait for approval.\n2. Add WhatsApp Business Cloud and Google Sheets credentials. Set your phone number id and spreadsheet (tab \"Review requests\": order_id, phone, sent_at, message_id).\n\n### Customization\nChange the wait time in the Wait node.",
+        "height": 700,
         "width": 560,
-        "color": 4
-      }
-    },
-    {
-      "id": "7c00dbd9-3592-4bbc-bb20-00ce3fe1ae22",
-      "name": "Meta rules",
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        -760,
-        480
-      ],
-      "parameters": {
-        "content": "## Meta rules\n- A review request sent days later is outside the 24 hour window, so it must be an **approved template**.\n- Meta may classify it as **marketing**, which costs more than utility and needs **marketing opt-in**. Ask for that at checkout; do not assume order opt-in covers it.\n- Send once per order. Most review platforms forbid rewarding only positive reviews.\n- Honour STOP requests: check your opt-out list before sending.",
-        "height": 280,
-        "width": 560,
-        "color": 3
+        "color": 1
       }
     },
     {
@@ -43,9 +27,10 @@
         60
       ],
       "parameters": {
-        "content": "### Validate, wait, send, log",
+        "content": "## Validate, wait, send, log",
         "height": 60,
-        "width": 1580
+        "width": 1580,
+        "color": 7
       }
     },
     {

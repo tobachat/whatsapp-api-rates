@@ -11,26 +11,10 @@
         -60
       ],
       "parameters": {
-        "content": "## Route inbound WhatsApp messages to Slack, with 24h window and after-hours reply\n\nNo AI needed: keyword rules you can edit, a Slack channel for the team, and an automatic reply outside office hours.\n\n### How it works\n1. WhatsApp Trigger receives customer messages.\n2. A Code node classifies the text by keyword, checks office hours in your time zone and computes when the 24 hour window closes.\n3. STOP messages are logged as opt-outs and confirmed.\n4. Everything else is posted to Slack with the deadline for a free-form reply.\n5. Outside office hours the customer gets an automatic text reply (allowed because they just wrote to you).\n\n### Setup steps\n1. Add credentials: WhatsApp Trigger, WhatsApp Business Cloud, Slack, Google Sheets.\n2. Edit TIMEZONE, HOURS and ROUTES at the top of the Code node.\n3. Set your Slack channel id and phone number id. Duplicate the Slack node per topic if you want separate channels.\n4. Sheet tab \"Opt-outs\" with columns phone, opted_out_at.",
-        "height": 640,
-        "width": 580,
-        "color": 4
-      }
-    },
-    {
-      "id": "df620196-9458-49f3-8da9-7b19ce6917ba",
-      "name": "Meta rules",
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        -760,
-        600
-      ],
-      "parameters": {
-        "content": "## The 24 hour customer service window\nWhen a customer messages you, a 24 hour window opens. Inside it you can send **free-form** messages. After it closes you can only send **approved templates**, and only to people who opted in. Each new customer message re-opens the window.\n\nThe Slack message includes the closing time so agents know how long they can reply freely. This workflow only replies automatically inside the window; for later follow-ups use a template.\n\nSTOP and opt-out requests must be honoured: do not message that number again.",
-        "height": 300,
-        "width": 580,
-        "color": 3
+        "content": "## Route inbound WhatsApp messages to Slack, with 24h window and after-hours reply\n\n### How it works\nThis workflow helps small support teams handle WhatsApp in Slack without an AI model. The WhatsApp Trigger receives customer messages. A Code node classifies the text by editable keyword rules, checks office hours in your time zone and computes when the 24 hour customer service window closes. STOP messages are logged as opt-outs and confirmed. Everything else is posted to Slack with the deadline for a free-form reply. Outside office hours the customer gets an automatic text reply.\n\nInside the 24 hour window free-form messages are allowed; after it closes only approved templates may be sent, and only to people who opted in. Each new customer message reopens the window. Honour every opt-out.\n\n### Setup\n1. Add WhatsApp Trigger, WhatsApp Business Cloud, Slack and Google Sheets credentials.\n2. Edit TIMEZONE, HOURS and ROUTES at the top of the Code node.\n3. Set your Slack channel id and phone number id.\n4. Create a sheet tab \"Opt-outs\" with columns phone, opted_out_at.\n\n### Customization\nDuplicate the Slack node per topic for separate channels. Only one WhatsApp Trigger can exist per Meta app.",
+        "height": 760,
+        "width": 560,
+        "color": 1
       }
     },
     {
@@ -43,9 +27,10 @@
         100
       ],
       "parameters": {
-        "content": "### 1. Receive and classify",
+        "content": "## Receive and classify",
         "height": 60,
-        "width": 780
+        "width": 780,
+        "color": 7
       }
     },
     {
@@ -58,9 +43,10 @@
         0
       ],
       "parameters": {
-        "content": "### 2. Opt-out or team channel",
+        "content": "## Opt-out or team channel",
         "height": 60,
-        "width": 1000
+        "width": 1000,
+        "color": 7
       }
     },
     {
