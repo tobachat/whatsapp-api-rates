@@ -1,0 +1,48 @@
+currency,effective_date,checked_on,source,market,type,iso_codes,calling_code,marketing,utility,authentication,authentication_international,service
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Argentina,country,AR,54,4.5293,1.9062,1.9062,,1.9062
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Bangladesh,country,BD,880,5.3664,0.2712,0.2712,7.036,0.2712
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Brazil,country,BR,55,4.5808,0.4984,0.4984,,0.4984
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Chile,country,CL,56,6.5135,1.4654,1.4654,,1.4654
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Colombia,country,CO,57,0.9161,0.0588,0.0588,,0.0588
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Egypt,country,EG,20,4.7191,0.2639,0.2639,4.7668,0.2639
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,France,country,FR,33,6.299,2.1994,2.1994,,2.1994
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Germany,country,DE,49,10.0073,4.0322,4.0322,,4.0322
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Hong Kong,country,HK,852,5.3664,1.9056,1.9056,,1.9056
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Hungary,country,HU,36,6.2997,2.5583,2.5583,,2.5583
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,India,country,IN,91,0.8631,0.115,0.115,2.4971,0.115
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Indonesia,country,ID,62,3.0111,1.8316,1.8316,9.9638,1.8316
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Iraq,country,IQ,964,2.4993,0.5786,0.5786,9.3749,0.5786
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Israel,country,IL,972,2.5871,0.3885,0.3885,,0.3885
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Italy,country,IT,39,5.8206,2.1974,2.1974,,2.1974
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Kazakhstan,country,KZ,7,4.4248,1.3187,1.3187,11.7216,1.3187
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Kuwait,country,KW,965,5.8059,3.2226,3.2226,8.789,3.2226
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Malaysia,country,MY,60,6.3037,1.0262,1.0262,3.0639,1.0262
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Mexico,country,MX,52,2.9064,0.6226,0.6226,,0.6226
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Morocco,country,MA,212,3.0354,1.6848,1.6848,5.9406,1.6848
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Netherlands,country,NL,31,11.7078,3.6656,3.6656,,3.6656
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Nepal,country,NP,977,5.3664,0.2492,0.2492,8.2087,0.2492
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Nigeria,country,NG,234,3.7851,0.4915,0.4915,5.5035,0.4915
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Oman,country,OM,968,2.4993,1.8091,1.8091,4.3945,1.8091
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Pakistan,country,PK,92,3.4683,1.1,1.1,5.5035,1.1
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Peru,country,PE,51,5.1536,2.1993,2.1993,,2.1993
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Poland,country,PL,48,2.6754,0.8918,0.8918,,0.8918
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Qatar,country,QA,974,2.4993,0.8789,0.8789,,0.8789
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Romania,country,RO,40,6.2997,2.1197,2.1197,,2.1197
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Russia,country,RU,7,5.8767,2.9311,2.9311,,2.9311
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Saudi Arabia,country,SA,966,4.2114,0.7834,0.7834,4.3871,0.7834
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Singapore,country,SG,65,5.3664,1.1727,1.1727,,1.1727
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,South Africa,country,ZA,27,2.7821,0.6974,0.6974,1.4681,0.6974
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Spain,country,ES,34,5.1801,1.4648,1.4648,,1.4648
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Sri Lanka,country,LK,94,5.3664,0.1466,0.1466,10.5541,0.1466
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Turkey,country,TR,90,0.7989,0.066,0.066,,0.066
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Ukraine,country,UA,380,6.2997,2.1782,2.1782,5.4528,2.1782
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,United Arab Emirates,country,AE,971,4.2114,1.1509,1.1509,3.7342,1.1509
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,United Kingdom,country,GB,44,4.6496,1.6122,1.6122,,1.6122
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,North America,region,CA US,1,1.8313,0.2491,0.2491,,0.2491
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Rest of Africa,region,AO BF BI BJ BW CG CI CM DZ ER ET GA GH GM GW KE LR LS LY MG ML MR MW MZ NA NE RW SD SL SN SO SS SZ TD TG TN TZ UG ZM ZW,211 213 216 218 220 221 222 223 225 226 227 228 229 231 232 233 235 237 241 242 244 245 249 250 251 252 254 255 256 257 258 260 261 263 264 265 266 267 268 291,1.6497,0.293,0.293,,0.293
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Rest of Asia Pacific,region,AF AU CN JP KH LA MN NZ PG PH TH TJ TM TW UZ VN,61 63 64 66 81 84 86 93 675 855 856 886 976 992 993 998,6.1714,0.8282,0.8282,,0.8282
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Rest of Central & Eastern Europe,region,AL AM AZ BG BY CZ GE GR HR LT LV MD MK RS SI SK,30 355 359 370 371 373 374 375 381 385 386 389 420 421 994 995,6.2997,1.5496,1.5496,,1.5496
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Rest of Latin America,region,BO CR DO EC GT HN HT JM NI PA PR PY SV UY VE,1 58 502 503 504 505 506 507 509 591 593 595 598,5.4207,0.8278,0.8278,,0.8278
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Rest of Middle East,region,BH JO LB YE,961 962 967 973,2.8742,0.6665,0.6665,,0.6665
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Rest of Western Europe,region,AT BE CH DK FI IE NO PT SE,32 41 43 45 46 47 351 353 358,4.3378,1.2516,1.2516,,1.2516
+INR,2026-10-01,2026-10-27,https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing,Other,other,,,4.4248,0.5641,0.5641,,0.5641

@@ -1,0 +1,459 @@
+{
+  "name": "WhatsApp opt-in capture with consent log and confirmation template",
+  "nodes": [
+    {
+      "id": "0746a25a-5338-49c1-b83d-f8ab3ff84726",
+      "name": "Overview",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        -60
+      ],
+      "parameters": {
+        "content": "## WhatsApp opt-in capture with consent log\n\nStores a provable opt-in record and sends a confirmation template.\n\n### How it works\n1. Your web form (any form tool, or your own site) POSTs name, phone, consent and consent_text to the webhook.\n2. A Code node checks the number (international format) and that consent is explicitly true.\n3. The consent is appended to a Google Sheet with timestamp, source, wording shown and IP.\n4. A WhatsApp template message confirms the sign-up.\n5. Second branch: a customer who replies STOP is marked as opted out in the same sheet.\n\n### Setup steps\n1. Create a sheet with tab \"Opt-ins\" and columns: phone, name, consent, consent_text, source, ip, opted_in_at, opted_out_at.\n2. Add Google Sheets, WhatsApp Business Cloud and WhatsApp Trigger credentials. Pick your document in both Sheets nodes and your phone number id in both WhatsApp nodes.\n3. Create an approved template named optin_confirmation (one body variable: the name) and select it in the WhatsApp node.\n4. Point your form to the Production URL of the webhook.",
+        "height": 600,
+        "width": 560,
+        "color": 4
+      }
+    },
+    {
+      "id": "69907c5b-0a93-4206-9376-cdf953e5f9a2",
+      "name": "Meta rules",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        560
+      ],
+      "parameters": {
+        "content": "## Meta rules this workflow follows\n- **Opt-in is required** before you message someone on WhatsApp. It can be collected on a web form, but it must be clear that the person wants messages from your business on WhatsApp, and you must be able to show it. Keep the exact text you showed (consent_text).\n- **Templates need approval.** A message sent outside a customer service window must be a pre-approved template. Create it in WhatsApp Manager and wait for Approved. Meta assigns the category.\n- **24 hour window:** a customer message opens a 24 hour window in which free-form replies are allowed. The STOP confirmation is a reply inside that window, so plain text is fine.\n- Respect opt-outs: stop all sends to numbers with opted_out_at filled in.",
+        "height": 340,
+        "width": 560,
+        "color": 3
+      }
+    },
+    {
+      "id": "e1be5516-5dcb-49a3-a0af-2c084775d4f4",
+      "name": "Section: capture",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        -40
+      ],
+      "parameters": {
+        "content": "### 1. Capture and log consent",
+        "height": 60,
+        "width": 1480
+      }
+    },
+    {
+      "id": "790a3378-51d8-40d8-93d9-4b6ada89cea0",
+      "name": "Form webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -40,
+        120
+      ],
+      "webhookId": "7d6cc875-f3e6-412e-a501-95dcecdd52a8",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "whatsapp-optin",
+        "responseMode": "responseNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "d557393e-f4b0-4e09-85c7-0e3386b54e8f",
+      "name": "Validate consent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        120
+      ],
+      "parameters": {
+        "jsCode": "// Expects JSON body: { name, phone, consent, consent_text, source }\nconst input = $input.first().json;\nconst b = input.body || input;\nconst phone = String(b.phone || '').replace(/[^\\d+]/g, '').replace(/^00/, '+');\nconst validPhone = /^\\+?[1-9]\\d{7,14}$/.test(phone);\nconst consent = b.consent === true || b.consent === 'true' || b.consent === 'on' || b.consent === 'yes';\nconst hasText = !!b.consent_text;\nreturn [{ json: {\n  valid: validPhone && consent && hasText,\n  phone: phone.replace('+', ''), // WhatsApp API wants digits with country code\n  name: String(b.name || '').trim().slice(0, 100),\n  consent,\n  consent_text: String(b.consent_text || '').slice(0, 500),\n  source: String(b.source || 'web form').slice(0, 100),\n  ip: (input.headers || {})['x-forwarded-for'] || '',\n  opted_in_at: new Date().toISOString(),\n  opted_out_at: '',\n  error: !validPhone ? 'Invalid phone number, use international format' : (!consent || !hasText ? 'Consent is required' : ''),\n} }];"
+      }
+    },
+    {
+      "id": "23e1ba37-9fe5-4b34-9795-dc0ca1a876cf",
+      "name": "Valid and consented?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        440,
+        120
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9e95391a-12c8-4c7f-9544-ec2324d92e1c",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "5b8fb964-4900-47b2-89eb-a89016b2e634",
+      "name": "Log opt-in",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        680,
+        60
+      ],
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_SPREADSHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Opt-ins",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": []
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "fa566a1e-4812-4889-bd81-5973c441ac8d",
+      "name": "Send confirmation template",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1.1,
+      "position": [
+        920,
+        60
+      ],
+      "parameters": {
+        "resource": "message",
+        "phoneNumberId": "YOUR_PHONE_NUMBER_ID",
+        "operation": "sendTemplate",
+        "recipientPhoneNumber": "={{ $('Validate consent').item.json.phone }}",
+        "template": "optin_confirmation|en",
+        "components": {
+          "component": [
+            {
+              "type": "body",
+              "bodyParameters": {
+                "parameter": [
+                  {
+                    "type": "text",
+                    "text": "={{ $('Validate consent').item.json.name || 'there' }}"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "2e5f2c26-1aea-487c-8ca8-0367588f6e73",
+      "name": "Respond OK",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        1160,
+        60
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"ok\": true } }}",
+        "options": {
+          "responseCode": 200
+        }
+      }
+    },
+    {
+      "id": "2f091452-9b90-455d-b4a4-e1af43534c37",
+      "name": "Respond error",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        680,
+        240
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"ok\": false, \"error\": $json.error } }}",
+        "options": {
+          "responseCode": 400
+        }
+      }
+    },
+    {
+      "id": "bd00f036-ae0c-434f-b945-4aca15bd190f",
+      "name": "Section: opt-out",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        420
+      ],
+      "parameters": {
+        "content": "### 2. Opt-out by replying STOP",
+        "height": 60,
+        "width": 1480
+      }
+    },
+    {
+      "id": "938156ea-e542-41da-83d7-bef1efab0540",
+      "name": "WhatsApp Trigger",
+      "type": "n8n-nodes-base.whatsAppTrigger",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        540
+      ],
+      "webhookId": "698edc38-8fa3-4d8e-8158-adff574150a4",
+      "parameters": {
+        "updates": [
+          "messages"
+        ],
+        "options": {
+          "messageStatusUpdates": [
+            "deleted"
+          ]
+        }
+      }
+    },
+    {
+      "id": "1597549d-24ac-4d15-ad63-5e90d0882bda",
+      "name": "Is STOP message?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        240,
+        540
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ca09cb04-ab16-44d7-ac7a-8f2e784afec7",
+              "leftValue": "={{ !!$json.messages && /^\\s*(stop|unsubscribe|opt.?out|cancel)\\s*$/i.test($json.messages[0].text?.body || '') }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "34b1f549-08c7-4917-a5c6-29d3b1bb2359",
+      "name": "Prepare opt-out",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        520
+      ],
+      "parameters": {
+        "jsCode": "const m = $input.first().json.messages[0];\nreturn [{ json: { phone: m.from, opted_out_at: new Date().toISOString() } }];"
+      }
+    },
+    {
+      "id": "7f23e372-bc12-47fe-960b-98885aad9ca1",
+      "name": "Mark opted out",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        720,
+        520
+      ],
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_SPREADSHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Opt-ins",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "phone"
+          ],
+          "schema": []
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "4ec83eb0-fd9d-4b0c-897a-8892576a6fd0",
+      "name": "Confirm opt-out (free-form, inside window)",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1.1,
+      "position": [
+        960,
+        520
+      ],
+      "parameters": {
+        "resource": "message",
+        "phoneNumberId": "YOUR_PHONE_NUMBER_ID",
+        "operation": "send",
+        "recipientPhoneNumber": "={{ $('Prepare opt-out').item.json.phone }}",
+        "messageType": "text",
+        "textBody": "You have been unsubscribed and will not receive further WhatsApp messages from us."
+      }
+    }
+  ],
+  "connections": {
+    "Form webhook": {
+      "main": [
+        [
+          {
+            "node": "Validate consent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate consent": {
+      "main": [
+        [
+          {
+            "node": "Valid and consented?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valid and consented?": {
+      "main": [
+        [
+          {
+            "node": "Log opt-in",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log opt-in": {
+      "main": [
+        [
+          {
+            "node": "Send confirmation template",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send confirmation template": {
+      "main": [
+        [
+          {
+            "node": "Respond OK",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "WhatsApp Trigger": {
+      "main": [
+        [
+          {
+            "node": "Is STOP message?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is STOP message?": {
+      "main": [
+        [
+          {
+            "node": "Prepare opt-out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare opt-out": {
+      "main": [
+        [
+          {
+            "node": "Mark opted out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark opted out": {
+      "main": [
+        [
+          {
+            "node": "Confirm opt-out (free-form, inside window)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "tags": []
+}

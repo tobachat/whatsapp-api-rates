@@ -1,0 +1,1358 @@
+{
+  "name": "whatsapp-api-rates",
+  "title": "WhatsApp Business Platform per-message rates",
+  "description": "Meta's published WhatsApp Business Platform rate cards in 16 currencies, as tidy CSV with volume tiers and a country to market table. Not affiliated with Meta.",
+  "version": "2026-10-01",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Tobachat",
+      "role": "author"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meta, Pricing on the WhatsApp Business Platform",
+      "path": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+    }
+  ],
+  "resources": [
+    {
+      "name": "rates-2026-10-01",
+      "path": "data/rates/2026-10-01.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": "First day the rates apply (Meta Messaging account timezone)"
+          },
+          {
+            "name": "currency",
+            "type": "string",
+            "description": "ISO 4217 code; Meta's own published value, never converted"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": "Market name as written on Meta's rate card"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "marketing, utility, authentication, authentication_international or service"
+          },
+          {
+            "name": "rate",
+            "type": "string",
+            "description": "Decimal string, per delivered message, excluding VAT; absent when Meta lists n/a"
+          }
+        ]
+      },
+      "hash": "sha256:77b943bad010e37c1e4f1a0690db05ef279bfb5f330f8a693b1eadef3737dd5d"
+    },
+    {
+      "name": "tiers-2026-10-01",
+      "path": "data/tiers/2026-10-01.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": "First day the rates apply (Meta Messaging account timezone)"
+          },
+          {
+            "name": "currency",
+            "type": "string",
+            "description": "ISO 4217 code; Meta's own published value, never converted"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": "Market name as written on Meta's rate card"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "marketing, utility, authentication, authentication_international or service"
+          },
+          {
+            "name": "tier_from",
+            "type": "string",
+            "description": "First message of the tier in the calendar month"
+          },
+          {
+            "name": "tier_to",
+            "type": "string",
+            "description": "Last message of the tier; empty = open ended (Meta writes --)"
+          },
+          {
+            "name": "rate_type",
+            "type": "string",
+            "description": "list_rate or tier_rate"
+          },
+          {
+            "name": "rate",
+            "type": "string",
+            "description": "Decimal string per message"
+          },
+          {
+            "name": "pct_vs_list",
+            "type": "string",
+            "description": "Decimal fraction vs the list rate, e.g. -0.05"
+          }
+        ]
+      },
+      "hash": "sha256:801c0a6b1489b59930ad71c5746d7b9d764150ba539e9a4c18f4a567da41280f"
+    },
+    {
+      "name": "latest-aed",
+      "path": "data/latest/AED.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-ars",
+      "path": "data/latest/ARS.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-aud",
+      "path": "data/latest/AUD.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-brl",
+      "path": "data/latest/BRL.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-clp",
+      "path": "data/latest/CLP.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-cop",
+      "path": "data/latest/COP.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-eur",
+      "path": "data/latest/EUR.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-gbp",
+      "path": "data/latest/GBP.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-idr",
+      "path": "data/latest/IDR.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-inr",
+      "path": "data/latest/INR.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-mxn",
+      "path": "data/latest/MXN.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-myr",
+      "path": "data/latest/MYR.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-pen",
+      "path": "data/latest/PEN.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-sar",
+      "path": "data/latest/SAR.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-sgd",
+      "path": "data/latest/SGD.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "latest-usd",
+      "path": "data/latest/USD.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "currency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "effective_date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "checked_on",
+            "type": "date",
+            "description": "Day this repo last compared with Meta"
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Meta page the values come from"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "country, region or other"
+          },
+          {
+            "name": "iso_codes",
+            "type": "string",
+            "description": "Space separated ISO 3166-1 alpha-2 members"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": "Space separated country calling codes"
+          },
+          {
+            "name": "marketing",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "utility",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "authentication_international",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Rate, empty when not published"
+          }
+        ]
+      }
+    },
+    {
+      "name": "country-market",
+      "path": "data/country_market.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "iso2",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2"
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Name as Meta lists it"
+          },
+          {
+            "name": "market",
+            "type": "string",
+            "description": "Rate-card market this country is priced under"
+          },
+          {
+            "name": "market_type",
+            "type": "string",
+            "description": "country or region"
+          },
+          {
+            "name": "calling_code",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "extra_area_codes",
+            "type": "string",
+            "description": "Shared-code area codes Meta lists, e.g. 809 829 849"
+          }
+        ]
+      }
+    }
+  ]
+}

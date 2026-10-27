@@ -1,0 +1,343 @@
+{
+  "name": "Request a review on WhatsApp after delivery with an approved template",
+  "nodes": [
+    {
+      "id": "9c546f13-a1d8-4b26-9e42-0841ce583b39",
+      "name": "Overview",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        -60
+      ],
+      "parameters": {
+        "content": "## Ask for a review on WhatsApp after delivery\n\nWaits a few days after an order is delivered and sends one approved template with a review link button, only if the customer opted in.\n\n### How it works\n1. Your shop POSTs {order_id, phone, name, marketing_opt_in} when an order is delivered.\n2. A Code node validates the event and the opt-in flag; the webhook answers at once.\n3. The workflow waits (default 3 days).\n4. A WhatsApp template with a URL button is sent and the request is logged in Google Sheets.\n\n### Setup steps\n1. Create a template review_request with one body variable (name) and a URL button with a variable suffix, e.g. https://example.com/review/{{1}}. Wait for approval.\n2. Credentials: WhatsApp Business Cloud and Google Sheets. Set phone number id and spreadsheet (tab \"Review requests\": order_id, phone, sent_at, message_id).\n3. Change the wait time in the Wait node if needed.",
+        "height": 520,
+        "width": 560,
+        "color": 4
+      }
+    },
+    {
+      "id": "7c00dbd9-3592-4bbc-bb20-00ce3fe1ae22",
+      "name": "Meta rules",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        480
+      ],
+      "parameters": {
+        "content": "## Meta rules\n- A review request sent days later is outside the 24 hour window, so it must be an **approved template**.\n- Meta may classify it as **marketing**, which costs more than utility and needs **marketing opt-in**. Ask for that at checkout; do not assume order opt-in covers it.\n- Send once per order. Most review platforms forbid rewarding only positive reviews.\n- Honour STOP requests: check your opt-out list before sending.",
+        "height": 280,
+        "width": 560,
+        "color": 3
+      }
+    },
+    {
+      "id": "d562944d-ddda-459a-ade2-0156a3a0ae4c",
+      "name": "Section",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        60
+      ],
+      "parameters": {
+        "content": "### Validate, wait, send, log",
+        "height": 60,
+        "width": 1580
+      }
+    },
+    {
+      "id": "33c218d7-23e8-4589-8fc9-20f9456e8b01",
+      "name": "Delivered webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -40,
+        160
+      ],
+      "webhookId": "b8728f5a-5a1c-4a19-9d82-571b41f39487",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "whatsapp-review-request",
+        "responseMode": "responseNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "aa46f4b7-777c-4dec-b9fd-482f31d776f8",
+      "name": "Validate event",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        160
+      ],
+      "parameters": {
+        "jsCode": "const b = $input.first().json.body || $input.first().json;\nconst phone = String(b.phone || '').replace(/\\D/g, '');\nconst ok = phone.length >= 8 && !!b.order_id && (b.marketing_opt_in === true || b.marketing_opt_in === 'true');\nreturn [{ json: {\n  ok, order_id: String(b.order_id || ''), phone, name: String(b.name || 'there').trim(),\n  // value for the template's URL button variable (appended to your fixed review URL)\n  review_suffix: encodeURIComponent(String(b.order_id || '')),\n  lang: b.lang || 'en',\n  error: ok ? '' : 'Missing phone or order_id, or no marketing opt-in',\n} }];"
+      }
+    },
+    {
+      "id": "7242d4e5-c814-4a2a-86df-ce5b1c65c99b",
+      "name": "Valid and opted in?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        440,
+        160
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "0064f12e-52e6-4eb8-a516-e5197819e843",
+              "leftValue": "={{ $json.ok }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "8cc5399a-118b-4bac-9670-2a4a99949d31",
+      "name": "Respond accepted",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        680,
+        100
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"ok\": true } }}",
+        "options": {
+          "responseCode": 200
+        }
+      }
+    },
+    {
+      "id": "b42869a3-f6c7-42f1-902d-eb61dad2bf17",
+      "name": "Wait 3 days",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        920,
+        100
+      ],
+      "webhookId": "f485b77e-a39e-4315-98bd-92ab984aa22b",
+      "parameters": {
+        "amount": 3,
+        "unit": "days"
+      }
+    },
+    {
+      "id": "8fd07d06-8595-4425-bbe5-d559560041ef",
+      "name": "Send review template",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1.1,
+      "position": [
+        1160,
+        100
+      ],
+      "parameters": {
+        "resource": "message",
+        "phoneNumberId": "YOUR_PHONE_NUMBER_ID",
+        "operation": "sendTemplate",
+        "recipientPhoneNumber": "={{ $('Validate event').item.json.phone }}",
+        "template": "={{ 'review_request|' + $('Validate event').item.json.lang }}",
+        "components": {
+          "component": [
+            {
+              "type": "body",
+              "bodyParameters": {
+                "parameter": [
+                  {
+                    "type": "text",
+                    "text": "={{ $('Validate event').item.json.name }}"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "button",
+              "sub_type": "url",
+              "index": 0,
+              "buttonParameters": {
+                "parameter": {
+                  "type": "text",
+                  "text": "={{ $('Validate event').item.json.review_suffix }}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "49c06be9-71b1-44a2-9441-80cd4e83c44a",
+      "name": "Build log row",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1400,
+        100
+      ],
+      "parameters": {
+        "jsCode": "const src = $('Validate event').first().json;\nreturn [{ json: {\n  order_id: src.order_id, phone: src.phone,\n  sent_at: new Date().toISOString(),\n  message_id: $input.first().json.messages?.[0]?.id || '',\n} }];"
+      }
+    },
+    {
+      "id": "98948952-dc04-464c-ac0d-205c83597973",
+      "name": "Log request",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1640,
+        100
+      ],
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_SPREADSHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Review requests",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": []
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "49787068-a9c3-4444-b979-85017156f8fc",
+      "name": "Respond error",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"ok\": false, \"error\": $json.error } }}",
+        "options": {
+          "responseCode": 400
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Delivered webhook": {
+      "main": [
+        [
+          {
+            "node": "Validate event",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate event": {
+      "main": [
+        [
+          {
+            "node": "Valid and opted in?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valid and opted in?": {
+      "main": [
+        [
+          {
+            "node": "Respond accepted",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respond accepted": {
+      "main": [
+        [
+          {
+            "node": "Wait 3 days",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 3 days": {
+      "main": [
+        [
+          {
+            "node": "Send review template",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send review template": {
+      "main": [
+        [
+          {
+            "node": "Build log row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build log row": {
+      "main": [
+        [
+          {
+            "node": "Log request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "tags": []
+}

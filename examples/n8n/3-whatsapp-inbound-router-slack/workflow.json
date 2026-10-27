@@ -1,0 +1,383 @@
+{
+  "name": "Route inbound WhatsApp messages to Slack with after-hours reply and 24h window",
+  "nodes": [
+    {
+      "id": "bb2e387d-d52b-4ac6-84ec-68a1b7df657d",
+      "name": "Overview",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        -60
+      ],
+      "parameters": {
+        "content": "## Route inbound WhatsApp messages to Slack, with 24h window and after-hours reply\n\nNo AI needed: keyword rules you can edit, a Slack channel for the team, and an automatic reply outside office hours.\n\n### How it works\n1. WhatsApp Trigger receives customer messages.\n2. A Code node classifies the text by keyword, checks office hours in your time zone and computes when the 24 hour window closes.\n3. STOP messages are logged as opt-outs and confirmed.\n4. Everything else is posted to Slack with the deadline for a free-form reply.\n5. Outside office hours the customer gets an automatic text reply (allowed because they just wrote to you).\n\n### Setup steps\n1. Add credentials: WhatsApp Trigger, WhatsApp Business Cloud, Slack, Google Sheets.\n2. Edit TIMEZONE, HOURS and ROUTES at the top of the Code node.\n3. Set your Slack channel id and phone number id. Duplicate the Slack node per topic if you want separate channels.\n4. Sheet tab \"Opt-outs\" with columns phone, opted_out_at.",
+        "height": 640,
+        "width": 580,
+        "color": 4
+      }
+    },
+    {
+      "id": "df620196-9458-49f3-8da9-7b19ce6917ba",
+      "name": "Meta rules",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        600
+      ],
+      "parameters": {
+        "content": "## The 24 hour customer service window\nWhen a customer messages you, a 24 hour window opens. Inside it you can send **free-form** messages. After it closes you can only send **approved templates**, and only to people who opted in. Each new customer message re-opens the window.\n\nThe Slack message includes the closing time so agents know how long they can reply freely. This workflow only replies automatically inside the window; for later follow-ups use a template.\n\nSTOP and opt-out requests must be honoured: do not message that number again.",
+        "height": 300,
+        "width": 580,
+        "color": 3
+      }
+    },
+    {
+      "id": "7ec32a26-668d-4f93-8e28-1874a692211c",
+      "name": "Section: classify",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        100
+      ],
+      "parameters": {
+        "content": "### 1. Receive and classify",
+        "height": 60,
+        "width": 780
+      }
+    },
+    {
+      "id": "0ad5983a-fa6b-4db5-83bb-6099b9152125",
+      "name": "Section: route",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        700,
+        0
+      ],
+      "parameters": {
+        "content": "### 2. Opt-out or team channel",
+        "height": 60,
+        "width": 1000
+      }
+    },
+    {
+      "id": "4567f389-b488-4cd0-b6e0-61ee0541d999",
+      "name": "WhatsApp Trigger",
+      "type": "n8n-nodes-base.whatsAppTrigger",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        200
+      ],
+      "webhookId": "b4a0e6e2-743d-4262-a518-6e8c3d51f817",
+      "parameters": {
+        "updates": [
+          "messages"
+        ],
+        "options": {
+          "messageStatusUpdates": [
+            "deleted"
+          ]
+        }
+      }
+    },
+    {
+      "id": "3c316c9c-6766-4001-9627-8efd11b79f3d",
+      "name": "Is text message?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        200,
+        200
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "47d6650b-2fac-45a8-8114-012b62a4a202",
+              "leftValue": "={{ !!$json.messages && $json.messages[0].type === 'text' }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "eba3b265-44a2-4e85-b343-d02eefe9a742",
+      "name": "Classify and check hours",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        200
+      ],
+      "parameters": {
+        "jsCode": "// ---- edit these ----\nconst TIMEZONE = 'Europe/Amsterdam';\nconst HOURS = { start: 9, end: 17, days: [1, 2, 3, 4, 5] }; // Mon-Fri, 09:00-17:00\nconst ROUTES = [\n  { topic: 'stop',    words: ['stop', 'unsubscribe', 'opt out', 'optout'] },\n  { topic: 'orders',  words: ['order', 'delivery', 'track', 'shipping', 'parcel'] },\n  { topic: 'billing', words: ['invoice', 'refund', 'payment', 'charge'] },\n];\n// --------------------\nconst item = $input.first().json;\nconst m = item.messages[0];\nconst text = (m.text?.body || '').toLowerCase();\nconst name = item.contacts?.[0]?.profile?.name || 'Unknown';\nlet topic = 'general';\nfor (const r of ROUTES) {\n  if (r.words.some(w => text.trim() === w || text.includes(w))) { topic = r.topic; break; }\n}\nconst parts = new Intl.DateTimeFormat('en-GB', { timeZone: TIMEZONE, hour: 'numeric', weekday: 'short', hourCycle: 'h23' }).formatToParts(new Date());\nconst hour = Number(parts.find(p => p.type === 'hour').value);\nconst day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(parts.find(p => p.type === 'weekday').value);\nconst open = HOURS.days.includes(day) && hour >= HOURS.start && hour < HOURS.end;\nconst windowEnds = new Date(Number(m.timestamp) * 1000 + 24 * 3600 * 1000).toISOString();\nreturn [{ json: {\n  phone: m.from, name, text: m.text.body, topic,\n  is_stop: topic === 'stop', open_hours: open, window_ends: windowEnds,\n  opted_out_at: new Date().toISOString(),\n} }];"
+      }
+    },
+    {
+      "id": "8ab854a6-b32f-4545-bf68-688d291a6c01",
+      "name": "Is STOP?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        680,
+        200
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "76a916b0-f228-4266-a788-8c58431bf2c8",
+              "leftValue": "={{ $json.is_stop }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "61372e5c-7184-4192-aa60-c4d7f3c6b194",
+      "name": "Log opt-out",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        920,
+        80
+      ],
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_SPREADSHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Opt-outs",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "phone"
+          ],
+          "schema": []
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "33bb62f2-bac6-4acc-855a-d753d8d3fa93",
+      "name": "Confirm opt-out",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1.1,
+      "position": [
+        1160,
+        80
+      ],
+      "parameters": {
+        "resource": "message",
+        "phoneNumberId": "YOUR_PHONE_NUMBER_ID",
+        "operation": "send",
+        "recipientPhoneNumber": "={{ $('Classify and check hours').item.json.phone }}",
+        "messageType": "text",
+        "textBody": "You are unsubscribed and will not receive further messages."
+      }
+    },
+    {
+      "id": "c5a73455-698e-4376-9431-933460a5a5ed",
+      "name": "Post to Slack",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        920,
+        320
+      ],
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "YOUR_SLACK_CHANNEL_ID",
+          "mode": "id"
+        },
+        "text": "=*{{ $json.topic }}* from {{ $json.name }} (+{{ $json.phone }})\n>{{ $json.text }}\nFree-form reply possible until {{ $json.window_ends }} (24h window).",
+        "otherOptions": {}
+      }
+    },
+    {
+      "id": "380c7a09-5a0f-4e9e-9016-9db83abfb228",
+      "name": "Outside office hours?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1160,
+        320
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "7fdc2b2b-442b-4ab3-8fc2-ea674271598c",
+              "leftValue": "={{ !$('Classify and check hours').item.json.open_hours }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "42a63732-6ae5-4c30-bb08-c9fdb1a4eb66",
+      "name": "After-hours auto reply",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1.1,
+      "position": [
+        1400,
+        260
+      ],
+      "parameters": {
+        "resource": "message",
+        "phoneNumberId": "YOUR_PHONE_NUMBER_ID",
+        "operation": "send",
+        "recipientPhoneNumber": "={{ $('Classify and check hours').item.json.phone }}",
+        "messageType": "text",
+        "textBody": "Thanks for your message. Our team is offline right now and will reply on the next working day."
+      }
+    }
+  ],
+  "connections": {
+    "WhatsApp Trigger": {
+      "main": [
+        [
+          {
+            "node": "Is text message?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is text message?": {
+      "main": [
+        [
+          {
+            "node": "Classify and check hours",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Classify and check hours": {
+      "main": [
+        [
+          {
+            "node": "Is STOP?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is STOP?": {
+      "main": [
+        [
+          {
+            "node": "Log opt-out",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Post to Slack",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log opt-out": {
+      "main": [
+        [
+          {
+            "node": "Confirm opt-out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Post to Slack": {
+      "main": [
+        [
+          {
+            "node": "Outside office hours?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Outside office hours?": {
+      "main": [
+        [
+          {
+            "node": "After-hours auto reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "tags": []
+}

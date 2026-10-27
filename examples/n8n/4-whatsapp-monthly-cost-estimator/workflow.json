@@ -1,0 +1,152 @@
+{
+  "name": "Estimate monthly WhatsApp Business API cost per country from an open rate CSV",
+  "nodes": [
+    {
+      "id": "465ab5eb-12fd-4e0a-8a34-a55a969bf4f2",
+      "name": "Overview",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        -60
+      ],
+      "parameters": {
+        "content": "## Estimate your monthly WhatsApp Business API message cost\n\nReads an open rate card CSV and prices your planned sends per country and category.\n\n### How it works\n1. Edit the planned sends in the first Code node (country ISO code, category, messages per month).\n2. The workflow downloads the rate CSV (EUR per message).\n3. A Code node matches each country (or its regional rate) and multiplies.\n4. The output lists the cost per line plus the total.\n\n### Setup steps\nNo credentials needed. Click Execute workflow. To receive the result by email or Slack, add a node after the last one.\n\nRates are an estimate: check effective_date in the output and compare with Meta pricing before budgeting.",
+        "height": 440,
+        "width": 560,
+        "color": 4
+      }
+    },
+    {
+      "id": "488d2e44-8739-40e1-9a78-12e444180c24",
+      "name": "Meta rules",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        400
+      ],
+      "parameters": {
+        "content": "## How Meta bills (summary)\n- Pricing is **per delivered template message**, by recipient country and category (marketing, utility, authentication).\n- Free-form messages inside the 24 hour customer service window are free, and utility templates delivered inside an open window are free. This estimate does not model that, so it is a ceiling.\n- Volume tiers and currency conversion can change the real price; this uses the list rate.\n- Categories are assigned by Meta, not by you.",
+        "height": 280,
+        "width": 560,
+        "color": 3
+      }
+    },
+    {
+      "id": "6ba58ea0-9444-4b75-971a-61f55718824f",
+      "name": "Section",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        60
+      ],
+      "parameters": {
+        "content": "### Plan, fetch rates, price",
+        "height": 60,
+        "width": 1000
+      }
+    },
+    {
+      "id": "9fbb9b49-cf93-4891-932b-e1fa2cf17e49",
+      "name": "Execute workflow",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        160
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "85e6f7ba-1ec9-43f5-ae58-256be1414374",
+      "name": "Planned sends (edit me)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        160
+      ],
+      "parameters": {
+        "jsCode": "// country: ISO code. category: marketing | utility | authentication. count: messages per month.\nreturn [\n  { country: 'NL', category: 'utility', count: 3000 },\n  { country: 'NL', category: 'marketing', count: 1000 },\n  { country: 'DE', category: 'utility', count: 1500 },\n  { country: 'BR', category: 'marketing', count: 2000 },\n].map(json => ({ json }));"
+      }
+    },
+    {
+      "id": "cc305880-5f44-44e1-9a1e-56bb716ec6fc",
+      "name": "Download rate CSV",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        160
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://raw.githubusercontent.com/tobachat/whatsapp-api-rates/main/data/latest/EUR.csv",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "text",
+              "outputPropertyName": "csv"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "350d8bf4-2e33-44ff-b114-12bd717161b0",
+      "name": "Estimate cost",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        680,
+        160
+      ],
+      "parameters": {
+        "jsCode": "const csv = $input.first().json.csv;\nconst rows = csv.trim().split(/\\r?\\n/).map(l => l.split(','));\nconst head = rows.shift();\nconst col = n => head.indexOf(n);\nconst table = rows.map(r => ({\n  market: r[col('market')],\n  iso: (r[col('iso_codes')] || '').split(' ').filter(Boolean),\n  marketing: Number(r[col('marketing')]),\n  utility: Number(r[col('utility')]),\n  authentication: Number(r[col('authentication')]),\n  effective: r[col('effective_date')],\n}));\nconst fallback = table.find(t => t.market === 'Other');\nconst out = [];\nlet total = 0;\nfor (const item of $('Planned sends (edit me)').all()) {\n  const { country, category, count } = item.json;\n  // a single-country row wins over a regional row that also lists the code\n  const row = table.find(t => t.iso.length === 1 && t.iso[0] === country)\n    || table.find(t => t.iso.includes(country)) || fallback;\n  const rate = row[category];\n  const cost = Math.round(rate * count * 100) / 100;\n  total += cost;\n  out.push({ country, rate_card: row.market, category, count, eur_per_message: rate, eur_cost: cost, effective_date: row.effective });\n}\nout.push({ total_eur_per_month: Math.round(total * 100) / 100, note: 'List rates, before volume tiers and free windows' });\nreturn out.map(json => ({ json }));"
+      }
+    }
+  ],
+  "connections": {
+    "Execute workflow": {
+      "main": [
+        [
+          {
+            "node": "Planned sends (edit me)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Planned sends (edit me)": {
+      "main": [
+        [
+          {
+            "node": "Download rate CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download rate CSV": {
+      "main": [
+        [
+          {
+            "node": "Estimate cost",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "tags": []
+}

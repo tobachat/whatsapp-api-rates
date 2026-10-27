@@ -1,0 +1,58 @@
+name: watch-meta
+
+# Weekly: download Meta's current rate-card files, compare with data/latest, open an issue on any change.
+# Meta's download links are signed and expire, so the page is scraped every run. No secrets needed.
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl==3.1.5
+      - id: watch
+        run: python scripts/watch.py work
+      - name: Keep Meta's raw files for 90 days
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: meta-raw-${{ github.run_id }}
+          path: |
+            work/raw
+            work/report.md
+          retention-days: 90
+          if-no-files-found: ignore
+      - name: Open or update an issue
+        if: steps.watch.outputs.status == 'changed' || steps.watch.outputs.status == 'broken'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATUS: ${{ steps.watch.outputs.status }}
+        run: |
+          if [ "$STATUS" = "broken" ]; then
+            title="Watcher broken: Meta page could not be read"
+            label="watcher-broken"
+          else
+            title="Meta changed its WhatsApp rate card"
+            label="meta-change"
+          fi
+          body="$(cat work/report.md)
+
+          Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID} (raw files attached as artifact)"
+          gh label create "$label" --force >/dev/null 2>&1 || true
+          existing="$(gh issue list --label "$label" --state open --json number --jq '.[0].number')"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --label "$label" --body "$body"
+          fi

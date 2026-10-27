@@ -1,0 +1,3297 @@
+effective_date,currency,market,category,rate
+2026-10-01,AED,Argentina,marketing,0.2269
+2026-10-01,AED,Argentina,utility,0.0955
+2026-10-01,AED,Argentina,authentication,0.0955
+2026-10-01,AED,Argentina,service,0.0955
+2026-10-01,AED,Bangladesh,marketing,0.2688
+2026-10-01,AED,Bangladesh,utility,0.0136
+2026-10-01,AED,Bangladesh,authentication,0.0136
+2026-10-01,AED,Bangladesh,authentication_international,0.3526
+2026-10-01,AED,Bangladesh,service,0.0136
+2026-10-01,AED,Brazil,marketing,0.2295
+2026-10-01,AED,Brazil,utility,0.025
+2026-10-01,AED,Brazil,authentication,0.025
+2026-10-01,AED,Brazil,service,0.025
+2026-10-01,AED,Chile,marketing,0.3264
+2026-10-01,AED,Chile,utility,0.0734
+2026-10-01,AED,Chile,authentication,0.0734
+2026-10-01,AED,Chile,service,0.0734
+2026-10-01,AED,Colombia,marketing,0.0459
+2026-10-01,AED,Colombia,utility,0.0029
+2026-10-01,AED,Colombia,authentication,0.0029
+2026-10-01,AED,Colombia,service,0.0029
+2026-10-01,AED,Egypt,marketing,0.2364
+2026-10-01,AED,Egypt,utility,0.0132
+2026-10-01,AED,Egypt,authentication,0.0132
+2026-10-01,AED,Egypt,authentication_international,0.2386
+2026-10-01,AED,Egypt,service,0.0132
+2026-10-01,AED,France,marketing,0.3154
+2026-10-01,AED,France,utility,0.1101
+2026-10-01,AED,France,authentication,0.1101
+2026-10-01,AED,France,service,0.1101
+2026-10-01,AED,Germany,marketing,0.5012
+2026-10-01,AED,Germany,utility,0.2019
+2026-10-01,AED,Germany,authentication,0.2019
+2026-10-01,AED,Germany,service,0.2019
+2026-10-01,AED,Hong Kong,marketing,0.2688
+2026-10-01,AED,Hong Kong,utility,0.0955
+2026-10-01,AED,Hong Kong,authentication,0.0955
+2026-10-01,AED,Hong Kong,service,0.0955
+2026-10-01,AED,Hungary,marketing,0.3157
+2026-10-01,AED,Hungary,utility,0.1284
+2026-10-01,AED,Hungary,authentication,0.1284
+2026-10-01,AED,Hungary,service,0.1284
+2026-10-01,AED,India,marketing,0.0433
+2026-10-01,AED,India,utility,0.0051
+2026-10-01,AED,India,authentication,0.0051
+2026-10-01,AED,India,authentication_international,0.1116
+2026-10-01,AED,India,service,0.0051
+2026-10-01,AED,Indonesia,marketing,0.1509
+2026-10-01,AED,Indonesia,utility,0.0918
+2026-10-01,AED,Indonesia,authentication,0.0918
+2026-10-01,AED,Indonesia,authentication_international,0.4993
+2026-10-01,AED,Indonesia,service,0.0918
+2026-10-01,AED,Iraq,marketing,0.1252
+2026-10-01,AED,Iraq,utility,0.029
+2026-10-01,AED,Iraq,authentication,0.029
+2026-10-01,AED,Iraq,authentication_international,0.4698
+2026-10-01,AED,Iraq,service,0.029
+2026-10-01,AED,Israel,marketing,0.1296
+2026-10-01,AED,Israel,utility,0.0195
+2026-10-01,AED,Israel,authentication,0.0195
+2026-10-01,AED,Israel,service,0.0195
+2026-10-01,AED,Italy,marketing,0.2918
+2026-10-01,AED,Italy,utility,0.1101
+2026-10-01,AED,Italy,authentication,0.1101
+2026-10-01,AED,Italy,service,0.1101
+2026-10-01,AED,Kazakhstan,marketing,0.2218
+2026-10-01,AED,Kazakhstan,utility,0.0662
+2026-10-01,AED,Kazakhstan,authentication,0.0662
+2026-10-01,AED,Kazakhstan,authentication_international,0.5881
+2026-10-01,AED,Kazakhstan,service,0.0662
+2026-10-01,AED,Kuwait,marketing,0.2908
+2026-10-01,AED,Kuwait,utility,0.1615
+2026-10-01,AED,Kuwait,authentication,0.1615
+2026-10-01,AED,Kuwait,authentication_international,0.4404
+2026-10-01,AED,Kuwait,service,0.1615
+2026-10-01,AED,Malaysia,marketing,0.3157
+2026-10-01,AED,Malaysia,utility,0.0514
+2026-10-01,AED,Malaysia,authentication,0.0514
+2026-10-01,AED,Malaysia,authentication_international,0.1535
+2026-10-01,AED,Malaysia,service,0.0514
+2026-10-01,AED,Mexico,marketing,0.1456
+2026-10-01,AED,Mexico,utility,0.0312
+2026-10-01,AED,Mexico,authentication,0.0312
+2026-10-01,AED,Mexico,service,0.0312
+2026-10-01,AED,Morocco,marketing,0.152
+2026-10-01,AED,Morocco,utility,0.0845
+2026-10-01,AED,Morocco,authentication,0.0845
+2026-10-01,AED,Morocco,authentication_international,0.298
+2026-10-01,AED,Morocco,service,0.0845
+2026-10-01,AED,Netherlands,marketing,0.5863
+2026-10-01,AED,Netherlands,utility,0.1836
+2026-10-01,AED,Netherlands,authentication,0.1836
+2026-10-01,AED,Netherlands,service,0.1836
+2026-10-01,AED,Nepal,marketing,0.2688
+2026-10-01,AED,Nepal,utility,0.0125
+2026-10-01,AED,Nepal,authentication,0.0125
+2026-10-01,AED,Nepal,authentication_international,0.4113
+2026-10-01,AED,Nepal,service,0.0125
+2026-10-01,AED,Nigeria,marketing,0.1894
+2026-10-01,AED,Nigeria,utility,0.0246
+2026-10-01,AED,Nigeria,authentication,0.0246
+2026-10-01,AED,Nigeria,authentication_international,0.2754
+2026-10-01,AED,Nigeria,service,0.0246
+2026-10-01,AED,Oman,marketing,0.1252
+2026-10-01,AED,Oman,utility,0.0907
+2026-10-01,AED,Oman,authentication,0.0907
+2026-10-01,AED,Oman,authentication_international,0.2202
+2026-10-01,AED,Oman,service,0.0907
+2026-10-01,AED,Pakistan,marketing,0.1737
+2026-10-01,AED,Pakistan,utility,0.0551
+2026-10-01,AED,Pakistan,authentication,0.0551
+2026-10-01,AED,Pakistan,authentication_international,0.2754
+2026-10-01,AED,Pakistan,service,0.0551
+2026-10-01,AED,Peru,marketing,0.2581
+2026-10-01,AED,Peru,utility,0.1101
+2026-10-01,AED,Peru,authentication,0.1101
+2026-10-01,AED,Peru,service,0.1101
+2026-10-01,AED,Poland,marketing,0.1344
+2026-10-01,AED,Poland,utility,0.0448
+2026-10-01,AED,Poland,authentication,0.0448
+2026-10-01,AED,Poland,service,0.0448
+2026-10-01,AED,Qatar,marketing,0.1252
+2026-10-01,AED,Qatar,utility,0.044
+2026-10-01,AED,Qatar,authentication,0.044
+2026-10-01,AED,Qatar,service,0.044
+2026-10-01,AED,Romania,marketing,0.3157
+2026-10-01,AED,Romania,utility,0.1064
+2026-10-01,AED,Romania,authentication,0.1064
+2026-10-01,AED,Romania,service,0.1064
+2026-10-01,AED,Russia,marketing,0.2945
+2026-10-01,AED,Russia,utility,0.1469
+2026-10-01,AED,Russia,authentication,0.1469
+2026-10-01,AED,Russia,service,0.1469
+2026-10-01,AED,Saudi Arabia,marketing,0.2115
+2026-10-01,AED,Saudi Arabia,utility,0.0393
+2026-10-01,AED,Saudi Arabia,authentication,0.0393
+2026-10-01,AED,Saudi Arabia,authentication_international,0.2196
+2026-10-01,AED,Saudi Arabia,service,0.0393
+2026-10-01,AED,Singapore,marketing,0.2688
+2026-10-01,AED,Singapore,utility,0.0588
+2026-10-01,AED,Singapore,authentication,0.0588
+2026-10-01,AED,Singapore,service,0.0588
+2026-10-01,AED,South Africa,marketing,0.1391
+2026-10-01,AED,South Africa,utility,0.0349
+2026-10-01,AED,South Africa,authentication,0.0349
+2026-10-01,AED,South Africa,authentication_international,0.0734
+2026-10-01,AED,South Africa,service,0.0349
+2026-10-01,AED,Spain,marketing,0.2597
+2026-10-01,AED,Spain,utility,0.0734
+2026-10-01,AED,Spain,authentication,0.0734
+2026-10-01,AED,Spain,service,0.0734
+2026-10-01,AED,Sri Lanka,marketing,0.2688
+2026-10-01,AED,Sri Lanka,utility,0.0073
+2026-10-01,AED,Sri Lanka,authentication,0.0073
+2026-10-01,AED,Sri Lanka,authentication_international,0.5288
+2026-10-01,AED,Sri Lanka,service,0.0073
+2026-10-01,AED,Turkey,marketing,0.04
+2026-10-01,AED,Turkey,utility,0.0033
+2026-10-01,AED,Turkey,authentication,0.0033
+2026-10-01,AED,Turkey,service,0.0033
+2026-10-01,AED,Ukraine,marketing,0.3157
+2026-10-01,AED,Ukraine,utility,0.1094
+2026-10-01,AED,Ukraine,authentication,0.1094
+2026-10-01,AED,Ukraine,authentication_international,0.2738
+2026-10-01,AED,Ukraine,service,0.1094
+2026-10-01,AED,United Arab Emirates,marketing,0.2115
+2026-10-01,AED,United Arab Emirates,utility,0.0576
+2026-10-01,AED,United Arab Emirates,authentication,0.0576
+2026-10-01,AED,United Arab Emirates,authentication_international,0.1872
+2026-10-01,AED,United Arab Emirates,service,0.0576
+2026-10-01,AED,United Kingdom,marketing,0.233
+2026-10-01,AED,United Kingdom,utility,0.0808
+2026-10-01,AED,United Kingdom,authentication,0.0808
+2026-10-01,AED,United Kingdom,service,0.0808
+2026-10-01,AED,North America,marketing,0.0918
+2026-10-01,AED,North America,utility,0.0125
+2026-10-01,AED,North America,authentication,0.0125
+2026-10-01,AED,North America,service,0.0125
+2026-10-01,AED,Rest of Africa,marketing,0.0826
+2026-10-01,AED,Rest of Africa,utility,0.0147
+2026-10-01,AED,Rest of Africa,authentication,0.0147
+2026-10-01,AED,Rest of Africa,service,0.0147
+2026-10-01,AED,Rest of Asia Pacific,marketing,0.3091
+2026-10-01,AED,Rest of Asia Pacific,utility,0.0415
+2026-10-01,AED,Rest of Asia Pacific,authentication,0.0415
+2026-10-01,AED,Rest of Asia Pacific,service,0.0415
+2026-10-01,AED,Rest of Central & Eastern Europe,marketing,0.3157
+2026-10-01,AED,Rest of Central & Eastern Europe,utility,0.0778
+2026-10-01,AED,Rest of Central & Eastern Europe,authentication,0.0778
+2026-10-01,AED,Rest of Central & Eastern Europe,service,0.0778
+2026-10-01,AED,Rest of Latin America,marketing,0.2717
+2026-10-01,AED,Rest of Latin America,utility,0.0415
+2026-10-01,AED,Rest of Latin America,authentication,0.0415
+2026-10-01,AED,Rest of Latin America,service,0.0415
+2026-10-01,AED,Rest of Middle East,marketing,0.144
+2026-10-01,AED,Rest of Middle East,utility,0.0334
+2026-10-01,AED,Rest of Middle East,authentication,0.0334
+2026-10-01,AED,Rest of Middle East,service,0.0334
+2026-10-01,AED,Rest of Western Europe,marketing,0.2174
+2026-10-01,AED,Rest of Western Europe,utility,0.0628
+2026-10-01,AED,Rest of Western Europe,authentication,0.0628
+2026-10-01,AED,Rest of Western Europe,service,0.0628
+2026-10-01,AED,Other,marketing,0.2218
+2026-10-01,AED,Other,utility,0.0283
+2026-10-01,AED,Other,authentication,0.0283
+2026-10-01,AED,Other,service,0.0283
+2026-10-01,ARS,Argentina,marketing,89.562
+2026-10-01,ARS,Argentina,utility,37.6798
+2026-10-01,ARS,Argentina,authentication,37.6798
+2026-10-01,ARS,Argentina,service,37.6798
+2026-10-01,ARS,Bangladesh,marketing,106.0832
+2026-10-01,ARS,Bangladesh,utility,5.3621
+2026-10-01,ARS,Bangladesh,authentication,5.3621
+2026-10-01,ARS,Bangladesh,authentication_international,139.1252
+2026-10-01,ARS,Bangladesh,service,5.3621
+2026-10-01,ARS,Brazil,marketing,90.5765
+2026-10-01,ARS,Brazil,utility,9.8547
+2026-10-01,ARS,Brazil,authentication,9.8547
+2026-10-01,ARS,Brazil,service,9.8547
+2026-10-01,ARS,Chile,marketing,128.836
+2026-10-01,ARS,Chile,utility,28.9845
+2026-10-01,ARS,Chile,authentication,28.9845
+2026-10-01,ARS,Chile,service,28.9845
+2026-10-01,ARS,Colombia,marketing,18.1153
+2026-10-01,ARS,Colombia,utility,1.1594
+2026-10-01,ARS,Colombia,authentication,1.1594
+2026-10-01,ARS,Colombia,service,1.1594
+2026-10-01,ARS,Egypt,marketing,93.33
+2026-10-01,ARS,Egypt,utility,5.2172
+2026-10-01,ARS,Egypt,authentication,5.2172
+2026-10-01,ARS,Egypt,authentication_international,94.1995
+2026-10-01,ARS,Egypt,service,5.2172
+2026-10-01,ARS,France,marketing,124.4883
+2026-10-01,ARS,France,utility,43.4767
+2026-10-01,ARS,France,authentication,43.4767
+2026-10-01,ARS,France,service,43.4767
+2026-10-01,ARS,Germany,marketing,197.819
+2026-10-01,ARS,Germany,utility,79.7073
+2026-10-01,ARS,Germany,authentication,79.7073
+2026-10-01,ARS,Germany,service,79.7073
+2026-10-01,ARS,Hong Kong,marketing,106.0832
+2026-10-01,ARS,Hong Kong,utility,37.6798
+2026-10-01,ARS,Hong Kong,authentication,37.6798
+2026-10-01,ARS,Hong Kong,service,37.6798
+2026-10-01,ARS,Hungary,marketing,124.6332
+2026-10-01,ARS,Hungary,utility,50.7228
+2026-10-01,ARS,Hungary,authentication,50.7228
+2026-10-01,ARS,Hungary,service,50.7228
+2026-10-01,ARS,India,marketing,17.1008
+2026-10-01,ARS,India,utility,2.0289
+2026-10-01,ARS,India,authentication,2.0289
+2026-10-01,ARS,India,authentication_international,44.0564
+2026-10-01,ARS,India,service,2.0289
+2026-10-01,ARS,Indonesia,marketing,59.5631
+2026-10-01,ARS,Indonesia,utility,36.2306
+2026-10-01,ARS,Indonesia,authentication,36.2306
+2026-10-01,ARS,Indonesia,authentication_international,197.0944
+2026-10-01,ARS,Indonesia,service,36.2306
+2026-10-01,ARS,Iraq,marketing,49.4185
+2026-10-01,ARS,Iraq,utility,11.4488
+2026-10-01,ARS,Iraq,authentication,11.4488
+2026-10-01,ARS,Iraq,authentication_international,185.5001
+2026-10-01,ARS,Iraq,service,11.4488
+2026-10-01,ARS,Israel,marketing,51.1576
+2026-10-01,ARS,Israel,utility,7.6809
+2026-10-01,ARS,Israel,authentication,7.6809
+2026-10-01,ARS,Israel,service,7.6809
+2026-10-01,ARS,Italy,marketing,115.1625
+2026-10-01,ARS,Italy,utility,43.4767
+2026-10-01,ARS,Italy,authentication,43.4767
+2026-10-01,ARS,Italy,service,43.4767
+2026-10-01,ARS,Kazakhstan,marketing,87.5331
+2026-10-01,ARS,Kazakhstan,utility,26.086
+2026-10-01,ARS,Kazakhstan,authentication,26.086
+2026-10-01,ARS,Kazakhstan,authentication_international,231.8753
+2026-10-01,ARS,Kazakhstan,service,26.086
+2026-10-01,ARS,Kuwait,marketing,114.7992
+2026-10-01,ARS,Kuwait,utility,63.7657
+2026-10-01,ARS,Kuwait,authentication,63.7657
+2026-10-01,ARS,Kuwait,authentication_international,173.9064
+2026-10-01,ARS,Kuwait,service,63.7657
+2026-10-01,ARS,Malaysia,marketing,124.6332
+2026-10-01,ARS,Malaysia,utility,20.2891
+2026-10-01,ARS,Malaysia,authentication,20.2891
+2026-10-01,ARS,Malaysia,authentication_international,60.5775
+2026-10-01,ARS,Malaysia,service,20.2891
+2026-10-01,ARS,Mexico,marketing,57.4617
+2026-10-01,ARS,Mexico,utility,12.3184
+2026-10-01,ARS,Mexico,authentication,12.3184
+2026-10-01,ARS,Mexico,service,12.3184
+2026-10-01,ARS,Morocco,marketing,59.9978
+2026-10-01,ARS,Morocco,utility,33.3322
+2026-10-01,ARS,Morocco,authentication,33.3322
+2026-10-01,ARS,Morocco,authentication_international,117.5321
+2026-10-01,ARS,Morocco,service,33.3322
+2026-10-01,ARS,Netherlands,marketing,231.441
+2026-10-01,ARS,Netherlands,utility,72.4612
+2026-10-01,ARS,Netherlands,authentication,72.4612
+2026-10-01,ARS,Netherlands,service,72.4612
+2026-10-01,ARS,Nepal,marketing,106.0832
+2026-10-01,ARS,Nepal,utility,4.9274
+2026-10-01,ARS,Nepal,authentication,4.9274
+2026-10-01,ARS,Nepal,authentication_international,162.3128
+2026-10-01,ARS,Nepal,service,4.9274
+2026-10-01,ARS,Nigeria,marketing,74.7799
+2026-10-01,ARS,Nigeria,utility,9.7098
+2026-10-01,ARS,Nigeria,authentication,9.7098
+2026-10-01,ARS,Nigeria,authentication_international,108.6918
+2026-10-01,ARS,Nigeria,service,9.7098
+2026-10-01,ARS,Oman,marketing,49.4185
+2026-10-01,ARS,Oman,utility,35.7957
+2026-10-01,ARS,Oman,authentication,35.7957
+2026-10-01,ARS,Oman,authentication_international,86.9532
+2026-10-01,ARS,Oman,service,35.7957
+2026-10-01,ARS,Pakistan,marketing,68.5483
+2026-10-01,ARS,Pakistan,utility,21.7383
+2026-10-01,ARS,Pakistan,authentication,21.7383
+2026-10-01,ARS,Pakistan,authentication_international,108.6918
+2026-10-01,ARS,Pakistan,service,21.7383
+2026-10-01,ARS,Peru,marketing,101.8804
+2026-10-01,ARS,Peru,utility,43.4768
+2026-10-01,ARS,Peru,authentication,43.4768
+2026-10-01,ARS,Peru,service,43.4768
+2026-10-01,ARS,Poland,marketing,53.0415
+2026-10-01,ARS,Poland,utility,17.6805
+2026-10-01,ARS,Poland,authentication,17.6805
+2026-10-01,ARS,Poland,service,17.6805
+2026-10-01,ARS,Qatar,marketing,49.4185
+2026-10-01,ARS,Qatar,utility,17.3906
+2026-10-01,ARS,Qatar,authentication,17.3906
+2026-10-01,ARS,Qatar,service,17.3906
+2026-10-01,ARS,Romania,marketing,124.6332
+2026-10-01,ARS,Romania,utility,42.0274
+2026-10-01,ARS,Romania,authentication,42.0274
+2026-10-01,ARS,Romania,service,42.0274
+2026-10-01,ARS,Russia,marketing,116.2277
+2026-10-01,ARS,Russia,utility,57.9689
+2026-10-01,ARS,Russia,authentication,57.9689
+2026-10-01,ARS,Russia,service,57.9689
+2026-10-01,ARS,Saudi Arabia,marketing,83.497
+2026-10-01,ARS,Saudi Arabia,utility,15.5067
+2026-10-01,ARS,Saudi Arabia,authentication,15.5067
+2026-10-01,ARS,Saudi Arabia,authentication_international,86.6636
+2026-10-01,ARS,Saudi Arabia,service,15.5067
+2026-10-01,ARS,Singapore,marketing,106.0832
+2026-10-01,ARS,Singapore,utility,23.1875
+2026-10-01,ARS,Singapore,authentication,23.1875
+2026-10-01,ARS,Singapore,service,23.1875
+2026-10-01,ARS,South Africa,marketing,54.9256
+2026-10-01,ARS,South Africa,utility,13.7676
+2026-10-01,ARS,South Africa,authentication,13.7676
+2026-10-01,ARS,South Africa,authentication_international,28.9845
+2026-10-01,ARS,South Africa,service,13.7676
+2026-10-01,ARS,Spain,marketing,102.4963
+2026-10-01,ARS,Spain,utility,28.9845
+2026-10-01,ARS,Spain,authentication,28.9845
+2026-10-01,ARS,Spain,service,28.9845
+2026-10-01,ARS,Sri Lanka,marketing,106.0832
+2026-10-01,ARS,Sri Lanka,utility,2.8984
+2026-10-01,ARS,Sri Lanka,authentication,2.8984
+2026-10-01,ARS,Sri Lanka,authentication_international,208.6879
+2026-10-01,ARS,Sri Lanka,service,2.8984
+2026-10-01,ARS,Turkey,marketing,15.7965
+2026-10-01,ARS,Turkey,utility,1.3043
+2026-10-01,ARS,Turkey,authentication,1.3043
+2026-10-01,ARS,Turkey,service,1.3043
+2026-10-01,ARS,Ukraine,marketing,124.6332
+2026-10-01,ARS,Ukraine,utility,43.1868
+2026-10-01,ARS,Ukraine,authentication,43.1868
+2026-10-01,ARS,Ukraine,authentication_international,108.1119
+2026-10-01,ARS,Ukraine,service,43.1868
+2026-10-01,ARS,United Arab Emirates,marketing,83.497
+2026-10-01,ARS,United Arab Emirates,utility,22.7528
+2026-10-01,ARS,United Arab Emirates,authentication,22.7528
+2026-10-01,ARS,United Arab Emirates,authentication_international,73.9104
+2026-10-01,ARS,United Arab Emirates,service,22.7528
+2026-10-01,ARS,United Kingdom,marketing,91.9967
+2026-10-01,ARS,United Kingdom,utility,31.8829
+2026-10-01,ARS,United Kingdom,authentication,31.8829
+2026-10-01,ARS,United Kingdom,service,31.8829
+2026-10-01,ARS,North America,marketing,36.2306
+2026-10-01,ARS,North America,utility,4.9274
+2026-10-01,ARS,North America,authentication,4.9274
+2026-10-01,ARS,North America,service,4.9274
+2026-10-01,ARS,Rest of Africa,marketing,32.6075
+2026-10-01,ARS,Rest of Africa,utility,5.7969
+2026-10-01,ARS,Rest of Africa,authentication,5.7969
+2026-10-01,ARS,Rest of Africa,service,5.7969
+2026-10-01,ARS,Rest of Asia Pacific,marketing,121.9957
+2026-10-01,ARS,Rest of Asia Pacific,utility,16.3762
+2026-10-01,ARS,Rest of Asia Pacific,authentication,16.3762
+2026-10-01,ARS,Rest of Asia Pacific,service,16.3762
+2026-10-01,ARS,Rest of Central & Eastern Europe,marketing,124.6332
+2026-10-01,ARS,Rest of Central & Eastern Europe,utility,30.7235
+2026-10-01,ARS,Rest of Central & Eastern Europe,authentication,30.7235
+2026-10-01,ARS,Rest of Central & Eastern Europe,service,30.7235
+2026-10-01,ARS,Rest of Latin America,marketing,107.2425
+2026-10-01,ARS,Rest of Latin America,utility,16.3762
+2026-10-01,ARS,Rest of Latin America,authentication,16.3762
+2026-10-01,ARS,Rest of Latin America,service,16.3762
+2026-10-01,ARS,Rest of Middle East,marketing,56.8313
+2026-10-01,ARS,Rest of Middle East,utility,13.1879
+2026-10-01,ARS,Rest of Middle East,authentication,13.1879
+2026-10-01,ARS,Rest of Middle East,service,13.1879
+2026-10-01,ARS,Rest of Western Europe,marketing,85.794
+2026-10-01,ARS,Rest of Western Europe,utility,24.7817
+2026-10-01,ARS,Rest of Western Europe,authentication,24.7817
+2026-10-01,ARS,Rest of Western Europe,service,24.7817
+2026-10-01,ARS,Other,marketing,87.5331
+2026-10-01,ARS,Other,utility,11.159
+2026-10-01,ARS,Other,authentication,11.159
+2026-10-01,ARS,Other,service,11.159
+2026-10-01,AUD,Argentina,marketing,0.0804
+2026-10-01,AUD,Argentina,utility,0.034
+2026-10-01,AUD,Argentina,authentication,0.034
+2026-10-01,AUD,Argentina,service,0.034
+2026-10-01,AUD,Bangladesh,marketing,0.0952
+2026-10-01,AUD,Bangladesh,utility,0.0048
+2026-10-01,AUD,Bangladesh,authentication,0.0048
+2026-10-01,AUD,Bangladesh,authentication_international,0.1257
+2026-10-01,AUD,Bangladesh,service,0.0048
+2026-10-01,AUD,Brazil,marketing,0.0813
+2026-10-01,AUD,Brazil,utility,0.0088
+2026-10-01,AUD,Brazil,authentication,0.0088
+2026-10-01,AUD,Brazil,service,0.0088
+2026-10-01,AUD,Chile,marketing,0.1156
+2026-10-01,AUD,Chile,utility,0.026
+2026-10-01,AUD,Chile,authentication,0.026
+2026-10-01,AUD,Chile,service,0.026
+2026-10-01,AUD,Colombia,marketing,0.0163
+2026-10-01,AUD,Colombia,utility,0.0012
+2026-10-01,AUD,Colombia,authentication,0.0012
+2026-10-01,AUD,Colombia,service,0.0012
+2026-10-01,AUD,Egypt,marketing,0.0837
+2026-10-01,AUD,Egypt,utility,0.0047
+2026-10-01,AUD,Egypt,authentication,0.0047
+2026-10-01,AUD,Egypt,authentication_international,0.0846
+2026-10-01,AUD,Egypt,service,0.0047
+2026-10-01,AUD,France,marketing,0.1117
+2026-10-01,AUD,France,utility,0.039
+2026-10-01,AUD,France,authentication,0.039
+2026-10-01,AUD,France,service,0.039
+2026-10-01,AUD,Germany,marketing,0.1775
+2026-10-01,AUD,Germany,utility,0.0715
+2026-10-01,AUD,Germany,authentication,0.0715
+2026-10-01,AUD,Germany,service,0.0715
+2026-10-01,AUD,Hong Kong,marketing,0.0952
+2026-10-01,AUD,Hong Kong,utility,0.0341
+2026-10-01,AUD,Hong Kong,authentication,0.0341
+2026-10-01,AUD,Hong Kong,service,0.0341
+2026-10-01,AUD,Hungary,marketing,0.1117
+2026-10-01,AUD,Hungary,utility,0.0454
+2026-10-01,AUD,Hungary,authentication,0.0454
+2026-10-01,AUD,Hungary,service,0.0454
+2026-10-01,AUD,India,marketing,0.0153
+2026-10-01,AUD,India,utility,0.0018
+2026-10-01,AUD,India,authentication,0.0018
+2026-10-01,AUD,India,authentication_international,0.0395
+2026-10-01,AUD,India,service,0.0018
+2026-10-01,AUD,Indonesia,marketing,0.0535
+2026-10-01,AUD,Indonesia,utility,0.0325
+2026-10-01,AUD,Indonesia,authentication,0.0325
+2026-10-01,AUD,Indonesia,authentication_international,0.1768
+2026-10-01,AUD,Indonesia,service,0.0325
+2026-10-01,AUD,Iraq,marketing,0.0443
+2026-10-01,AUD,Iraq,utility,0.0102
+2026-10-01,AUD,Iraq,authentication,0.0102
+2026-10-01,AUD,Iraq,authentication_international,0.1646
+2026-10-01,AUD,Iraq,service,0.0102
+2026-10-01,AUD,Israel,marketing,0.0459
+2026-10-01,AUD,Israel,utility,0.0069
+2026-10-01,AUD,Israel,authentication,0.0069
+2026-10-01,AUD,Israel,service,0.0069
+2026-10-01,AUD,Italy,marketing,0.1032
+2026-10-01,AUD,Italy,utility,0.0389
+2026-10-01,AUD,Italy,authentication,0.0389
+2026-10-01,AUD,Italy,service,0.0389
+2026-10-01,AUD,Kazakhstan,marketing,0.0784
+2026-10-01,AUD,Kazakhstan,utility,0.0234
+2026-10-01,AUD,Kazakhstan,authentication,0.0234
+2026-10-01,AUD,Kazakhstan,authentication_international,0.2078
+2026-10-01,AUD,Kazakhstan,service,0.0234
+2026-10-01,AUD,Kuwait,marketing,0.1029
+2026-10-01,AUD,Kuwait,utility,0.0566
+2026-10-01,AUD,Kuwait,authentication,0.0566
+2026-10-01,AUD,Kuwait,authentication_international,0.1543
+2026-10-01,AUD,Kuwait,service,0.0566
+2026-10-01,AUD,Malaysia,marketing,0.1117
+2026-10-01,AUD,Malaysia,utility,0.0182
+2026-10-01,AUD,Malaysia,authentication,0.0182
+2026-10-01,AUD,Malaysia,authentication_international,0.0543
+2026-10-01,AUD,Malaysia,service,0.0182
+2026-10-01,AUD,Mexico,marketing,0.0515
+2026-10-01,AUD,Mexico,utility,0.0112
+2026-10-01,AUD,Mexico,authentication,0.0112
+2026-10-01,AUD,Mexico,service,0.0112
+2026-10-01,AUD,Morocco,marketing,0.0539
+2026-10-01,AUD,Morocco,utility,0.0299
+2026-10-01,AUD,Morocco,authentication,0.0299
+2026-10-01,AUD,Morocco,authentication_international,0.1054
+2026-10-01,AUD,Morocco,service,0.0299
+2026-10-01,AUD,Netherlands,marketing,0.2077
+2026-10-01,AUD,Netherlands,utility,0.065
+2026-10-01,AUD,Netherlands,authentication,0.065
+2026-10-01,AUD,Netherlands,service,0.065
+2026-10-01,AUD,Nepal,marketing,0.0952
+2026-10-01,AUD,Nepal,utility,0.0045
+2026-10-01,AUD,Nepal,authentication,0.0045
+2026-10-01,AUD,Nepal,authentication_international,0.1467
+2026-10-01,AUD,Nepal,service,0.0045
+2026-10-01,AUD,Nigeria,marketing,0.0671
+2026-10-01,AUD,Nigeria,utility,0.0087
+2026-10-01,AUD,Nigeria,authentication,0.0087
+2026-10-01,AUD,Nigeria,authentication_international,0.0975
+2026-10-01,AUD,Nigeria,service,0.0087
+2026-10-01,AUD,Oman,marketing,0.0443
+2026-10-01,AUD,Oman,utility,0.0318
+2026-10-01,AUD,Oman,authentication,0.0318
+2026-10-01,AUD,Oman,authentication_international,0.0771
+2026-10-01,AUD,Oman,service,0.0318
+2026-10-01,AUD,Pakistan,marketing,0.0615
+2026-10-01,AUD,Pakistan,utility,0.0195
+2026-10-01,AUD,Pakistan,authentication,0.0195
+2026-10-01,AUD,Pakistan,authentication_international,0.0975
+2026-10-01,AUD,Pakistan,service,0.0195
+2026-10-01,AUD,Peru,marketing,0.0913
+2026-10-01,AUD,Peru,utility,0.039
+2026-10-01,AUD,Peru,authentication,0.039
+2026-10-01,AUD,Peru,service,0.039
+2026-10-01,AUD,Poland,marketing,0.0474
+2026-10-01,AUD,Poland,utility,0.0158
+2026-10-01,AUD,Poland,authentication,0.0158
+2026-10-01,AUD,Poland,service,0.0158
+2026-10-01,AUD,Qatar,marketing,0.0443
+2026-10-01,AUD,Qatar,utility,0.0154
+2026-10-01,AUD,Qatar,authentication,0.0154
+2026-10-01,AUD,Qatar,service,0.0154
+2026-10-01,AUD,Romania,marketing,0.1117
+2026-10-01,AUD,Romania,utility,0.0376
+2026-10-01,AUD,Romania,authentication,0.0376
+2026-10-01,AUD,Romania,service,0.0376
+2026-10-01,AUD,Russia,marketing,0.1043
+2026-10-01,AUD,Russia,utility,0.052
+2026-10-01,AUD,Russia,authentication,0.052
+2026-10-01,AUD,Russia,service,0.052
+2026-10-01,AUD,Saudi Arabia,marketing,0.0746
+2026-10-01,AUD,Saudi Arabia,utility,0.0139
+2026-10-01,AUD,Saudi Arabia,authentication,0.0139
+2026-10-01,AUD,Saudi Arabia,authentication_international,0.0778
+2026-10-01,AUD,Saudi Arabia,service,0.0139
+2026-10-01,AUD,Singapore,marketing,0.0952
+2026-10-01,AUD,Singapore,utility,0.021
+2026-10-01,AUD,Singapore,authentication,0.021
+2026-10-01,AUD,Singapore,service,0.021
+2026-10-01,AUD,South Africa,marketing,0.0493
+2026-10-01,AUD,South Africa,utility,0.0124
+2026-10-01,AUD,South Africa,authentication,0.0124
+2026-10-01,AUD,South Africa,authentication_international,0.026
+2026-10-01,AUD,South Africa,service,0.0124
+2026-10-01,AUD,Spain,marketing,0.0919
+2026-10-01,AUD,Spain,utility,0.026
+2026-10-01,AUD,Spain,authentication,0.026
+2026-10-01,AUD,Spain,service,0.026
+2026-10-01,AUD,Sri Lanka,marketing,0.0952
+2026-10-01,AUD,Sri Lanka,utility,0.0026
+2026-10-01,AUD,Sri Lanka,authentication,0.0026
+2026-10-01,AUD,Sri Lanka,authentication_international,0.1886
+2026-10-01,AUD,Sri Lanka,service,0.0026
+2026-10-01,AUD,Turkey,marketing,0.0142
+2026-10-01,AUD,Turkey,utility,0.0012
+2026-10-01,AUD,Turkey,authentication,0.0012
+2026-10-01,AUD,Turkey,service,0.0012
+2026-10-01,AUD,Ukraine,marketing,0.1117
+2026-10-01,AUD,Ukraine,utility,0.0387
+2026-10-01,AUD,Ukraine,authentication,0.0387
+2026-10-01,AUD,Ukraine,authentication_international,0.0968
+2026-10-01,AUD,Ukraine,service,0.0387
+2026-10-01,AUD,United Arab Emirates,marketing,0.0746
+2026-10-01,AUD,United Arab Emirates,utility,0.0205
+2026-10-01,AUD,United Arab Emirates,authentication,0.0205
+2026-10-01,AUD,United Arab Emirates,authentication_international,0.0662
+2026-10-01,AUD,United Arab Emirates,service,0.0205
+2026-10-01,AUD,United Kingdom,marketing,0.0824
+2026-10-01,AUD,United Kingdom,utility,0.0286
+2026-10-01,AUD,United Kingdom,authentication,0.0286
+2026-10-01,AUD,United Kingdom,service,0.0286
+2026-10-01,AUD,North America,marketing,0.0325
+2026-10-01,AUD,North America,utility,0.0044
+2026-10-01,AUD,North America,authentication,0.0044
+2026-10-01,AUD,North America,service,0.0044
+2026-10-01,AUD,Rest of Africa,marketing,0.0293
+2026-10-01,AUD,Rest of Africa,utility,0.0052
+2026-10-01,AUD,Rest of Africa,authentication,0.0052
+2026-10-01,AUD,Rest of Africa,service,0.0052
+2026-10-01,AUD,Rest of Asia Pacific,marketing,0.1095
+2026-10-01,AUD,Rest of Asia Pacific,utility,0.0148
+2026-10-01,AUD,Rest of Asia Pacific,authentication,0.0148
+2026-10-01,AUD,Rest of Asia Pacific,service,0.0148
+2026-10-01,AUD,Rest of Central & Eastern Europe,marketing,0.1117
+2026-10-01,AUD,Rest of Central & Eastern Europe,utility,0.0275
+2026-10-01,AUD,Rest of Central & Eastern Europe,authentication,0.0275
+2026-10-01,AUD,Rest of Central & Eastern Europe,service,0.0275
+2026-10-01,AUD,Rest of Latin America,marketing,0.0961
+2026-10-01,AUD,Rest of Latin America,utility,0.0147
+2026-10-01,AUD,Rest of Latin America,authentication,0.0147
+2026-10-01,AUD,Rest of Latin America,service,0.0147
+2026-10-01,AUD,Rest of Middle East,marketing,0.0509
+2026-10-01,AUD,Rest of Middle East,utility,0.0117
+2026-10-01,AUD,Rest of Middle East,authentication,0.0117
+2026-10-01,AUD,Rest of Middle East,service,0.0117
+2026-10-01,AUD,Rest of Western Europe,marketing,0.0769
+2026-10-01,AUD,Rest of Western Europe,utility,0.0222
+2026-10-01,AUD,Rest of Western Europe,authentication,0.0222
+2026-10-01,AUD,Rest of Western Europe,service,0.0222
+2026-10-01,AUD,Other,marketing,0.0784
+2026-10-01,AUD,Other,utility,0.01
+2026-10-01,AUD,Other,authentication,0.01
+2026-10-01,AUD,Other,service,0.01
+2026-10-01,BRL,Argentina,marketing,0.3181
+2026-10-01,BRL,Argentina,utility,0.1338
+2026-10-01,BRL,Argentina,authentication,0.1338
+2026-10-01,BRL,Argentina,service,0.1338
+2026-10-01,BRL,Bangladesh,marketing,0.3768
+2026-10-01,BRL,Bangladesh,utility,0.0191
+2026-10-01,BRL,Bangladesh,authentication,0.0191
+2026-10-01,BRL,Bangladesh,authentication_international,0.4944
+2026-10-01,BRL,Bangladesh,service,0.0191
+2026-10-01,BRL,Brazil,marketing,0.3217
+2026-10-01,BRL,Brazil,utility,0.035
+2026-10-01,BRL,Brazil,authentication,0.035
+2026-10-01,BRL,Brazil,service,0.035
+2026-10-01,BRL,Chile,marketing,0.4576
+2026-10-01,BRL,Chile,utility,0.1029
+2026-10-01,BRL,Chile,authentication,0.1029
+2026-10-01,BRL,Chile,service,0.1029
+2026-10-01,BRL,Colombia,marketing,0.0643
+2026-10-01,BRL,Colombia,utility,0.0041
+2026-10-01,BRL,Colombia,authentication,0.0041
+2026-10-01,BRL,Colombia,service,0.0041
+2026-10-01,BRL,Egypt,marketing,0.3315
+2026-10-01,BRL,Egypt,utility,0.0185
+2026-10-01,BRL,Egypt,authentication,0.0185
+2026-10-01,BRL,Egypt,authentication_international,0.3346
+2026-10-01,BRL,Egypt,service,0.0185
+2026-10-01,BRL,France,marketing,0.4421
+2026-10-01,BRL,France,utility,0.1544
+2026-10-01,BRL,France,authentication,0.1544
+2026-10-01,BRL,France,service,0.1544
+2026-10-01,BRL,Germany,marketing,0.7026
+2026-10-01,BRL,Germany,utility,0.2831
+2026-10-01,BRL,Germany,authentication,0.2831
+2026-10-01,BRL,Germany,service,0.2831
+2026-10-01,BRL,Hong Kong,marketing,0.3768
+2026-10-01,BRL,Hong Kong,utility,0.1338
+2026-10-01,BRL,Hong Kong,authentication,0.1338
+2026-10-01,BRL,Hong Kong,service,0.1338
+2026-10-01,BRL,Hungary,marketing,0.4427
+2026-10-01,BRL,Hungary,utility,0.1801
+2026-10-01,BRL,Hungary,authentication,0.1801
+2026-10-01,BRL,Hungary,service,0.1801
+2026-10-01,BRL,India,marketing,0.0607
+2026-10-01,BRL,India,utility,0.0072
+2026-10-01,BRL,India,authentication,0.0072
+2026-10-01,BRL,India,authentication_international,0.1565
+2026-10-01,BRL,India,service,0.0072
+2026-10-01,BRL,Indonesia,marketing,0.2115
+2026-10-01,BRL,Indonesia,utility,0.1287
+2026-10-01,BRL,Indonesia,authentication,0.1287
+2026-10-01,BRL,Indonesia,authentication_international,0.7
+2026-10-01,BRL,Indonesia,service,0.1287
+2026-10-01,BRL,Iraq,marketing,0.1755
+2026-10-01,BRL,Iraq,utility,0.0406
+2026-10-01,BRL,Iraq,authentication,0.0406
+2026-10-01,BRL,Iraq,authentication_international,0.6583
+2026-10-01,BRL,Iraq,service,0.0406
+2026-10-01,BRL,Israel,marketing,0.1817
+2026-10-01,BRL,Israel,utility,0.0273
+2026-10-01,BRL,Israel,authentication,0.0273
+2026-10-01,BRL,Israel,service,0.0273
+2026-10-01,BRL,Italy,marketing,0.4092
+2026-10-01,BRL,Italy,utility,0.1544
+2026-10-01,BRL,Italy,authentication,0.1544
+2026-10-01,BRL,Italy,service,0.1544
+2026-10-01,BRL,Kazakhstan,marketing,0.3109
+2026-10-01,BRL,Kazakhstan,utility,0.0926
+2026-10-01,BRL,Kazakhstan,authentication,0.0926
+2026-10-01,BRL,Kazakhstan,authentication_international,0.8229
+2026-10-01,BRL,Kazakhstan,service,0.0926
+2026-10-01,BRL,Kuwait,marketing,0.4077
+2026-10-01,BRL,Kuwait,utility,0.2263
+2026-10-01,BRL,Kuwait,authentication,0.2263
+2026-10-01,BRL,Kuwait,authentication_international,0.6171
+2026-10-01,BRL,Kuwait,service,0.2263
+2026-10-01,BRL,Malaysia,marketing,0.4427
+2026-10-01,BRL,Malaysia,utility,0.0721
+2026-10-01,BRL,Malaysia,authentication,0.0721
+2026-10-01,BRL,Malaysia,authentication_international,0.2151
+2026-10-01,BRL,Malaysia,service,0.0721
+2026-10-01,BRL,Mexico,marketing,0.2041
+2026-10-01,BRL,Mexico,utility,0.0438
+2026-10-01,BRL,Mexico,authentication,0.0438
+2026-10-01,BRL,Mexico,service,0.0438
+2026-10-01,BRL,Morocco,marketing,0.2131
+2026-10-01,BRL,Morocco,utility,0.1185
+2026-10-01,BRL,Morocco,authentication,0.1185
+2026-10-01,BRL,Morocco,authentication_international,0.4177
+2026-10-01,BRL,Morocco,service,0.1185
+2026-10-01,BRL,Netherlands,marketing,0.822
+2026-10-01,BRL,Netherlands,utility,0.2574
+2026-10-01,BRL,Netherlands,authentication,0.2574
+2026-10-01,BRL,Netherlands,service,0.2574
+2026-10-01,BRL,Nepal,marketing,0.3768
+2026-10-01,BRL,Nepal,utility,0.0175
+2026-10-01,BRL,Nepal,authentication,0.0175
+2026-10-01,BRL,Nepal,authentication_international,0.5768
+2026-10-01,BRL,Nepal,service,0.0175
+2026-10-01,BRL,Nigeria,marketing,0.2656
+2026-10-01,BRL,Nigeria,utility,0.0345
+2026-10-01,BRL,Nigeria,authentication,0.0345
+2026-10-01,BRL,Nigeria,authentication_international,0.386
+2026-10-01,BRL,Nigeria,service,0.0345
+2026-10-01,BRL,Oman,marketing,0.1755
+2026-10-01,BRL,Oman,utility,0.127
+2026-10-01,BRL,Oman,authentication,0.127
+2026-10-01,BRL,Oman,authentication_international,0.3086
+2026-10-01,BRL,Oman,service,0.127
+2026-10-01,BRL,Pakistan,marketing,0.2435
+2026-10-01,BRL,Pakistan,utility,0.0773
+2026-10-01,BRL,Pakistan,authentication,0.0773
+2026-10-01,BRL,Pakistan,authentication_international,0.386
+2026-10-01,BRL,Pakistan,service,0.0773
+2026-10-01,BRL,Peru,marketing,0.3618
+2026-10-01,BRL,Peru,utility,0.1544
+2026-10-01,BRL,Peru,authentication,0.1544
+2026-10-01,BRL,Peru,service,0.1544
+2026-10-01,BRL,Poland,marketing,0.1884
+2026-10-01,BRL,Poland,utility,0.0628
+2026-10-01,BRL,Poland,authentication,0.0628
+2026-10-01,BRL,Poland,service,0.0628
+2026-10-01,BRL,Qatar,marketing,0.1755
+2026-10-01,BRL,Qatar,utility,0.0618
+2026-10-01,BRL,Qatar,authentication,0.0618
+2026-10-01,BRL,Qatar,service,0.0618
+2026-10-01,BRL,Romania,marketing,0.4427
+2026-10-01,BRL,Romania,utility,0.1493
+2026-10-01,BRL,Romania,authentication,0.1493
+2026-10-01,BRL,Romania,service,0.1493
+2026-10-01,BRL,Russia,marketing,0.4128
+2026-10-01,BRL,Russia,utility,0.2059
+2026-10-01,BRL,Russia,authentication,0.2059
+2026-10-01,BRL,Russia,service,0.2059
+2026-10-01,BRL,Saudi Arabia,marketing,0.2966
+2026-10-01,BRL,Saudi Arabia,utility,0.0551
+2026-10-01,BRL,Saudi Arabia,authentication,0.0551
+2026-10-01,BRL,Saudi Arabia,authentication_international,0.3078
+2026-10-01,BRL,Saudi Arabia,service,0.0551
+2026-10-01,BRL,Singapore,marketing,0.3768
+2026-10-01,BRL,Singapore,utility,0.0824
+2026-10-01,BRL,Singapore,authentication,0.0824
+2026-10-01,BRL,Singapore,service,0.0824
+2026-10-01,BRL,South Africa,marketing,0.1951
+2026-10-01,BRL,South Africa,utility,0.0489
+2026-10-01,BRL,South Africa,authentication,0.0489
+2026-10-01,BRL,South Africa,authentication_international,0.1029
+2026-10-01,BRL,South Africa,service,0.0489
+2026-10-01,BRL,Spain,marketing,0.3639
+2026-10-01,BRL,Spain,utility,0.1029
+2026-10-01,BRL,Spain,authentication,0.1029
+2026-10-01,BRL,Spain,service,0.1029
+2026-10-01,BRL,Sri Lanka,marketing,0.3768
+2026-10-01,BRL,Sri Lanka,utility,0.0103
+2026-10-01,BRL,Sri Lanka,authentication,0.0103
+2026-10-01,BRL,Sri Lanka,authentication_international,0.7417
+2026-10-01,BRL,Sri Lanka,service,0.0103
+2026-10-01,BRL,Turkey,marketing,0.0561
+2026-10-01,BRL,Turkey,utility,0.0046
+2026-10-01,BRL,Turkey,authentication,0.0046
+2026-10-01,BRL,Turkey,service,0.0046
+2026-10-01,BRL,Ukraine,marketing,0.4427
+2026-10-01,BRL,Ukraine,utility,0.1534
+2026-10-01,BRL,Ukraine,authentication,0.1534
+2026-10-01,BRL,Ukraine,authentication_international,0.3839
+2026-10-01,BRL,Ukraine,service,0.1534
+2026-10-01,BRL,United Arab Emirates,marketing,0.2966
+2026-10-01,BRL,United Arab Emirates,utility,0.0808
+2026-10-01,BRL,United Arab Emirates,authentication,0.0808
+2026-10-01,BRL,United Arab Emirates,authentication_international,0.2625
+2026-10-01,BRL,United Arab Emirates,service,0.0808
+2026-10-01,BRL,United Kingdom,marketing,0.3268
+2026-10-01,BRL,United Kingdom,utility,0.1132
+2026-10-01,BRL,United Kingdom,authentication,0.1132
+2026-10-01,BRL,United Kingdom,service,0.1132
+2026-10-01,BRL,North America,marketing,0.1287
+2026-10-01,BRL,North America,utility,0.0175
+2026-10-01,BRL,North America,authentication,0.0175
+2026-10-01,BRL,North America,service,0.0175
+2026-10-01,BRL,Rest of Africa,marketing,0.1158
+2026-10-01,BRL,Rest of Africa,utility,0.0206
+2026-10-01,BRL,Rest of Africa,authentication,0.0206
+2026-10-01,BRL,Rest of Africa,service,0.0206
+2026-10-01,BRL,Rest of Asia Pacific,marketing,0.4333
+2026-10-01,BRL,Rest of Asia Pacific,utility,0.0582
+2026-10-01,BRL,Rest of Asia Pacific,authentication,0.0582
+2026-10-01,BRL,Rest of Asia Pacific,service,0.0582
+2026-10-01,BRL,Rest of Central & Eastern Europe,marketing,0.4427
+2026-10-01,BRL,Rest of Central & Eastern Europe,utility,0.1091
+2026-10-01,BRL,Rest of Central & Eastern Europe,authentication,0.1091
+2026-10-01,BRL,Rest of Central & Eastern Europe,service,0.1091
+2026-10-01,BRL,Rest of Latin America,marketing,0.3809
+2026-10-01,BRL,Rest of Latin America,utility,0.0582
+2026-10-01,BRL,Rest of Latin America,authentication,0.0582
+2026-10-01,BRL,Rest of Latin America,service,0.0582
+2026-10-01,BRL,Rest of Middle East,marketing,0.2018
+2026-10-01,BRL,Rest of Middle East,utility,0.0468
+2026-10-01,BRL,Rest of Middle East,authentication,0.0468
+2026-10-01,BRL,Rest of Middle East,service,0.0468
+2026-10-01,BRL,Rest of Western Europe,marketing,0.3047
+2026-10-01,BRL,Rest of Western Europe,utility,0.088
+2026-10-01,BRL,Rest of Western Europe,authentication,0.088
+2026-10-01,BRL,Rest of Western Europe,service,0.088
+2026-10-01,BRL,Other,marketing,0.3109
+2026-10-01,BRL,Other,utility,0.0396
+2026-10-01,BRL,Other,authentication,0.0396
+2026-10-01,BRL,Other,service,0.0396
+2026-10-01,CLP,Argentina,marketing,54.5645
+2026-10-01,CLP,Argentina,utility,22.956
+2026-10-01,CLP,Argentina,authentication,22.956
+2026-10-01,CLP,Argentina,service,22.956
+2026-10-01,CLP,Bangladesh,marketing,64.6298
+2026-10-01,CLP,Bangladesh,utility,3.2668
+2026-10-01,CLP,Bangladesh,authentication,3.2668
+2026-10-01,CLP,Bangladesh,authentication_international,84.7604
+2026-10-01,CLP,Bangladesh,service,3.2668
+2026-10-01,CLP,Brazil,marketing,55.1826
+2026-10-01,CLP,Brazil,utility,6.0039
+2026-10-01,CLP,Brazil,authentication,6.0039
+2026-10-01,CLP,Brazil,service,6.0039
+2026-10-01,CLP,Chile,marketing,78.4917
+2026-10-01,CLP,Chile,utility,17.6584
+2026-10-01,CLP,Chile,authentication,17.6584
+2026-10-01,CLP,Chile,service,17.6584
+2026-10-01,CLP,Colombia,marketing,11.0365
+2026-10-01,CLP,Colombia,utility,0.7063
+2026-10-01,CLP,Colombia,authentication,0.7063
+2026-10-01,CLP,Colombia,service,0.7063
+2026-10-01,CLP,Egypt,marketing,56.8601
+2026-10-01,CLP,Egypt,utility,3.1785
+2026-10-01,CLP,Egypt,authentication,3.1785
+2026-10-01,CLP,Egypt,authentication_international,57.3899
+2026-10-01,CLP,Egypt,service,3.1785
+2026-10-01,CLP,France,marketing,75.8429
+2026-10-01,CLP,France,utility,26.4876
+2026-10-01,CLP,France,authentication,26.4876
+2026-10-01,CLP,France,service,26.4876
+2026-10-01,CLP,Germany,marketing,120.5188
+2026-10-01,CLP,Germany,utility,48.5607
+2026-10-01,CLP,Germany,authentication,48.5607
+2026-10-01,CLP,Germany,service,48.5607
+2026-10-01,CLP,Hong Kong,marketing,64.6298
+2026-10-01,CLP,Hong Kong,utility,22.9559
+2026-10-01,CLP,Hong Kong,authentication,22.9559
+2026-10-01,CLP,Hong Kong,service,22.9559
+2026-10-01,CLP,Hungary,marketing,75.9312
+2026-10-01,CLP,Hungary,utility,30.9022
+2026-10-01,CLP,Hungary,authentication,30.9022
+2026-10-01,CLP,Hungary,service,30.9022
+2026-10-01,CLP,India,marketing,10.4185
+2026-10-01,CLP,India,utility,1.2361
+2026-10-01,CLP,India,authentication,1.2361
+2026-10-01,CLP,India,authentication_international,26.8408
+2026-10-01,CLP,India,service,1.2361
+2026-10-01,CLP,Indonesia,marketing,36.2881
+2026-10-01,CLP,Indonesia,utility,22.073
+2026-10-01,CLP,Indonesia,authentication,22.073
+2026-10-01,CLP,Indonesia,authentication_international,120.0773
+2026-10-01,CLP,Indonesia,service,22.073
+2026-10-01,CLP,Iraq,marketing,30.1076
+2026-10-01,CLP,Iraq,utility,6.9751
+2026-10-01,CLP,Iraq,authentication,6.9751
+2026-10-01,CLP,Iraq,authentication_international,113.0142
+2026-10-01,CLP,Iraq,service,6.9751
+2026-10-01,CLP,Israel,marketing,31.1671
+2026-10-01,CLP,Israel,utility,4.6795
+2026-10-01,CLP,Israel,authentication,4.6795
+2026-10-01,CLP,Israel,service,4.6795
+2026-10-01,CLP,Italy,marketing,70.1614
+2026-10-01,CLP,Italy,utility,26.4876
+2026-10-01,CLP,Italy,authentication,26.4876
+2026-10-01,CLP,Italy,service,26.4876
+2026-10-01,CLP,Kazakhstan,marketing,53.3285
+2026-10-01,CLP,Kazakhstan,utility,15.8926
+2026-10-01,CLP,Kazakhstan,authentication,15.8926
+2026-10-01,CLP,Kazakhstan,authentication_international,141.2675
+2026-10-01,CLP,Kazakhstan,service,15.8926
+2026-10-01,CLP,Kuwait,marketing,69.94
+2026-10-01,CLP,Kuwait,utility,38.8486
+2026-10-01,CLP,Kuwait,authentication,38.8486
+2026-10-01,CLP,Kuwait,authentication_international,105.9508
+2026-10-01,CLP,Kuwait,service,38.8486
+2026-10-01,CLP,Malaysia,marketing,75.9312
+2026-10-01,CLP,Malaysia,utility,12.3609
+2026-10-01,CLP,Malaysia,authentication,12.3609
+2026-10-01,CLP,Malaysia,authentication_international,36.9061
+2026-10-01,CLP,Malaysia,service,12.3609
+2026-10-01,CLP,Mexico,marketing,35.0078
+2026-10-01,CLP,Mexico,utility,7.5048
+2026-10-01,CLP,Mexico,authentication,7.5048
+2026-10-01,CLP,Mexico,service,7.5048
+2026-10-01,CLP,Morocco,marketing,36.5529
+2026-10-01,CLP,Morocco,utility,20.3073
+2026-10-01,CLP,Morocco,authentication,20.3073
+2026-10-01,CLP,Morocco,authentication_international,71.6052
+2026-10-01,CLP,Morocco,service,20.3073
+2026-10-01,CLP,Netherlands,marketing,141.0025
+2026-10-01,CLP,Netherlands,utility,44.1461
+2026-10-01,CLP,Netherlands,authentication,44.1461
+2026-10-01,CLP,Netherlands,service,44.1461
+2026-10-01,CLP,Nepal,marketing,64.6298
+2026-10-01,CLP,Nepal,utility,3.0019
+2026-10-01,CLP,Nepal,authentication,3.0019
+2026-10-01,CLP,Nepal,authentication_international,98.8871
+2026-10-01,CLP,Nepal,service,3.0019
+2026-10-01,CLP,Nigeria,marketing,45.5587
+2026-10-01,CLP,Nigeria,utility,5.9156
+2026-10-01,CLP,Nigeria,authentication,5.9156
+2026-10-01,CLP,Nigeria,authentication_international,66.2191
+2026-10-01,CLP,Nigeria,service,5.9156
+2026-10-01,CLP,Oman,marketing,30.1076
+2026-10-01,CLP,Oman,utility,21.8082
+2026-10-01,CLP,Oman,authentication,21.8082
+2026-10-01,CLP,Oman,authentication_international,52.9754
+2026-10-01,CLP,Oman,service,21.8082
+2026-10-01,CLP,Pakistan,marketing,41.7622
+2026-10-01,CLP,Pakistan,utility,13.2438
+2026-10-01,CLP,Pakistan,authentication,13.2438
+2026-10-01,CLP,Pakistan,authentication_international,66.2191
+2026-10-01,CLP,Pakistan,service,13.2438
+2026-10-01,CLP,Peru,marketing,62.0694
+2026-10-01,CLP,Peru,utility,26.4876
+2026-10-01,CLP,Peru,authentication,26.4876
+2026-10-01,CLP,Peru,service,26.4876
+2026-10-01,CLP,Poland,marketing,32.3148
+2026-10-01,CLP,Poland,utility,10.7716
+2026-10-01,CLP,Poland,authentication,10.7716
+2026-10-01,CLP,Poland,service,10.7716
+2026-10-01,CLP,Qatar,marketing,30.1076
+2026-10-01,CLP,Qatar,utility,10.5951
+2026-10-01,CLP,Qatar,authentication,10.5951
+2026-10-01,CLP,Qatar,service,10.5951
+2026-10-01,CLP,Romania,marketing,75.9312
+2026-10-01,CLP,Romania,utility,25.6047
+2026-10-01,CLP,Romania,authentication,25.6047
+2026-10-01,CLP,Romania,service,25.6047
+2026-10-01,CLP,Russia,marketing,70.8103
+2026-10-01,CLP,Russia,utility,35.3169
+2026-10-01,CLP,Russia,authentication,35.3169
+2026-10-01,CLP,Russia,service,35.3169
+2026-10-01,CLP,Saudi Arabia,marketing,50.8696
+2026-10-01,CLP,Saudi Arabia,utility,9.4473
+2026-10-01,CLP,Saudi Arabia,authentication,9.4473
+2026-10-01,CLP,Saudi Arabia,authentication_international,52.7987
+2026-10-01,CLP,Saudi Arabia,service,9.4473
+2026-10-01,CLP,Singapore,marketing,64.6298
+2026-10-01,CLP,Singapore,utility,14.1267
+2026-10-01,CLP,Singapore,authentication,14.1267
+2026-10-01,CLP,Singapore,service,14.1267
+2026-10-01,CLP,South Africa,marketing,33.4627
+2026-10-01,CLP,South Africa,utility,8.3878
+2026-10-01,CLP,South Africa,authentication,8.3878
+2026-10-01,CLP,South Africa,authentication_international,17.6584
+2026-10-01,CLP,South Africa,service,8.3878
+2026-10-01,CLP,Spain,marketing,62.4447
+2026-10-01,CLP,Spain,utility,17.6584
+2026-10-01,CLP,Spain,authentication,17.6584
+2026-10-01,CLP,Spain,service,17.6584
+2026-10-01,CLP,Sri Lanka,marketing,64.6298
+2026-10-01,CLP,Sri Lanka,utility,1.7658
+2026-10-01,CLP,Sri Lanka,authentication,1.7658
+2026-10-01,CLP,Sri Lanka,authentication_international,127.1405
+2026-10-01,CLP,Sri Lanka,service,1.7658
+2026-10-01,CLP,Turkey,marketing,9.6238
+2026-10-01,CLP,Turkey,utility,0.7946
+2026-10-01,CLP,Turkey,authentication,0.7946
+2026-10-01,CLP,Turkey,service,0.7946
+2026-10-01,CLP,Ukraine,marketing,75.9312
+2026-10-01,CLP,Ukraine,utility,26.311
+2026-10-01,CLP,Ukraine,authentication,26.311
+2026-10-01,CLP,Ukraine,authentication_international,65.8658
+2026-10-01,CLP,Ukraine,service,26.311
+2026-10-01,CLP,United Arab Emirates,marketing,50.8696
+2026-10-01,CLP,United Arab Emirates,utility,13.8619
+2026-10-01,CLP,United Arab Emirates,authentication,13.8619
+2026-10-01,CLP,United Arab Emirates,authentication_international,45.029
+2026-10-01,CLP,United Arab Emirates,service,13.8619
+2026-10-01,CLP,United Kingdom,marketing,56.0478
+2026-10-01,CLP,United Kingdom,utility,19.4243
+2026-10-01,CLP,United Kingdom,authentication,19.4243
+2026-10-01,CLP,United Kingdom,service,19.4243
+2026-10-01,CLP,North America,marketing,22.073
+2026-10-01,CLP,North America,utility,3.0019
+2026-10-01,CLP,North America,authentication,3.0019
+2026-10-01,CLP,North America,service,3.0019
+2026-10-01,CLP,Rest of Africa,marketing,19.8657
+2026-10-01,CLP,Rest of Africa,utility,3.5317
+2026-10-01,CLP,Rest of Africa,authentication,3.5317
+2026-10-01,CLP,Rest of Africa,service,3.5317
+2026-10-01,CLP,Rest of Asia Pacific,marketing,74.3243
+2026-10-01,CLP,Rest of Asia Pacific,utility,9.977
+2026-10-01,CLP,Rest of Asia Pacific,authentication,9.977
+2026-10-01,CLP,Rest of Asia Pacific,service,9.977
+2026-10-01,CLP,Rest of Central & Eastern Europe,marketing,75.9312
+2026-10-01,CLP,Rest of Central & Eastern Europe,utility,18.7179
+2026-10-01,CLP,Rest of Central & Eastern Europe,authentication,18.7179
+2026-10-01,CLP,Rest of Central & Eastern Europe,service,18.7179
+2026-10-01,CLP,Rest of Latin America,marketing,65.3362
+2026-10-01,CLP,Rest of Latin America,utility,9.977
+2026-10-01,CLP,Rest of Latin America,authentication,9.977
+2026-10-01,CLP,Rest of Latin America,service,9.977
+2026-10-01,CLP,Rest of Middle East,marketing,34.6237
+2026-10-01,CLP,Rest of Middle East,utility,8.0346
+2026-10-01,CLP,Rest of Middle East,authentication,8.0346
+2026-10-01,CLP,Rest of Middle East,service,8.0346
+2026-10-01,CLP,Rest of Western Europe,marketing,52.2689
+2026-10-01,CLP,Rest of Western Europe,utility,15.098
+2026-10-01,CLP,Rest of Western Europe,authentication,15.098
+2026-10-01,CLP,Rest of Western Europe,service,15.098
+2026-10-01,CLP,Other,marketing,53.3285
+2026-10-01,CLP,Other,utility,6.7985
+2026-10-01,CLP,Other,authentication,6.7985
+2026-10-01,CLP,Other,service,6.7985
+2026-10-01,COP,Argentina,marketing,227.5361
+2026-10-01,COP,Argentina,utility,95.7271
+2026-10-01,COP,Argentina,authentication,95.7271
+2026-10-01,COP,Argentina,service,95.7271
+2026-10-01,COP,Bangladesh,marketing,269.5087
+2026-10-01,COP,Bangladesh,utility,13.6227
+2026-10-01,COP,Bangladesh,authentication,13.6227
+2026-10-01,COP,Bangladesh,authentication_international,353.4542
+2026-10-01,COP,Bangladesh,service,13.6227
+2026-10-01,COP,Brazil,marketing,230.1133
+2026-10-01,COP,Brazil,utility,25.0363
+2026-10-01,COP,Brazil,authentication,25.0363
+2026-10-01,COP,Brazil,service,25.0363
+2026-10-01,COP,Chile,marketing,327.3132
+2026-10-01,COP,Chile,utility,73.6363
+2026-10-01,COP,Chile,authentication,73.6363
+2026-10-01,COP,Chile,service,73.6363
+2026-10-01,COP,Colombia,marketing,46.0227
+2026-10-01,COP,Colombia,utility,2.9455
+2026-10-01,COP,Colombia,authentication,2.9455
+2026-10-01,COP,Colombia,service,2.9455
+2026-10-01,COP,Egypt,marketing,237.1088
+2026-10-01,COP,Egypt,utility,13.2545
+2026-10-01,COP,Egypt,authentication,13.2545
+2026-10-01,COP,Egypt,authentication_international,239.3179
+2026-10-01,COP,Egypt,service,13.2545
+2026-10-01,COP,France,marketing,316.2678
+2026-10-01,COP,France,utility,110.4544
+2026-10-01,COP,France,authentication,110.4544
+2026-10-01,COP,France,service,110.4544
+2026-10-01,COP,Germany,marketing,502.5675
+2026-10-01,COP,Germany,utility,202.4997
+2026-10-01,COP,Germany,authentication,202.4997
+2026-10-01,COP,Germany,service,202.4997
+2026-10-01,COP,Hong Kong,marketing,269.5087
+2026-10-01,COP,Hong Kong,utility,95.7272
+2026-10-01,COP,Hong Kong,authentication,95.7272
+2026-10-01,COP,Hong Kong,service,95.7272
+2026-10-01,COP,Hungary,marketing,316.636
+2026-10-01,COP,Hungary,utility,128.8634
+2026-10-01,COP,Hungary,authentication,128.8634
+2026-10-01,COP,Hungary,service,128.8634
+2026-10-01,COP,India,marketing,43.4454
+2026-10-01,COP,India,utility,5.1545
+2026-10-01,COP,India,authentication,5.1545
+2026-10-01,COP,India,authentication_international,111.9271
+2026-10-01,COP,India,service,5.1545
+2026-10-01,COP,Indonesia,marketing,151.3225
+2026-10-01,COP,Indonesia,utility,92.0453
+2026-10-01,COP,Indonesia,authentication,92.0453
+2026-10-01,COP,Indonesia,authentication_international,500.7266
+2026-10-01,COP,Indonesia,service,92.0453
+2026-10-01,COP,Iraq,marketing,125.5498
+2026-10-01,COP,Iraq,utility,29.0863
+2026-10-01,COP,Iraq,authentication,29.0863
+2026-10-01,COP,Iraq,authentication_international,471.2721
+2026-10-01,COP,Iraq,service,29.0863
+2026-10-01,COP,Israel,marketing,129.968
+2026-10-01,COP,Israel,utility,19.5136
+2026-10-01,COP,Israel,authentication,19.5136
+2026-10-01,COP,Israel,service,19.5136
+2026-10-01,COP,Italy,marketing,292.5753
+2026-10-01,COP,Italy,utility,110.4544
+2026-10-01,COP,Italy,authentication,110.4544
+2026-10-01,COP,Italy,service,110.4544
+2026-10-01,COP,Kazakhstan,marketing,222.3815
+2026-10-01,COP,Kazakhstan,utility,66.2727
+2026-10-01,COP,Kazakhstan,authentication,66.2727
+2026-10-01,COP,Kazakhstan,authentication_international,589.0909
+2026-10-01,COP,Kazakhstan,service,66.2727
+2026-10-01,COP,Kuwait,marketing,291.6522
+2026-10-01,COP,Kuwait,utility,161.9998
+2026-10-01,COP,Kuwait,authentication,161.9998
+2026-10-01,COP,Kuwait,authentication_international,441.8176
+2026-10-01,COP,Kuwait,service,161.9998
+2026-10-01,COP,Malaysia,marketing,316.636
+2026-10-01,COP,Malaysia,utility,51.5454
+2026-10-01,COP,Malaysia,authentication,51.5454
+2026-10-01,COP,Malaysia,authentication_international,153.8998
+2026-10-01,COP,Malaysia,service,51.5454
+2026-10-01,COP,Mexico,marketing,145.9839
+2026-10-01,COP,Mexico,utility,31.2954
+2026-10-01,COP,Mexico,authentication,31.2954
+2026-10-01,COP,Mexico,service,31.2954
+2026-10-01,COP,Morocco,marketing,152.4271
+2026-10-01,COP,Morocco,utility,84.682
+2026-10-01,COP,Morocco,authentication,84.682
+2026-10-01,COP,Morocco,authentication_international,298.596
+2026-10-01,COP,Morocco,service,84.682
+2026-10-01,COP,Netherlands,marketing,587.9856
+2026-10-01,COP,Netherlands,utility,184.0907
+2026-10-01,COP,Netherlands,authentication,184.0907
+2026-10-01,COP,Netherlands,service,184.0907
+2026-10-01,COP,Nepal,marketing,269.5087
+2026-10-01,COP,Nepal,utility,12.5182
+2026-10-01,COP,Nepal,authentication,12.5182
+2026-10-01,COP,Nepal,authentication_international,412.3632
+2026-10-01,COP,Nepal,service,12.5182
+2026-10-01,COP,Nigeria,marketing,189.9816
+2026-10-01,COP,Nigeria,utility,24.6681
+2026-10-01,COP,Nigeria,authentication,24.6681
+2026-10-01,COP,Nigeria,authentication_international,276.136
+2026-10-01,COP,Nigeria,service,24.6681
+2026-10-01,COP,Oman,marketing,125.5498
+2026-10-01,COP,Oman,utility,90.9408
+2026-10-01,COP,Oman,authentication,90.9408
+2026-10-01,COP,Oman,authentication_international,220.9088
+2026-10-01,COP,Oman,service,90.9408
+2026-10-01,COP,Pakistan,marketing,174.1498
+2026-10-01,COP,Pakistan,utility,55.2272
+2026-10-01,COP,Pakistan,authentication,55.2272
+2026-10-01,COP,Pakistan,authentication_international,276.136
+2026-10-01,COP,Pakistan,service,55.2272
+2026-10-01,COP,Peru,marketing,258.8315
+2026-10-01,COP,Peru,utility,110.4545
+2026-10-01,COP,Peru,authentication,110.4545
+2026-10-01,COP,Peru,service,110.4545
+2026-10-01,COP,Poland,marketing,134.7543
+2026-10-01,COP,Poland,utility,44.9181
+2026-10-01,COP,Poland,authentication,44.9181
+2026-10-01,COP,Poland,service,44.9181
+2026-10-01,COP,Qatar,marketing,125.5498
+2026-10-01,COP,Qatar,utility,44.1818
+2026-10-01,COP,Qatar,authentication,44.1818
+2026-10-01,COP,Qatar,service,44.1818
+2026-10-01,COP,Romania,marketing,316.636
+2026-10-01,COP,Romania,utility,106.7725
+2026-10-01,COP,Romania,authentication,106.7725
+2026-10-01,COP,Romania,service,106.7725
+2026-10-01,COP,Russia,marketing,295.2814
+2026-10-01,COP,Russia,utility,147.2725
+2026-10-01,COP,Russia,authentication,147.2725
+2026-10-01,COP,Russia,service,147.2725
+2026-10-01,COP,Saudi Arabia,marketing,212.1277
+2026-10-01,COP,Saudi Arabia,utility,39.3954
+2026-10-01,COP,Saudi Arabia,authentication,39.3954
+2026-10-01,COP,Saudi Arabia,authentication_international,220.1724
+2026-10-01,COP,Saudi Arabia,service,39.3954
+2026-10-01,COP,Singapore,marketing,269.5087
+2026-10-01,COP,Singapore,utility,58.909
+2026-10-01,COP,Singapore,authentication,58.909
+2026-10-01,COP,Singapore,service,58.909
+2026-10-01,COP,South Africa,marketing,139.5407
+2026-10-01,COP,South Africa,utility,34.9773
+2026-10-01,COP,South Africa,authentication,34.9773
+2026-10-01,COP,South Africa,authentication_international,73.6363
+2026-10-01,COP,South Africa,service,34.9773
+2026-10-01,COP,Spain,marketing,260.3962
+2026-10-01,COP,Spain,utility,73.6363
+2026-10-01,COP,Spain,authentication,73.6363
+2026-10-01,COP,Spain,service,73.6363
+2026-10-01,COP,Sri Lanka,marketing,269.5087
+2026-10-01,COP,Sri Lanka,utility,7.3636
+2026-10-01,COP,Sri Lanka,authentication,7.3636
+2026-10-01,COP,Sri Lanka,authentication_international,530.1812
+2026-10-01,COP,Sri Lanka,service,7.3636
+2026-10-01,COP,Turkey,marketing,40.1318
+2026-10-01,COP,Turkey,utility,3.3136
+2026-10-01,COP,Turkey,authentication,3.3136
+2026-10-01,COP,Turkey,service,3.3136
+2026-10-01,COP,Ukraine,marketing,316.636
+2026-10-01,COP,Ukraine,utility,109.718
+2026-10-01,COP,Ukraine,authentication,109.718
+2026-10-01,COP,Ukraine,authentication_international,274.6631
+2026-10-01,COP,Ukraine,service,109.718
+2026-10-01,COP,United Arab Emirates,marketing,212.1277
+2026-10-01,COP,United Arab Emirates,utility,57.8045
+2026-10-01,COP,United Arab Emirates,authentication,57.8045
+2026-10-01,COP,United Arab Emirates,authentication_international,187.7725
+2026-10-01,COP,United Arab Emirates,service,57.8045
+2026-10-01,COP,United Kingdom,marketing,233.7215
+2026-10-01,COP,United Kingdom,utility,80.9999
+2026-10-01,COP,United Kingdom,authentication,80.9999
+2026-10-01,COP,United Kingdom,service,80.9999
+2026-10-01,COP,North America,marketing,92.0453
+2026-10-01,COP,North America,utility,12.5182
+2026-10-01,COP,North America,authentication,12.5182
+2026-10-01,COP,North America,service,12.5182
+2026-10-01,COP,Rest of Africa,marketing,82.8408
+2026-10-01,COP,Rest of Africa,utility,14.7273
+2026-10-01,COP,Rest of Africa,authentication,14.7273
+2026-10-01,COP,Rest of Africa,service,14.7273
+2026-10-01,COP,Rest of Asia Pacific,marketing,309.935
+2026-10-01,COP,Rest of Asia Pacific,utility,41.6045
+2026-10-01,COP,Rest of Asia Pacific,authentication,41.6045
+2026-10-01,COP,Rest of Asia Pacific,service,41.6045
+2026-10-01,COP,Rest of Central & Eastern Europe,marketing,316.636
+2026-10-01,COP,Rest of Central & Eastern Europe,utility,78.0544
+2026-10-01,COP,Rest of Central & Eastern Europe,authentication,78.0544
+2026-10-01,COP,Rest of Central & Eastern Europe,service,78.0544
+2026-10-01,COP,Rest of Latin America,marketing,272.4542
+2026-10-01,COP,Rest of Latin America,utility,41.6045
+2026-10-01,COP,Rest of Latin America,authentication,41.6045
+2026-10-01,COP,Rest of Latin America,service,41.6045
+2026-10-01,COP,Rest of Middle East,marketing,144.3823
+2026-10-01,COP,Rest of Middle East,utility,33.5045
+2026-10-01,COP,Rest of Middle East,authentication,33.5045
+2026-10-01,COP,Rest of Middle East,service,33.5045
+2026-10-01,COP,Rest of Western Europe,marketing,217.9634
+2026-10-01,COP,Rest of Western Europe,utility,62.959
+2026-10-01,COP,Rest of Western Europe,authentication,62.959
+2026-10-01,COP,Rest of Western Europe,service,62.959
+2026-10-01,COP,Other,marketing,222.3815
+2026-10-01,COP,Other,utility,28.35
+2026-10-01,COP,Other,authentication,28.35
+2026-10-01,COP,Other,service,28.35
+2026-10-01,EUR,Argentina,marketing,0.0512
+2026-10-01,EUR,Argentina,utility,0.0216
+2026-10-01,EUR,Argentina,authentication,0.0216
+2026-10-01,EUR,Argentina,service,0.0216
+2026-10-01,EUR,Bangladesh,marketing,0.0606
+2026-10-01,EUR,Bangladesh,utility,0.0031
+2026-10-01,EUR,Bangladesh,authentication,0.0031
+2026-10-01,EUR,Bangladesh,authentication_international,0.0799
+2026-10-01,EUR,Bangladesh,service,0.0031
+2026-10-01,EUR,Brazil,marketing,0.0518
+2026-10-01,EUR,Brazil,utility,0.0056
+2026-10-01,EUR,Brazil,authentication,0.0056
+2026-10-01,EUR,Brazil,service,0.0056
+2026-10-01,EUR,Chile,marketing,0.0736
+2026-10-01,EUR,Chile,utility,0.0166
+2026-10-01,EUR,Chile,authentication,0.0166
+2026-10-01,EUR,Chile,service,0.0166
+2026-10-01,EUR,Colombia,marketing,0.0104
+2026-10-01,EUR,Colombia,utility,0.0008
+2026-10-01,EUR,Colombia,authentication,0.0008
+2026-10-01,EUR,Colombia,service,0.0008
+2026-10-01,EUR,Egypt,marketing,0.0533
+2026-10-01,EUR,Egypt,utility,0.003
+2026-10-01,EUR,Egypt,authentication,0.003
+2026-10-01,EUR,Egypt,authentication_international,0.0538
+2026-10-01,EUR,Egypt,service,0.003
+2026-10-01,EUR,France,marketing,0.0712
+2026-10-01,EUR,France,utility,0.0248
+2026-10-01,EUR,France,authentication,0.0248
+2026-10-01,EUR,France,service,0.0248
+2026-10-01,EUR,Germany,marketing,0.1131
+2026-10-01,EUR,Germany,utility,0.0456
+2026-10-01,EUR,Germany,authentication,0.0456
+2026-10-01,EUR,Germany,service,0.0456
+2026-10-01,EUR,Hong Kong,marketing,0.0606
+2026-10-01,EUR,Hong Kong,utility,0.0216
+2026-10-01,EUR,Hong Kong,authentication,0.0216
+2026-10-01,EUR,Hong Kong,service,0.0216
+2026-10-01,EUR,Hungary,marketing,0.0712
+2026-10-01,EUR,Hungary,utility,0.0289
+2026-10-01,EUR,Hungary,authentication,0.0289
+2026-10-01,EUR,Hungary,service,0.0289
+2026-10-01,EUR,India,marketing,0.0099
+2026-10-01,EUR,India,utility,0.0012
+2026-10-01,EUR,India,authentication,0.0012
+2026-10-01,EUR,India,authentication_international,0.0252
+2026-10-01,EUR,India,service,0.0012
+2026-10-01,EUR,Indonesia,marketing,0.0341
+2026-10-01,EUR,Indonesia,utility,0.0208
+2026-10-01,EUR,Indonesia,authentication,0.0208
+2026-10-01,EUR,Indonesia,authentication_international,0.1129
+2026-10-01,EUR,Indonesia,service,0.0208
+2026-10-01,EUR,Iraq,marketing,0.0282
+2026-10-01,EUR,Iraq,utility,0.0065
+2026-10-01,EUR,Iraq,authentication,0.0065
+2026-10-01,EUR,Iraq,authentication_international,0.1055
+2026-10-01,EUR,Iraq,service,0.0065
+2026-10-01,EUR,Israel,marketing,0.0292
+2026-10-01,EUR,Israel,utility,0.0044
+2026-10-01,EUR,Israel,authentication,0.0044
+2026-10-01,EUR,Israel,service,0.0044
+2026-10-01,EUR,Italy,marketing,0.0658
+2026-10-01,EUR,Italy,utility,0.0248
+2026-10-01,EUR,Italy,authentication,0.0248
+2026-10-01,EUR,Italy,service,0.0248
+2026-10-01,EUR,Kazakhstan,marketing,0.05
+2026-10-01,EUR,Kazakhstan,utility,0.015
+2026-10-01,EUR,Kazakhstan,authentication,0.015
+2026-10-01,EUR,Kazakhstan,authentication_international,0.133
+2026-10-01,EUR,Kazakhstan,service,0.015
+2026-10-01,EUR,Kuwait,marketing,0.0655
+2026-10-01,EUR,Kuwait,utility,0.0363
+2026-10-01,EUR,Kuwait,authentication,0.0363
+2026-10-01,EUR,Kuwait,authentication_international,0.0989
+2026-10-01,EUR,Kuwait,service,0.0363
+2026-10-01,EUR,Malaysia,marketing,0.0712
+2026-10-01,EUR,Malaysia,utility,0.0116
+2026-10-01,EUR,Malaysia,authentication,0.0116
+2026-10-01,EUR,Malaysia,authentication_international,0.0346
+2026-10-01,EUR,Malaysia,service,0.0116
+2026-10-01,EUR,Mexico,marketing,0.0329
+2026-10-01,EUR,Mexico,utility,0.0071
+2026-10-01,EUR,Mexico,authentication,0.0071
+2026-10-01,EUR,Mexico,service,0.0071
+2026-10-01,EUR,Morocco,marketing,0.0342
+2026-10-01,EUR,Morocco,utility,0.019
+2026-10-01,EUR,Morocco,authentication,0.019
+2026-10-01,EUR,Morocco,authentication_international,0.0669
+2026-10-01,EUR,Morocco,service,0.019
+2026-10-01,EUR,Netherlands,marketing,0.1323
+2026-10-01,EUR,Netherlands,utility,0.0414
+2026-10-01,EUR,Netherlands,authentication,0.0414
+2026-10-01,EUR,Netherlands,service,0.0414
+2026-10-01,EUR,Nepal,marketing,0.0606
+2026-10-01,EUR,Nepal,utility,0.0028
+2026-10-01,EUR,Nepal,authentication,0.0028
+2026-10-01,EUR,Nepal,authentication_international,0.0932
+2026-10-01,EUR,Nepal,service,0.0028
+2026-10-01,EUR,Nigeria,marketing,0.0428
+2026-10-01,EUR,Nigeria,utility,0.0056
+2026-10-01,EUR,Nigeria,authentication,0.0056
+2026-10-01,EUR,Nigeria,authentication_international,0.0622
+2026-10-01,EUR,Nigeria,service,0.0056
+2026-10-01,EUR,Oman,marketing,0.0282
+2026-10-01,EUR,Oman,utility,0.0204
+2026-10-01,EUR,Oman,authentication,0.0204
+2026-10-01,EUR,Oman,authentication_international,0.0495
+2026-10-01,EUR,Oman,service,0.0204
+2026-10-01,EUR,Pakistan,marketing,0.0392
+2026-10-01,EUR,Pakistan,utility,0.0125
+2026-10-01,EUR,Pakistan,authentication,0.0125
+2026-10-01,EUR,Pakistan,authentication_international,0.0622
+2026-10-01,EUR,Pakistan,service,0.0125
+2026-10-01,EUR,Peru,marketing,0.0582
+2026-10-01,EUR,Peru,utility,0.0249
+2026-10-01,EUR,Peru,authentication,0.0249
+2026-10-01,EUR,Peru,service,0.0249
+2026-10-01,EUR,Poland,marketing,0.0303
+2026-10-01,EUR,Poland,utility,0.0101
+2026-10-01,EUR,Poland,authentication,0.0101
+2026-10-01,EUR,Poland,service,0.0101
+2026-10-01,EUR,Qatar,marketing,0.0282
+2026-10-01,EUR,Qatar,utility,0.0099
+2026-10-01,EUR,Qatar,authentication,0.0099
+2026-10-01,EUR,Qatar,service,0.0099
+2026-10-01,EUR,Romania,marketing,0.0712
+2026-10-01,EUR,Romania,utility,0.0239
+2026-10-01,EUR,Romania,authentication,0.0239
+2026-10-01,EUR,Romania,service,0.0239
+2026-10-01,EUR,Russia,marketing,0.0664
+2026-10-01,EUR,Russia,utility,0.0331
+2026-10-01,EUR,Russia,authentication,0.0331
+2026-10-01,EUR,Russia,service,0.0331
+2026-10-01,EUR,Saudi Arabia,marketing,0.0476
+2026-10-01,EUR,Saudi Arabia,utility,0.0088
+2026-10-01,EUR,Saudi Arabia,authentication,0.0088
+2026-10-01,EUR,Saudi Arabia,authentication_international,0.0495
+2026-10-01,EUR,Saudi Arabia,service,0.0088
+2026-10-01,EUR,Singapore,marketing,0.0606
+2026-10-01,EUR,Singapore,utility,0.0133
+2026-10-01,EUR,Singapore,authentication,0.0133
+2026-10-01,EUR,Singapore,service,0.0133
+2026-10-01,EUR,South Africa,marketing,0.0314
+2026-10-01,EUR,South Africa,utility,0.0079
+2026-10-01,EUR,South Africa,authentication,0.0079
+2026-10-01,EUR,South Africa,authentication_international,0.0166
+2026-10-01,EUR,South Africa,service,0.0079
+2026-10-01,EUR,Spain,marketing,0.0585
+2026-10-01,EUR,Spain,utility,0.0166
+2026-10-01,EUR,Spain,authentication,0.0166
+2026-10-01,EUR,Spain,service,0.0166
+2026-10-01,EUR,Sri Lanka,marketing,0.0606
+2026-10-01,EUR,Sri Lanka,utility,0.0017
+2026-10-01,EUR,Sri Lanka,authentication,0.0017
+2026-10-01,EUR,Sri Lanka,authentication_international,0.1198
+2026-10-01,EUR,Sri Lanka,service,0.0017
+2026-10-01,EUR,Turkey,marketing,0.009
+2026-10-01,EUR,Turkey,utility,0.0007
+2026-10-01,EUR,Turkey,authentication,0.0007
+2026-10-01,EUR,Turkey,service,0.0007
+2026-10-01,EUR,Ukraine,marketing,0.0712
+2026-10-01,EUR,Ukraine,utility,0.0246
+2026-10-01,EUR,Ukraine,authentication,0.0246
+2026-10-01,EUR,Ukraine,authentication_international,0.0616
+2026-10-01,EUR,Ukraine,service,0.0246
+2026-10-01,EUR,United Arab Emirates,marketing,0.0476
+2026-10-01,EUR,United Arab Emirates,utility,0.013
+2026-10-01,EUR,United Arab Emirates,authentication,0.013
+2026-10-01,EUR,United Arab Emirates,authentication_international,0.0421
+2026-10-01,EUR,United Arab Emirates,service,0.013
+2026-10-01,EUR,United Kingdom,marketing,0.0526
+2026-10-01,EUR,United Kingdom,utility,0.0182
+2026-10-01,EUR,United Kingdom,authentication,0.0182
+2026-10-01,EUR,United Kingdom,service,0.0182
+2026-10-01,EUR,North America,marketing,0.0207
+2026-10-01,EUR,North America,utility,0.0028
+2026-10-01,EUR,North America,authentication,0.0028
+2026-10-01,EUR,North America,service,0.0028
+2026-10-01,EUR,Rest of Africa,marketing,0.0186
+2026-10-01,EUR,Rest of Africa,utility,0.0033
+2026-10-01,EUR,Rest of Africa,authentication,0.0033
+2026-10-01,EUR,Rest of Africa,service,0.0033
+2026-10-01,EUR,Rest of Asia Pacific,marketing,0.0697
+2026-10-01,EUR,Rest of Asia Pacific,utility,0.0094
+2026-10-01,EUR,Rest of Asia Pacific,authentication,0.0094
+2026-10-01,EUR,Rest of Asia Pacific,service,0.0094
+2026-10-01,EUR,Rest of Central & Eastern Europe,marketing,0.0712
+2026-10-01,EUR,Rest of Central & Eastern Europe,utility,0.0175
+2026-10-01,EUR,Rest of Central & Eastern Europe,authentication,0.0175
+2026-10-01,EUR,Rest of Central & Eastern Europe,service,0.0175
+2026-10-01,EUR,Rest of Latin America,marketing,0.0612
+2026-10-01,EUR,Rest of Latin America,utility,0.0094
+2026-10-01,EUR,Rest of Latin America,authentication,0.0094
+2026-10-01,EUR,Rest of Latin America,service,0.0094
+2026-10-01,EUR,Rest of Middle East,marketing,0.0324
+2026-10-01,EUR,Rest of Middle East,utility,0.0075
+2026-10-01,EUR,Rest of Middle East,authentication,0.0075
+2026-10-01,EUR,Rest of Middle East,service,0.0075
+2026-10-01,EUR,Rest of Western Europe,marketing,0.049
+2026-10-01,EUR,Rest of Western Europe,utility,0.0142
+2026-10-01,EUR,Rest of Western Europe,authentication,0.0142
+2026-10-01,EUR,Rest of Western Europe,service,0.0142
+2026-10-01,EUR,Other,marketing,0.05
+2026-10-01,EUR,Other,utility,0.0064
+2026-10-01,EUR,Other,authentication,0.0064
+2026-10-01,EUR,Other,service,0.0064
+2026-10-01,GBP,Argentina,marketing,0.0445
+2026-10-01,GBP,Argentina,utility,0.0188
+2026-10-01,GBP,Argentina,authentication,0.0188
+2026-10-01,GBP,Argentina,service,0.0188
+2026-10-01,GBP,Bangladesh,marketing,0.0528
+2026-10-01,GBP,Bangladesh,utility,0.0027
+2026-10-01,GBP,Bangladesh,authentication,0.0027
+2026-10-01,GBP,Bangladesh,authentication_international,0.0697
+2026-10-01,GBP,Bangladesh,service,0.0027
+2026-10-01,GBP,Brazil,marketing,0.0451
+2026-10-01,GBP,Brazil,utility,0.0049
+2026-10-01,GBP,Brazil,authentication,0.0049
+2026-10-01,GBP,Brazil,service,0.0049
+2026-10-01,GBP,Chile,marketing,0.0641
+2026-10-01,GBP,Chile,utility,0.0144
+2026-10-01,GBP,Chile,authentication,0.0144
+2026-10-01,GBP,Chile,service,0.0144
+2026-10-01,GBP,Colombia,marketing,0.009
+2026-10-01,GBP,Colombia,utility,0.0004
+2026-10-01,GBP,Colombia,authentication,0.0004
+2026-10-01,GBP,Colombia,service,0.0004
+2026-10-01,GBP,Egypt,marketing,0.0464
+2026-10-01,GBP,Egypt,utility,0.0026
+2026-10-01,GBP,Egypt,authentication,0.0026
+2026-10-01,GBP,Egypt,authentication_international,0.0469
+2026-10-01,GBP,Egypt,service,0.0026
+2026-10-01,GBP,France,marketing,0.062
+2026-10-01,GBP,France,utility,0.0216
+2026-10-01,GBP,France,authentication,0.0216
+2026-10-01,GBP,France,service,0.0216
+2026-10-01,GBP,Germany,marketing,0.0985
+2026-10-01,GBP,Germany,utility,0.0397
+2026-10-01,GBP,Germany,authentication,0.0397
+2026-10-01,GBP,Germany,service,0.0397
+2026-10-01,GBP,Hong Kong,marketing,0.0528
+2026-10-01,GBP,Hong Kong,utility,0.0189
+2026-10-01,GBP,Hong Kong,authentication,0.0189
+2026-10-01,GBP,Hong Kong,service,0.0189
+2026-10-01,GBP,Hungary,marketing,0.062
+2026-10-01,GBP,Hungary,utility,0.0251
+2026-10-01,GBP,Hungary,authentication,0.0251
+2026-10-01,GBP,Hungary,service,0.0251
+2026-10-01,GBP,India,marketing,0.0086
+2026-10-01,GBP,India,utility,0.001
+2026-10-01,GBP,India,authentication,0.001
+2026-10-01,GBP,India,authentication_international,0.0219
+2026-10-01,GBP,India,service,0.001
+2026-10-01,GBP,Indonesia,marketing,0.0297
+2026-10-01,GBP,Indonesia,utility,0.018
+2026-10-01,GBP,Indonesia,authentication,0.018
+2026-10-01,GBP,Indonesia,authentication_international,0.0979
+2026-10-01,GBP,Indonesia,service,0.018
+2026-10-01,GBP,Iraq,marketing,0.0246
+2026-10-01,GBP,Iraq,utility,0.0056
+2026-10-01,GBP,Iraq,authentication,0.0056
+2026-10-01,GBP,Iraq,authentication_international,0.0914
+2026-10-01,GBP,Iraq,service,0.0056
+2026-10-01,GBP,Israel,marketing,0.0254
+2026-10-01,GBP,Israel,utility,0.0038
+2026-10-01,GBP,Israel,authentication,0.0038
+2026-10-01,GBP,Israel,service,0.0038
+2026-10-01,GBP,Italy,marketing,0.0573
+2026-10-01,GBP,Italy,utility,0.0216
+2026-10-01,GBP,Italy,authentication,0.0216
+2026-10-01,GBP,Italy,service,0.0216
+2026-10-01,GBP,Kazakhstan,marketing,0.0435
+2026-10-01,GBP,Kazakhstan,utility,0.0131
+2026-10-01,GBP,Kazakhstan,authentication,0.0131
+2026-10-01,GBP,Kazakhstan,authentication_international,0.1164
+2026-10-01,GBP,Kazakhstan,service,0.0131
+2026-10-01,GBP,Kuwait,marketing,0.0571
+2026-10-01,GBP,Kuwait,utility,0.0314
+2026-10-01,GBP,Kuwait,authentication,0.0314
+2026-10-01,GBP,Kuwait,authentication_international,0.0857
+2026-10-01,GBP,Kuwait,service,0.0314
+2026-10-01,GBP,Malaysia,marketing,0.062
+2026-10-01,GBP,Malaysia,utility,0.0101
+2026-10-01,GBP,Malaysia,authentication,0.0101
+2026-10-01,GBP,Malaysia,authentication_international,0.0302
+2026-10-01,GBP,Malaysia,service,0.0101
+2026-10-01,GBP,Mexico,marketing,0.0287
+2026-10-01,GBP,Mexico,utility,0.0062
+2026-10-01,GBP,Mexico,authentication,0.0062
+2026-10-01,GBP,Mexico,service,0.0062
+2026-10-01,GBP,Morocco,marketing,0.0298
+2026-10-01,GBP,Morocco,utility,0.0167
+2026-10-01,GBP,Morocco,authentication,0.0167
+2026-10-01,GBP,Morocco,authentication_international,0.0588
+2026-10-01,GBP,Morocco,service,0.0167
+2026-10-01,GBP,Netherlands,marketing,0.1152
+2026-10-01,GBP,Netherlands,utility,0.0361
+2026-10-01,GBP,Netherlands,authentication,0.0361
+2026-10-01,GBP,Netherlands,service,0.0361
+2026-10-01,GBP,Nepal,marketing,0.0528
+2026-10-01,GBP,Nepal,utility,0.0025
+2026-10-01,GBP,Nepal,authentication,0.0025
+2026-10-01,GBP,Nepal,authentication_international,0.0813
+2026-10-01,GBP,Nepal,service,0.0025
+2026-10-01,GBP,Nigeria,marketing,0.0372
+2026-10-01,GBP,Nigeria,utility,0.0048
+2026-10-01,GBP,Nigeria,authentication,0.0048
+2026-10-01,GBP,Nigeria,authentication_international,0.0541
+2026-10-01,GBP,Nigeria,service,0.0048
+2026-10-01,GBP,Oman,marketing,0.0246
+2026-10-01,GBP,Oman,utility,0.0176
+2026-10-01,GBP,Oman,authentication,0.0176
+2026-10-01,GBP,Oman,authentication_international,0.0429
+2026-10-01,GBP,Oman,service,0.0176
+2026-10-01,GBP,Pakistan,marketing,0.0341
+2026-10-01,GBP,Pakistan,utility,0.0108
+2026-10-01,GBP,Pakistan,authentication,0.0108
+2026-10-01,GBP,Pakistan,authentication_international,0.0541
+2026-10-01,GBP,Pakistan,service,0.0108
+2026-10-01,GBP,Peru,marketing,0.0507
+2026-10-01,GBP,Peru,utility,0.0216
+2026-10-01,GBP,Peru,authentication,0.0216
+2026-10-01,GBP,Peru,service,0.0216
+2026-10-01,GBP,Poland,marketing,0.0261
+2026-10-01,GBP,Poland,utility,0.0087
+2026-10-01,GBP,Poland,authentication,0.0087
+2026-10-01,GBP,Poland,service,0.0087
+2026-10-01,GBP,Qatar,marketing,0.0246
+2026-10-01,GBP,Qatar,utility,0.0086
+2026-10-01,GBP,Qatar,authentication,0.0086
+2026-10-01,GBP,Qatar,service,0.0086
+2026-10-01,GBP,Romania,marketing,0.062
+2026-10-01,GBP,Romania,utility,0.0208
+2026-10-01,GBP,Romania,authentication,0.0208
+2026-10-01,GBP,Romania,service,0.0208
+2026-10-01,GBP,Russia,marketing,0.0578
+2026-10-01,GBP,Russia,utility,0.0288
+2026-10-01,GBP,Russia,authentication,0.0288
+2026-10-01,GBP,Russia,service,0.0288
+2026-10-01,GBP,Saudi Arabia,marketing,0.0414
+2026-10-01,GBP,Saudi Arabia,utility,0.0077
+2026-10-01,GBP,Saudi Arabia,authentication,0.0077
+2026-10-01,GBP,Saudi Arabia,authentication_international,0.0431
+2026-10-01,GBP,Saudi Arabia,service,0.0077
+2026-10-01,GBP,Singapore,marketing,0.0528
+2026-10-01,GBP,Singapore,utility,0.0116
+2026-10-01,GBP,Singapore,authentication,0.0116
+2026-10-01,GBP,Singapore,service,0.0116
+2026-10-01,GBP,South Africa,marketing,0.0273
+2026-10-01,GBP,South Africa,utility,0.0069
+2026-10-01,GBP,South Africa,authentication,0.0069
+2026-10-01,GBP,South Africa,authentication_international,0.0144
+2026-10-01,GBP,South Africa,service,0.0069
+2026-10-01,GBP,Spain,marketing,0.0509
+2026-10-01,GBP,Spain,utility,0.0144
+2026-10-01,GBP,Spain,authentication,0.0144
+2026-10-01,GBP,Spain,service,0.0144
+2026-10-01,GBP,Sri Lanka,marketing,0.0528
+2026-10-01,GBP,Sri Lanka,utility,0.0015
+2026-10-01,GBP,Sri Lanka,authentication,0.0015
+2026-10-01,GBP,Sri Lanka,authentication_international,0.1045
+2026-10-01,GBP,Sri Lanka,service,0.0015
+2026-10-01,GBP,Turkey,marketing,0.0078
+2026-10-01,GBP,Turkey,utility,0.0006
+2026-10-01,GBP,Turkey,authentication,0.0006
+2026-10-01,GBP,Turkey,service,0.0006
+2026-10-01,GBP,Ukraine,marketing,0.062
+2026-10-01,GBP,Ukraine,utility,0.0214
+2026-10-01,GBP,Ukraine,authentication,0.0214
+2026-10-01,GBP,Ukraine,authentication_international,0.0535
+2026-10-01,GBP,Ukraine,service,0.0214
+2026-10-01,GBP,United Arab Emirates,marketing,0.0414
+2026-10-01,GBP,United Arab Emirates,utility,0.0113
+2026-10-01,GBP,United Arab Emirates,authentication,0.0113
+2026-10-01,GBP,United Arab Emirates,authentication_international,0.0367
+2026-10-01,GBP,United Arab Emirates,service,0.0113
+2026-10-01,GBP,United Kingdom,marketing,0.0458
+2026-10-01,GBP,United Kingdom,utility,0.0159
+2026-10-01,GBP,United Kingdom,authentication,0.0159
+2026-10-01,GBP,United Kingdom,service,0.0159
+2026-10-01,GBP,North America,marketing,0.018
+2026-10-01,GBP,North America,utility,0.0025
+2026-10-01,GBP,North America,authentication,0.0025
+2026-10-01,GBP,North America,service,0.0025
+2026-10-01,GBP,Rest of Africa,marketing,0.0162
+2026-10-01,GBP,Rest of Africa,utility,0.0029
+2026-10-01,GBP,Rest of Africa,authentication,0.0029
+2026-10-01,GBP,Rest of Africa,service,0.0029
+2026-10-01,GBP,Rest of Asia Pacific,marketing,0.0607
+2026-10-01,GBP,Rest of Asia Pacific,utility,0.0082
+2026-10-01,GBP,Rest of Asia Pacific,authentication,0.0082
+2026-10-01,GBP,Rest of Asia Pacific,service,0.0082
+2026-10-01,GBP,Rest of Central & Eastern Europe,marketing,0.062
+2026-10-01,GBP,Rest of Central & Eastern Europe,utility,0.0152
+2026-10-01,GBP,Rest of Central & Eastern Europe,authentication,0.0152
+2026-10-01,GBP,Rest of Central & Eastern Europe,service,0.0152
+2026-10-01,GBP,Rest of Latin America,marketing,0.0534
+2026-10-01,GBP,Rest of Latin America,utility,0.0081
+2026-10-01,GBP,Rest of Latin America,authentication,0.0081
+2026-10-01,GBP,Rest of Latin America,service,0.0081
+2026-10-01,GBP,Rest of Middle East,marketing,0.0283
+2026-10-01,GBP,Rest of Middle East,utility,0.0065
+2026-10-01,GBP,Rest of Middle East,authentication,0.0065
+2026-10-01,GBP,Rest of Middle East,service,0.0065
+2026-10-01,GBP,Rest of Western Europe,marketing,0.0427
+2026-10-01,GBP,Rest of Western Europe,utility,0.0123
+2026-10-01,GBP,Rest of Western Europe,authentication,0.0123
+2026-10-01,GBP,Rest of Western Europe,service,0.0123
+2026-10-01,GBP,Other,marketing,0.0435
+2026-10-01,GBP,Other,utility,0.0056
+2026-10-01,GBP,Other,authentication,0.0056
+2026-10-01,GBP,Other,service,0.0056
+2026-10-01,IDR,Argentina,marketing,881.95
+2026-10-01,IDR,Argentina,utility,371.19
+2026-10-01,IDR,Argentina,authentication,371.19
+2026-10-01,IDR,Argentina,service,371.19
+2026-10-01,IDR,Bangladesh,marketing,1044.97
+2026-10-01,IDR,Bangladesh,utility,52.81
+2026-10-01,IDR,Bangladesh,authentication,52.81
+2026-10-01,IDR,Bangladesh,authentication_international,1370.08
+2026-10-01,IDR,Bangladesh,service,52.81
+2026-10-01,IDR,Brazil,marketing,891.98
+2026-10-01,IDR,Brazil,utility,97.05
+2026-10-01,IDR,Brazil,authentication,97.05
+2026-10-01,IDR,Brazil,service,97.05
+2026-10-01,IDR,Chile,marketing,1268.36
+2026-10-01,IDR,Chile,utility,285.34
+2026-10-01,IDR,Chile,authentication,285.34
+2026-10-01,IDR,Chile,service,285.34
+2026-10-01,IDR,Colombia,marketing,178.4
+2026-10-01,IDR,Colombia,utility,11.4
+2026-10-01,IDR,Colombia,authentication,11.4
+2026-10-01,IDR,Colombia,service,11.4
+2026-10-01,IDR,Egypt,marketing,918.92
+2026-10-01,IDR,Egypt,utility,51.38
+2026-10-01,IDR,Egypt,authentication,51.38
+2026-10-01,IDR,Egypt,authentication_international,928.22
+2026-10-01,IDR,Egypt,service,51.38
+2026-10-01,IDR,France,marketing,1226.58
+2026-10-01,IDR,France,utility,428.27
+2026-10-01,IDR,France,authentication,428.27
+2026-10-01,IDR,France,service,428.27
+2026-10-01,IDR,Germany,marketing,1948.66
+2026-10-01,IDR,Germany,utility,785.17
+2026-10-01,IDR,Germany,authentication,785.17
+2026-10-01,IDR,Germany,service,785.17
+2026-10-01,IDR,Hong Kong,marketing,1044.97
+2026-10-01,IDR,Hong Kong,utility,371.06
+2026-10-01,IDR,Hong Kong,authentication,371.06
+2026-10-01,IDR,Hong Kong,service,371.06
+2026-10-01,IDR,Hungary,marketing,1226.72
+2026-10-01,IDR,Hungary,utility,498.17
+2026-10-01,IDR,Hungary,authentication,498.17
+2026-10-01,IDR,Hungary,service,498.17
+2026-10-01,IDR,India,marketing,168.05
+2026-10-01,IDR,India,utility,19.97
+2026-10-01,IDR,India,authentication,19.97
+2026-10-01,IDR,India,authentication_international,433.68
+2026-10-01,IDR,India,service,19.97
+2026-10-01,IDR,Indonesia,marketing,586.33
+2026-10-01,IDR,Indonesia,utility,356.65
+2026-10-01,IDR,Indonesia,authentication,356.65
+2026-10-01,IDR,Indonesia,authentication_international,1940.13
+2026-10-01,IDR,Indonesia,service,356.65
+2026-10-01,IDR,Iraq,marketing,486.68
+2026-10-01,IDR,Iraq,utility,112.67
+2026-10-01,IDR,Iraq,authentication,112.67
+2026-10-01,IDR,Iraq,authentication_international,1825.48
+2026-10-01,IDR,Iraq,service,112.67
+2026-10-01,IDR,Israel,marketing,503.79
+2026-10-01,IDR,Israel,utility,75.64
+2026-10-01,IDR,Israel,authentication,75.64
+2026-10-01,IDR,Israel,service,75.64
+2026-10-01,IDR,Italy,marketing,1133.39
+2026-10-01,IDR,Italy,utility,427.89
+2026-10-01,IDR,Italy,authentication,427.89
+2026-10-01,IDR,Italy,service,427.89
+2026-10-01,IDR,Kazakhstan,marketing,861.62
+2026-10-01,IDR,Kazakhstan,utility,256.77
+2026-10-01,IDR,Kazakhstan,authentication,256.77
+2026-10-01,IDR,Kazakhstan,authentication_international,2282.39
+2026-10-01,IDR,Kazakhstan,service,256.77
+2026-10-01,IDR,Kuwait,marketing,1130.56
+2026-10-01,IDR,Kuwait,utility,627.51
+2026-10-01,IDR,Kuwait,authentication,627.51
+2026-10-01,IDR,Kuwait,authentication_international,1711.38
+2026-10-01,IDR,Kuwait,service,627.51
+2026-10-01,IDR,Malaysia,marketing,1227.49
+2026-10-01,IDR,Malaysia,utility,199.82
+2026-10-01,IDR,Malaysia,authentication,199.82
+2026-10-01,IDR,Malaysia,authentication_international,596.63
+2026-10-01,IDR,Malaysia,service,199.82
+2026-10-01,IDR,Mexico,marketing,565.94
+2026-10-01,IDR,Mexico,utility,121.24
+2026-10-01,IDR,Mexico,authentication,121.24
+2026-10-01,IDR,Mexico,service,121.24
+2026-10-01,IDR,Morocco,marketing,591.08
+2026-10-01,IDR,Morocco,utility,328.1
+2026-10-01,IDR,Morocco,authentication,328.1
+2026-10-01,IDR,Morocco,authentication_international,1156.89
+2026-10-01,IDR,Morocco,service,328.1
+2026-10-01,IDR,Netherlands,marketing,2279.8
+2026-10-01,IDR,Netherlands,utility,713.78
+2026-10-01,IDR,Netherlands,authentication,713.78
+2026-10-01,IDR,Netherlands,service,713.78
+2026-10-01,IDR,Nepal,marketing,1044.97
+2026-10-01,IDR,Nepal,utility,48.52
+2026-10-01,IDR,Nepal,authentication,48.52
+2026-10-01,IDR,Nepal,authentication_international,1598.43
+2026-10-01,IDR,Nepal,service,48.52
+2026-10-01,IDR,Nigeria,marketing,737.05
+2026-10-01,IDR,Nigeria,utility,95.7
+2026-10-01,IDR,Nigeria,authentication,95.7
+2026-10-01,IDR,Nigeria,authentication_international,1071.67
+2026-10-01,IDR,Nigeria,service,95.7
+2026-10-01,IDR,Oman,marketing,486.68
+2026-10-01,IDR,Oman,utility,352.26
+2026-10-01,IDR,Oman,authentication,352.26
+2026-10-01,IDR,Oman,authentication_international,855.69
+2026-10-01,IDR,Oman,service,352.26
+2026-10-01,IDR,Pakistan,marketing,675.37
+2026-10-01,IDR,Pakistan,utility,214.17
+2026-10-01,IDR,Pakistan,authentication,214.17
+2026-10-01,IDR,Pakistan,authentication_international,1071.67
+2026-10-01,IDR,Pakistan,service,214.17
+2026-10-01,IDR,Peru,marketing,1003.55
+2026-10-01,IDR,Peru,utility,428.25
+2026-10-01,IDR,Peru,authentication,428.25
+2026-10-01,IDR,Peru,service,428.25
+2026-10-01,IDR,Poland,marketing,520.95
+2026-10-01,IDR,Poland,utility,173.65
+2026-10-01,IDR,Poland,authentication,173.65
+2026-10-01,IDR,Poland,service,173.65
+2026-10-01,IDR,Qatar,marketing,486.68
+2026-10-01,IDR,Qatar,utility,171.14
+2026-10-01,IDR,Qatar,authentication,171.14
+2026-10-01,IDR,Qatar,service,171.14
+2026-10-01,IDR,Romania,marketing,1226.72
+2026-10-01,IDR,Romania,utility,412.77
+2026-10-01,IDR,Romania,authentication,412.77
+2026-10-01,IDR,Romania,service,412.77
+2026-10-01,IDR,Russia,marketing,1144.36
+2026-10-01,IDR,Russia,utility,570.75
+2026-10-01,IDR,Russia,authentication,570.75
+2026-10-01,IDR,Russia,service,570.75
+2026-10-01,IDR,Saudi Arabia,marketing,820.08
+2026-10-01,IDR,Saudi Arabia,utility,152.54
+2026-10-01,IDR,Saudi Arabia,authentication,152.54
+2026-10-01,IDR,Saudi Arabia,authentication_international,854.24
+2026-10-01,IDR,Saudi Arabia,service,152.54
+2026-10-01,IDR,Singapore,marketing,1044.97
+2026-10-01,IDR,Singapore,utility,228.35
+2026-10-01,IDR,Singapore,authentication,228.35
+2026-10-01,IDR,Singapore,service,228.35
+2026-10-01,IDR,South Africa,marketing,541.75
+2026-10-01,IDR,South Africa,utility,135.8
+2026-10-01,IDR,South Africa,authentication,135.8
+2026-10-01,IDR,South Africa,authentication_international,285.89
+2026-10-01,IDR,South Africa,service,135.8
+2026-10-01,IDR,Spain,marketing,1008.68
+2026-10-01,IDR,Spain,utility,285.24
+2026-10-01,IDR,Spain,authentication,285.24
+2026-10-01,IDR,Spain,service,285.24
+2026-10-01,IDR,Sri Lanka,marketing,1044.97
+2026-10-01,IDR,Sri Lanka,utility,28.54
+2026-10-01,IDR,Sri Lanka,authentication,28.54
+2026-10-01,IDR,Sri Lanka,authentication_international,2055.12
+2026-10-01,IDR,Sri Lanka,service,28.54
+2026-10-01,IDR,Turkey,marketing,155.56
+2026-10-01,IDR,Turkey,utility,12.84
+2026-10-01,IDR,Turkey,authentication,12.84
+2026-10-01,IDR,Turkey,service,12.84
+2026-10-01,IDR,Ukraine,marketing,1226.72
+2026-10-01,IDR,Ukraine,utility,424.16
+2026-10-01,IDR,Ukraine,authentication,424.16
+2026-10-01,IDR,Ukraine,authentication_international,1061.82
+2026-10-01,IDR,Ukraine,service,424.16
+2026-10-01,IDR,United Arab Emirates,marketing,820.08
+2026-10-01,IDR,United Arab Emirates,utility,224.11
+2026-10-01,IDR,United Arab Emirates,authentication,224.11
+2026-10-01,IDR,United Arab Emirates,authentication_international,727.12
+2026-10-01,IDR,United Arab Emirates,service,224.11
+2026-10-01,IDR,United Kingdom,marketing,905.41
+2026-10-01,IDR,United Kingdom,utility,313.93
+2026-10-01,IDR,United Kingdom,authentication,313.93
+2026-10-01,IDR,United Kingdom,service,313.93
+2026-10-01,IDR,North America,marketing,356.6
+2026-10-01,IDR,North America,utility,48.5
+2026-10-01,IDR,North America,authentication,48.5
+2026-10-01,IDR,North America,service,48.5
+2026-10-01,IDR,Rest of Africa,marketing,321.24
+2026-10-01,IDR,Rest of Africa,utility,57.06
+2026-10-01,IDR,Rest of Africa,authentication,57.06
+2026-10-01,IDR,Rest of Africa,service,57.06
+2026-10-01,IDR,Rest of Asia Pacific,marketing,1201.72
+2026-10-01,IDR,Rest of Asia Pacific,utility,161.27
+2026-10-01,IDR,Rest of Asia Pacific,authentication,161.27
+2026-10-01,IDR,Rest of Asia Pacific,service,161.27
+2026-10-01,IDR,Rest of Central & Eastern Europe,marketing,1226.72
+2026-10-01,IDR,Rest of Central & Eastern Europe,utility,301.75
+2026-10-01,IDR,Rest of Central & Eastern Europe,authentication,301.75
+2026-10-01,IDR,Rest of Central & Eastern Europe,service,301.75
+2026-10-01,IDR,Rest of Latin America,marketing,1055.54
+2026-10-01,IDR,Rest of Latin America,utility,161.18
+2026-10-01,IDR,Rest of Latin America,authentication,161.18
+2026-10-01,IDR,Rest of Latin America,service,161.18
+2026-10-01,IDR,Rest of Middle East,marketing,559.68
+2026-10-01,IDR,Rest of Middle East,utility,129.78
+2026-10-01,IDR,Rest of Middle East,authentication,129.78
+2026-10-01,IDR,Rest of Middle East,service,129.78
+2026-10-01,IDR,Rest of Western Europe,marketing,844.68
+2026-10-01,IDR,Rest of Western Europe,utility,243.72
+2026-10-01,IDR,Rest of Western Europe,authentication,243.72
+2026-10-01,IDR,Rest of Western Europe,service,243.72
+2026-10-01,IDR,Other,marketing,861.62
+2026-10-01,IDR,Other,utility,109.84
+2026-10-01,IDR,Other,authentication,109.84
+2026-10-01,IDR,Other,service,109.84
+2026-10-01,INR,Argentina,marketing,4.5293
+2026-10-01,INR,Argentina,utility,1.9062
+2026-10-01,INR,Argentina,authentication,1.9062
+2026-10-01,INR,Argentina,service,1.9062
+2026-10-01,INR,Bangladesh,marketing,5.3664
+2026-10-01,INR,Bangladesh,utility,0.2712
+2026-10-01,INR,Bangladesh,authentication,0.2712
+2026-10-01,INR,Bangladesh,authentication_international,7.036
+2026-10-01,INR,Bangladesh,service,0.2712
+2026-10-01,INR,Brazil,marketing,4.5808
+2026-10-01,INR,Brazil,utility,0.4984
+2026-10-01,INR,Brazil,authentication,0.4984
+2026-10-01,INR,Brazil,service,0.4984
+2026-10-01,INR,Chile,marketing,6.5135
+2026-10-01,INR,Chile,utility,1.4654
+2026-10-01,INR,Chile,authentication,1.4654
+2026-10-01,INR,Chile,service,1.4654
+2026-10-01,INR,Colombia,marketing,0.9161
+2026-10-01,INR,Colombia,utility,0.0588
+2026-10-01,INR,Colombia,authentication,0.0588
+2026-10-01,INR,Colombia,service,0.0588
+2026-10-01,INR,Egypt,marketing,4.7191
+2026-10-01,INR,Egypt,utility,0.2639
+2026-10-01,INR,Egypt,authentication,0.2639
+2026-10-01,INR,Egypt,authentication_international,4.7668
+2026-10-01,INR,Egypt,service,0.2639
+2026-10-01,INR,France,marketing,6.299
+2026-10-01,INR,France,utility,2.1994
+2026-10-01,INR,France,authentication,2.1994
+2026-10-01,INR,France,service,2.1994
+2026-10-01,INR,Germany,marketing,10.0073
+2026-10-01,INR,Germany,utility,4.0322
+2026-10-01,INR,Germany,authentication,4.0322
+2026-10-01,INR,Germany,service,4.0322
+2026-10-01,INR,Hong Kong,marketing,5.3664
+2026-10-01,INR,Hong Kong,utility,1.9056
+2026-10-01,INR,Hong Kong,authentication,1.9056
+2026-10-01,INR,Hong Kong,service,1.9056
+2026-10-01,INR,Hungary,marketing,6.2997
+2026-10-01,INR,Hungary,utility,2.5583
+2026-10-01,INR,Hungary,authentication,2.5583
+2026-10-01,INR,Hungary,service,2.5583
+2026-10-01,INR,India,marketing,0.8631
+2026-10-01,INR,India,utility,0.115
+2026-10-01,INR,India,authentication,0.115
+2026-10-01,INR,India,authentication_international,2.4971
+2026-10-01,INR,India,service,0.115
+2026-10-01,INR,Indonesia,marketing,3.0111
+2026-10-01,INR,Indonesia,utility,1.8316
+2026-10-01,INR,Indonesia,authentication,1.8316
+2026-10-01,INR,Indonesia,authentication_international,9.9638
+2026-10-01,INR,Indonesia,service,1.8316
+2026-10-01,INR,Iraq,marketing,2.4993
+2026-10-01,INR,Iraq,utility,0.5786
+2026-10-01,INR,Iraq,authentication,0.5786
+2026-10-01,INR,Iraq,authentication_international,9.3749
+2026-10-01,INR,Iraq,service,0.5786
+2026-10-01,INR,Israel,marketing,2.5871
+2026-10-01,INR,Israel,utility,0.3885
+2026-10-01,INR,Israel,authentication,0.3885
+2026-10-01,INR,Israel,service,0.3885
+2026-10-01,INR,Italy,marketing,5.8206
+2026-10-01,INR,Italy,utility,2.1974
+2026-10-01,INR,Italy,authentication,2.1974
+2026-10-01,INR,Italy,service,2.1974
+2026-10-01,INR,Kazakhstan,marketing,4.4248
+2026-10-01,INR,Kazakhstan,utility,1.3187
+2026-10-01,INR,Kazakhstan,authentication,1.3187
+2026-10-01,INR,Kazakhstan,authentication_international,11.7216
+2026-10-01,INR,Kazakhstan,service,1.3187
+2026-10-01,INR,Kuwait,marketing,5.8059
+2026-10-01,INR,Kuwait,utility,3.2226
+2026-10-01,INR,Kuwait,authentication,3.2226
+2026-10-01,INR,Kuwait,authentication_international,8.789
+2026-10-01,INR,Kuwait,service,3.2226
+2026-10-01,INR,Malaysia,marketing,6.3037
+2026-10-01,INR,Malaysia,utility,1.0262
+2026-10-01,INR,Malaysia,authentication,1.0262
+2026-10-01,INR,Malaysia,authentication_international,3.0639
+2026-10-01,INR,Malaysia,service,1.0262
+2026-10-01,INR,Mexico,marketing,2.9064
+2026-10-01,INR,Mexico,utility,0.6226
+2026-10-01,INR,Mexico,authentication,0.6226
+2026-10-01,INR,Mexico,service,0.6226
+2026-10-01,INR,Morocco,marketing,3.0354
+2026-10-01,INR,Morocco,utility,1.6848
+2026-10-01,INR,Morocco,authentication,1.6848
+2026-10-01,INR,Morocco,authentication_international,5.9406
+2026-10-01,INR,Morocco,service,1.6848
+2026-10-01,INR,Netherlands,marketing,11.7078
+2026-10-01,INR,Netherlands,utility,3.6656
+2026-10-01,INR,Netherlands,authentication,3.6656
+2026-10-01,INR,Netherlands,service,3.6656
+2026-10-01,INR,Nepal,marketing,5.3664
+2026-10-01,INR,Nepal,utility,0.2492
+2026-10-01,INR,Nepal,authentication,0.2492
+2026-10-01,INR,Nepal,authentication_international,8.2087
+2026-10-01,INR,Nepal,service,0.2492
+2026-10-01,INR,Nigeria,marketing,3.7851
+2026-10-01,INR,Nigeria,utility,0.4915
+2026-10-01,INR,Nigeria,authentication,0.4915
+2026-10-01,INR,Nigeria,authentication_international,5.5035
+2026-10-01,INR,Nigeria,service,0.4915
+2026-10-01,INR,Oman,marketing,2.4993
+2026-10-01,INR,Oman,utility,1.8091
+2026-10-01,INR,Oman,authentication,1.8091
+2026-10-01,INR,Oman,authentication_international,4.3945
+2026-10-01,INR,Oman,service,1.8091
+2026-10-01,INR,Pakistan,marketing,3.4683
+2026-10-01,INR,Pakistan,utility,1.1
+2026-10-01,INR,Pakistan,authentication,1.1
+2026-10-01,INR,Pakistan,authentication_international,5.5035
+2026-10-01,INR,Pakistan,service,1.1
+2026-10-01,INR,Peru,marketing,5.1536
+2026-10-01,INR,Peru,utility,2.1993
+2026-10-01,INR,Peru,authentication,2.1993
+2026-10-01,INR,Peru,service,2.1993
+2026-10-01,INR,Poland,marketing,2.6754
+2026-10-01,INR,Poland,utility,0.8918
+2026-10-01,INR,Poland,authentication,0.8918
+2026-10-01,INR,Poland,service,0.8918
+2026-10-01,INR,Qatar,marketing,2.4993
+2026-10-01,INR,Qatar,utility,0.8789
+2026-10-01,INR,Qatar,authentication,0.8789
+2026-10-01,INR,Qatar,service,0.8789
+2026-10-01,INR,Romania,marketing,6.2997
+2026-10-01,INR,Romania,utility,2.1197
+2026-10-01,INR,Romania,authentication,2.1197
+2026-10-01,INR,Romania,service,2.1197
+2026-10-01,INR,Russia,marketing,5.8767
+2026-10-01,INR,Russia,utility,2.9311
+2026-10-01,INR,Russia,authentication,2.9311
+2026-10-01,INR,Russia,service,2.9311
+2026-10-01,INR,Saudi Arabia,marketing,4.2114
+2026-10-01,INR,Saudi Arabia,utility,0.7834
+2026-10-01,INR,Saudi Arabia,authentication,0.7834
+2026-10-01,INR,Saudi Arabia,authentication_international,4.3871
+2026-10-01,INR,Saudi Arabia,service,0.7834
+2026-10-01,INR,Singapore,marketing,5.3664
+2026-10-01,INR,Singapore,utility,1.1727
+2026-10-01,INR,Singapore,authentication,1.1727
+2026-10-01,INR,Singapore,service,1.1727
+2026-10-01,INR,South Africa,marketing,2.7821
+2026-10-01,INR,South Africa,utility,0.6974
+2026-10-01,INR,South Africa,authentication,0.6974
+2026-10-01,INR,South Africa,authentication_international,1.4681
+2026-10-01,INR,South Africa,service,0.6974
+2026-10-01,INR,Spain,marketing,5.1801
+2026-10-01,INR,Spain,utility,1.4648
+2026-10-01,INR,Spain,authentication,1.4648
+2026-10-01,INR,Spain,service,1.4648
+2026-10-01,INR,Sri Lanka,marketing,5.3664
+2026-10-01,INR,Sri Lanka,utility,0.1466
+2026-10-01,INR,Sri Lanka,authentication,0.1466
+2026-10-01,INR,Sri Lanka,authentication_international,10.5541
+2026-10-01,INR,Sri Lanka,service,0.1466
+2026-10-01,INR,Turkey,marketing,0.7989
+2026-10-01,INR,Turkey,utility,0.066
+2026-10-01,INR,Turkey,authentication,0.066
+2026-10-01,INR,Turkey,service,0.066
+2026-10-01,INR,Ukraine,marketing,6.2997
+2026-10-01,INR,Ukraine,utility,2.1782
+2026-10-01,INR,Ukraine,authentication,2.1782
+2026-10-01,INR,Ukraine,authentication_international,5.4528
+2026-10-01,INR,Ukraine,service,2.1782
+2026-10-01,INR,United Arab Emirates,marketing,4.2114
+2026-10-01,INR,United Arab Emirates,utility,1.1509
+2026-10-01,INR,United Arab Emirates,authentication,1.1509
+2026-10-01,INR,United Arab Emirates,authentication_international,3.7342
+2026-10-01,INR,United Arab Emirates,service,1.1509
+2026-10-01,INR,United Kingdom,marketing,4.6496
+2026-10-01,INR,United Kingdom,utility,1.6122
+2026-10-01,INR,United Kingdom,authentication,1.6122
+2026-10-01,INR,United Kingdom,service,1.6122
+2026-10-01,INR,North America,marketing,1.8313
+2026-10-01,INR,North America,utility,0.2491
+2026-10-01,INR,North America,authentication,0.2491
+2026-10-01,INR,North America,service,0.2491
+2026-10-01,INR,Rest of Africa,marketing,1.6497
+2026-10-01,INR,Rest of Africa,utility,0.293
+2026-10-01,INR,Rest of Africa,authentication,0.293
+2026-10-01,INR,Rest of Africa,service,0.293
+2026-10-01,INR,Rest of Asia Pacific,marketing,6.1714
+2026-10-01,INR,Rest of Asia Pacific,utility,0.8282
+2026-10-01,INR,Rest of Asia Pacific,authentication,0.8282
+2026-10-01,INR,Rest of Asia Pacific,service,0.8282
+2026-10-01,INR,Rest of Central & Eastern Europe,marketing,6.2997
+2026-10-01,INR,Rest of Central & Eastern Europe,utility,1.5496
+2026-10-01,INR,Rest of Central & Eastern Europe,authentication,1.5496
+2026-10-01,INR,Rest of Central & Eastern Europe,service,1.5496
+2026-10-01,INR,Rest of Latin America,marketing,5.4207
+2026-10-01,INR,Rest of Latin America,utility,0.8278
+2026-10-01,INR,Rest of Latin America,authentication,0.8278
+2026-10-01,INR,Rest of Latin America,service,0.8278
+2026-10-01,INR,Rest of Middle East,marketing,2.8742
+2026-10-01,INR,Rest of Middle East,utility,0.6665
+2026-10-01,INR,Rest of Middle East,authentication,0.6665
+2026-10-01,INR,Rest of Middle East,service,0.6665
+2026-10-01,INR,Rest of Western Europe,marketing,4.3378
+2026-10-01,INR,Rest of Western Europe,utility,1.2516
+2026-10-01,INR,Rest of Western Europe,authentication,1.2516
+2026-10-01,INR,Rest of Western Europe,service,1.2516
+2026-10-01,INR,Other,marketing,4.4248
+2026-10-01,INR,Other,utility,0.5641
+2026-10-01,INR,Other,authentication,0.5641
+2026-10-01,INR,Other,service,0.5641
+2026-10-01,MXN,Argentina,marketing,1.1375
+2026-10-01,MXN,Argentina,utility,0.4786
+2026-10-01,MXN,Argentina,authentication,0.4786
+2026-10-01,MXN,Argentina,service,0.4786
+2026-10-01,MXN,Bangladesh,marketing,1.3473
+2026-10-01,MXN,Bangladesh,utility,0.0681
+2026-10-01,MXN,Bangladesh,authentication,0.0681
+2026-10-01,MXN,Bangladesh,authentication_international,1.7671
+2026-10-01,MXN,Bangladesh,service,0.0681
+2026-10-01,MXN,Brazil,marketing,1.1504
+2026-10-01,MXN,Brazil,utility,0.1252
+2026-10-01,MXN,Brazil,authentication,0.1252
+2026-10-01,MXN,Brazil,service,0.1252
+2026-10-01,MXN,Chile,marketing,1.6363
+2026-10-01,MXN,Chile,utility,0.3681
+2026-10-01,MXN,Chile,authentication,0.3681
+2026-10-01,MXN,Chile,service,0.3681
+2026-10-01,MXN,Colombia,marketing,0.2301
+2026-10-01,MXN,Colombia,utility,0.0147
+2026-10-01,MXN,Colombia,authentication,0.0147
+2026-10-01,MXN,Colombia,service,0.0147
+2026-10-01,MXN,Egypt,marketing,1.1853
+2026-10-01,MXN,Egypt,utility,0.0663
+2026-10-01,MXN,Egypt,authentication,0.0663
+2026-10-01,MXN,Egypt,authentication_international,1.1964
+2026-10-01,MXN,Egypt,service,0.0663
+2026-10-01,MXN,France,marketing,1.5811
+2026-10-01,MXN,France,utility,0.5522
+2026-10-01,MXN,France,authentication,0.5522
+2026-10-01,MXN,France,service,0.5522
+2026-10-01,MXN,Germany,marketing,2.5124
+2026-10-01,MXN,Germany,utility,1.0123
+2026-10-01,MXN,Germany,authentication,1.0123
+2026-10-01,MXN,Germany,service,1.0123
+2026-10-01,MXN,Hong Kong,marketing,1.3473
+2026-10-01,MXN,Hong Kong,utility,0.4786
+2026-10-01,MXN,Hong Kong,authentication,0.4786
+2026-10-01,MXN,Hong Kong,service,0.4786
+2026-10-01,MXN,Hungary,marketing,1.5829
+2026-10-01,MXN,Hungary,utility,0.6442
+2026-10-01,MXN,Hungary,authentication,0.6442
+2026-10-01,MXN,Hungary,service,0.6442
+2026-10-01,MXN,India,marketing,0.2172
+2026-10-01,MXN,India,utility,0.0258
+2026-10-01,MXN,India,authentication,0.0258
+2026-10-01,MXN,India,authentication_international,0.5596
+2026-10-01,MXN,India,service,0.0258
+2026-10-01,MXN,Indonesia,marketing,0.7565
+2026-10-01,MXN,Indonesia,utility,0.4602
+2026-10-01,MXN,Indonesia,authentication,0.4602
+2026-10-01,MXN,Indonesia,authentication_international,2.5032
+2026-10-01,MXN,Indonesia,service,0.4602
+2026-10-01,MXN,Iraq,marketing,0.6276
+2026-10-01,MXN,Iraq,utility,0.1454
+2026-10-01,MXN,Iraq,authentication,0.1454
+2026-10-01,MXN,Iraq,authentication_international,2.356
+2026-10-01,MXN,Iraq,service,0.1454
+2026-10-01,MXN,Israel,marketing,0.6497
+2026-10-01,MXN,Israel,utility,0.0976
+2026-10-01,MXN,Israel,authentication,0.0976
+2026-10-01,MXN,Israel,service,0.0976
+2026-10-01,MXN,Italy,marketing,1.4627
+2026-10-01,MXN,Italy,utility,0.5522
+2026-10-01,MXN,Italy,authentication,0.5522
+2026-10-01,MXN,Italy,service,0.5522
+2026-10-01,MXN,Kazakhstan,marketing,1.1117
+2026-10-01,MXN,Kazakhstan,utility,0.3312
+2026-10-01,MXN,Kazakhstan,authentication,0.3312
+2026-10-01,MXN,Kazakhstan,authentication_international,2.9444
+2026-10-01,MXN,Kazakhstan,service,0.3312
+2026-10-01,MXN,Kuwait,marketing,1.4579
+2026-10-01,MXN,Kuwait,utility,0.8099
+2026-10-01,MXN,Kuwait,authentication,0.8099
+2026-10-01,MXN,Kuwait,authentication_international,2.2088
+2026-10-01,MXN,Kuwait,service,0.8099
+2026-10-01,MXN,Malaysia,marketing,1.5829
+2026-10-01,MXN,Malaysia,utility,0.2577
+2026-10-01,MXN,Malaysia,authentication,0.2577
+2026-10-01,MXN,Malaysia,authentication_international,0.7694
+2026-10-01,MXN,Malaysia,service,0.2577
+2026-10-01,MXN,Mexico,marketing,0.7298
+2026-10-01,MXN,Mexico,utility,0.1565
+2026-10-01,MXN,Mexico,authentication,0.1565
+2026-10-01,MXN,Mexico,service,0.1565
+2026-10-01,MXN,Morocco,marketing,0.7619
+2026-10-01,MXN,Morocco,utility,0.4232
+2026-10-01,MXN,Morocco,authentication,0.4232
+2026-10-01,MXN,Morocco,authentication_international,1.4922
+2026-10-01,MXN,Morocco,service,0.4232
+2026-10-01,MXN,Netherlands,marketing,2.9394
+2026-10-01,MXN,Netherlands,utility,0.9203
+2026-10-01,MXN,Netherlands,authentication,0.9203
+2026-10-01,MXN,Netherlands,service,0.9203
+2026-10-01,MXN,Nepal,marketing,1.3473
+2026-10-01,MXN,Nepal,utility,0.0626
+2026-10-01,MXN,Nepal,authentication,0.0626
+2026-10-01,MXN,Nepal,authentication_international,2.0616
+2026-10-01,MXN,Nepal,service,0.0626
+2026-10-01,MXN,Nigeria,marketing,0.9497
+2026-10-01,MXN,Nigeria,utility,0.1233
+2026-10-01,MXN,Nigeria,authentication,0.1233
+2026-10-01,MXN,Nigeria,authentication_international,1.3805
+2026-10-01,MXN,Nigeria,service,0.1233
+2026-10-01,MXN,Oman,marketing,0.6276
+2026-10-01,MXN,Oman,utility,0.4546
+2026-10-01,MXN,Oman,authentication,0.4546
+2026-10-01,MXN,Oman,authentication_international,1.1044
+2026-10-01,MXN,Oman,service,0.4546
+2026-10-01,MXN,Pakistan,marketing,0.8706
+2026-10-01,MXN,Pakistan,utility,0.2762
+2026-10-01,MXN,Pakistan,authentication,0.2762
+2026-10-01,MXN,Pakistan,authentication_international,1.3805
+2026-10-01,MXN,Pakistan,service,0.2762
+2026-10-01,MXN,Peru,marketing,1.2939
+2026-10-01,MXN,Peru,utility,0.5522
+2026-10-01,MXN,Peru,authentication,0.5522
+2026-10-01,MXN,Peru,service,0.5522
+2026-10-01,MXN,Poland,marketing,0.6735
+2026-10-01,MXN,Poland,utility,0.2245
+2026-10-01,MXN,Poland,authentication,0.2245
+2026-10-01,MXN,Poland,service,0.2245
+2026-10-01,MXN,Qatar,marketing,0.6276
+2026-10-01,MXN,Qatar,utility,0.2209
+2026-10-01,MXN,Qatar,authentication,0.2209
+2026-10-01,MXN,Qatar,service,0.2209
+2026-10-01,MXN,Romania,marketing,1.5829
+2026-10-01,MXN,Romania,utility,0.5338
+2026-10-01,MXN,Romania,authentication,0.5338
+2026-10-01,MXN,Romania,service,0.5338
+2026-10-01,MXN,Russia,marketing,1.4762
+2026-10-01,MXN,Russia,utility,0.7362
+2026-10-01,MXN,Russia,authentication,0.7362
+2026-10-01,MXN,Russia,service,0.7362
+2026-10-01,MXN,Saudi Arabia,marketing,1.0595
+2026-10-01,MXN,Saudi Arabia,utility,0.1969
+2026-10-01,MXN,Saudi Arabia,authentication,0.1969
+2026-10-01,MXN,Saudi Arabia,authentication_international,1.1007
+2026-10-01,MXN,Saudi Arabia,service,0.1969
+2026-10-01,MXN,Singapore,marketing,1.3473
+2026-10-01,MXN,Singapore,utility,0.2945
+2026-10-01,MXN,Singapore,authentication,0.2945
+2026-10-01,MXN,Singapore,service,0.2945
+2026-10-01,MXN,South Africa,marketing,0.6976
+2026-10-01,MXN,South Africa,utility,0.1749
+2026-10-01,MXN,South Africa,authentication,0.1749
+2026-10-01,MXN,South Africa,authentication_international,0.3681
+2026-10-01,MXN,South Africa,service,0.1749
+2026-10-01,MXN,Spain,marketing,1.3018
+2026-10-01,MXN,Spain,utility,0.3681
+2026-10-01,MXN,Spain,authentication,0.3681
+2026-10-01,MXN,Spain,service,0.3681
+2026-10-01,MXN,Sri Lanka,marketing,1.3473
+2026-10-01,MXN,Sri Lanka,utility,0.0368
+2026-10-01,MXN,Sri Lanka,authentication,0.0368
+2026-10-01,MXN,Sri Lanka,authentication_international,2.6506
+2026-10-01,MXN,Sri Lanka,service,0.0368
+2026-10-01,MXN,Turkey,marketing,0.2006
+2026-10-01,MXN,Turkey,utility,0.0166
+2026-10-01,MXN,Turkey,authentication,0.0166
+2026-10-01,MXN,Turkey,service,0.0166
+2026-10-01,MXN,Ukraine,marketing,1.5829
+2026-10-01,MXN,Ukraine,utility,0.5485
+2026-10-01,MXN,Ukraine,authentication,0.5485
+2026-10-01,MXN,Ukraine,authentication_international,1.3731
+2026-10-01,MXN,Ukraine,service,0.5485
+2026-10-01,MXN,United Arab Emirates,marketing,1.0595
+2026-10-01,MXN,United Arab Emirates,utility,0.289
+2026-10-01,MXN,United Arab Emirates,authentication,0.289
+2026-10-01,MXN,United Arab Emirates,authentication_international,0.9387
+2026-10-01,MXN,United Arab Emirates,service,0.289
+2026-10-01,MXN,United Kingdom,marketing,1.1684
+2026-10-01,MXN,United Kingdom,utility,0.4049
+2026-10-01,MXN,United Kingdom,authentication,0.4049
+2026-10-01,MXN,United Kingdom,service,0.4049
+2026-10-01,MXN,North America,marketing,0.4602
+2026-10-01,MXN,North America,utility,0.0626
+2026-10-01,MXN,North America,authentication,0.0626
+2026-10-01,MXN,North America,service,0.0626
+2026-10-01,MXN,Rest of Africa,marketing,0.4141
+2026-10-01,MXN,Rest of Africa,utility,0.0736
+2026-10-01,MXN,Rest of Africa,authentication,0.0736
+2026-10-01,MXN,Rest of Africa,service,0.0736
+2026-10-01,MXN,Rest of Asia Pacific,marketing,1.5494
+2026-10-01,MXN,Rest of Asia Pacific,utility,0.208
+2026-10-01,MXN,Rest of Asia Pacific,authentication,0.208
+2026-10-01,MXN,Rest of Asia Pacific,service,0.208
+2026-10-01,MXN,Rest of Central & Eastern Europe,marketing,1.5829
+2026-10-01,MXN,Rest of Central & Eastern Europe,utility,0.3902
+2026-10-01,MXN,Rest of Central & Eastern Europe,authentication,0.3902
+2026-10-01,MXN,Rest of Central & Eastern Europe,service,0.3902
+2026-10-01,MXN,Rest of Latin America,marketing,1.362
+2026-10-01,MXN,Rest of Latin America,utility,0.208
+2026-10-01,MXN,Rest of Latin America,authentication,0.208
+2026-10-01,MXN,Rest of Latin America,service,0.208
+2026-10-01,MXN,Rest of Middle East,marketing,0.7217
+2026-10-01,MXN,Rest of Middle East,utility,0.1675
+2026-10-01,MXN,Rest of Middle East,authentication,0.1675
+2026-10-01,MXN,Rest of Middle East,service,0.1675
+2026-10-01,MXN,Rest of Western Europe,marketing,1.0896
+2026-10-01,MXN,Rest of Western Europe,utility,0.3147
+2026-10-01,MXN,Rest of Western Europe,authentication,0.3147
+2026-10-01,MXN,Rest of Western Europe,service,0.3147
+2026-10-01,MXN,Other,marketing,1.1117
+2026-10-01,MXN,Other,utility,0.1417
+2026-10-01,MXN,Other,authentication,0.1417
+2026-10-01,MXN,Other,service,0.1417
+2026-10-01,MYR,Argentina,marketing,0.2492
+2026-10-01,MYR,Argentina,utility,0.1048
+2026-10-01,MYR,Argentina,authentication,0.1048
+2026-10-01,MYR,Argentina,service,0.1048
+2026-10-01,MYR,Bangladesh,marketing,0.2951
+2026-10-01,MYR,Bangladesh,utility,0.0149
+2026-10-01,MYR,Bangladesh,authentication,0.0149
+2026-10-01,MYR,Bangladesh,authentication_international,0.3874
+2026-10-01,MYR,Bangladesh,service,0.0149
+2026-10-01,MYR,Brazil,marketing,0.252
+2026-10-01,MYR,Brazil,utility,0.0274
+2026-10-01,MYR,Brazil,authentication,0.0274
+2026-10-01,MYR,Brazil,service,0.0274
+2026-10-01,MYR,Chile,marketing,0.3584
+2026-10-01,MYR,Chile,utility,0.0806
+2026-10-01,MYR,Chile,authentication,0.0806
+2026-10-01,MYR,Chile,service,0.0806
+2026-10-01,MYR,Colombia,marketing,0.0504
+2026-10-01,MYR,Colombia,utility,0.0032
+2026-10-01,MYR,Colombia,authentication,0.0032
+2026-10-01,MYR,Colombia,service,0.0032
+2026-10-01,MYR,Egypt,marketing,0.2596
+2026-10-01,MYR,Egypt,utility,0.0145
+2026-10-01,MYR,Egypt,authentication,0.0145
+2026-10-01,MYR,Egypt,authentication_international,0.2621
+2026-10-01,MYR,Egypt,service,0.0145
+2026-10-01,MYR,France,marketing,0.3463
+2026-10-01,MYR,France,utility,0.121
+2026-10-01,MYR,France,authentication,0.121
+2026-10-01,MYR,France,service,0.121
+2026-10-01,MYR,Germany,marketing,0.5503
+2026-10-01,MYR,Germany,utility,0.2217
+2026-10-01,MYR,Germany,authentication,0.2217
+2026-10-01,MYR,Germany,service,0.2217
+2026-10-01,MYR,Hong Kong,marketing,0.2951
+2026-10-01,MYR,Hong Kong,utility,0.1049
+2026-10-01,MYR,Hong Kong,authentication,0.1049
+2026-10-01,MYR,Hong Kong,service,0.1049
+2026-10-01,MYR,Hungary,marketing,0.3467
+2026-10-01,MYR,Hungary,utility,0.1412
+2026-10-01,MYR,Hungary,authentication,0.1412
+2026-10-01,MYR,Hungary,service,0.1412
+2026-10-01,MYR,India,marketing,0.0476
+2026-10-01,MYR,India,utility,0.0056
+2026-10-01,MYR,India,authentication,0.0056
+2026-10-01,MYR,India,authentication_international,0.1226
+2026-10-01,MYR,India,service,0.0056
+2026-10-01,MYR,Indonesia,marketing,0.1657
+2026-10-01,MYR,Indonesia,utility,0.1008
+2026-10-01,MYR,Indonesia,authentication,0.1008
+2026-10-01,MYR,Indonesia,authentication_international,0.5483
+2026-10-01,MYR,Indonesia,service,0.1008
+2026-10-01,MYR,Iraq,marketing,0.1375
+2026-10-01,MYR,Iraq,utility,0.0319
+2026-10-01,MYR,Iraq,authentication,0.0319
+2026-10-01,MYR,Iraq,authentication_international,0.5162
+2026-10-01,MYR,Iraq,service,0.0319
+2026-10-01,MYR,Israel,marketing,0.1423
+2026-10-01,MYR,Israel,utility,0.0214
+2026-10-01,MYR,Israel,authentication,0.0214
+2026-10-01,MYR,Israel,service,0.0214
+2026-10-01,MYR,Italy,marketing,0.3204
+2026-10-01,MYR,Italy,utility,0.121
+2026-10-01,MYR,Italy,authentication,0.121
+2026-10-01,MYR,Italy,service,0.121
+2026-10-01,MYR,Kazakhstan,marketing,0.2435
+2026-10-01,MYR,Kazakhstan,utility,0.0725
+2026-10-01,MYR,Kazakhstan,authentication,0.0725
+2026-10-01,MYR,Kazakhstan,authentication_international,0.6442
+2026-10-01,MYR,Kazakhstan,service,0.0725
+2026-10-01,MYR,Kuwait,marketing,0.3194
+2026-10-01,MYR,Kuwait,utility,0.1775
+2026-10-01,MYR,Kuwait,authentication,0.1775
+2026-10-01,MYR,Kuwait,authentication_international,0.484
+2026-10-01,MYR,Kuwait,service,0.1775
+2026-10-01,MYR,Malaysia,marketing,0.3467
+2026-10-01,MYR,Malaysia,utility,0.0564
+2026-10-01,MYR,Malaysia,authentication,0.0564
+2026-10-01,MYR,Malaysia,authentication_international,0.1685
+2026-10-01,MYR,Malaysia,service,0.0564
+2026-10-01,MYR,Mexico,marketing,0.1599
+2026-10-01,MYR,Mexico,utility,0.0343
+2026-10-01,MYR,Mexico,authentication,0.0343
+2026-10-01,MYR,Mexico,service,0.0343
+2026-10-01,MYR,Morocco,marketing,0.1669
+2026-10-01,MYR,Morocco,utility,0.0926
+2026-10-01,MYR,Morocco,authentication,0.0926
+2026-10-01,MYR,Morocco,authentication_international,0.3264
+2026-10-01,MYR,Morocco,service,0.0926
+2026-10-01,MYR,Netherlands,marketing,0.6439
+2026-10-01,MYR,Netherlands,utility,0.2016
+2026-10-01,MYR,Netherlands,authentication,0.2016
+2026-10-01,MYR,Netherlands,service,0.2016
+2026-10-01,MYR,Nepal,marketing,0.2951
+2026-10-01,MYR,Nepal,utility,0.0137
+2026-10-01,MYR,Nepal,authentication,0.0137
+2026-10-01,MYR,Nepal,authentication_international,0.452
+2026-10-01,MYR,Nepal,service,0.0137
+2026-10-01,MYR,Nigeria,marketing,0.208
+2026-10-01,MYR,Nigeria,utility,0.027
+2026-10-01,MYR,Nigeria,authentication,0.027
+2026-10-01,MYR,Nigeria,authentication_international,0.3024
+2026-10-01,MYR,Nigeria,service,0.027
+2026-10-01,MYR,Oman,marketing,0.1375
+2026-10-01,MYR,Oman,utility,0.0996
+2026-10-01,MYR,Oman,authentication,0.0996
+2026-10-01,MYR,Oman,authentication_international,0.242
+2026-10-01,MYR,Oman,service,0.0996
+2026-10-01,MYR,Pakistan,marketing,0.1907
+2026-10-01,MYR,Pakistan,utility,0.0605
+2026-10-01,MYR,Pakistan,authentication,0.0605
+2026-10-01,MYR,Pakistan,authentication_international,0.3024
+2026-10-01,MYR,Pakistan,service,0.0605
+2026-10-01,MYR,Peru,marketing,0.2834
+2026-10-01,MYR,Peru,utility,0.1209
+2026-10-01,MYR,Peru,authentication,0.1209
+2026-10-01,MYR,Peru,service,0.1209
+2026-10-01,MYR,Poland,marketing,0.1476
+2026-10-01,MYR,Poland,utility,0.0492
+2026-10-01,MYR,Poland,authentication,0.0492
+2026-10-01,MYR,Poland,service,0.0492
+2026-10-01,MYR,Qatar,marketing,0.1375
+2026-10-01,MYR,Qatar,utility,0.0484
+2026-10-01,MYR,Qatar,authentication,0.0484
+2026-10-01,MYR,Qatar,service,0.0484
+2026-10-01,MYR,Romania,marketing,0.3467
+2026-10-01,MYR,Romania,utility,0.117
+2026-10-01,MYR,Romania,authentication,0.117
+2026-10-01,MYR,Romania,service,0.117
+2026-10-01,MYR,Russia,marketing,0.3233
+2026-10-01,MYR,Russia,utility,0.1613
+2026-10-01,MYR,Russia,authentication,0.1613
+2026-10-01,MYR,Russia,service,0.1613
+2026-10-01,MYR,Saudi Arabia,marketing,0.2323
+2026-10-01,MYR,Saudi Arabia,utility,0.0431
+2026-10-01,MYR,Saudi Arabia,authentication,0.0431
+2026-10-01,MYR,Saudi Arabia,authentication_international,0.2411
+2026-10-01,MYR,Saudi Arabia,service,0.0431
+2026-10-01,MYR,Singapore,marketing,0.2951
+2026-10-01,MYR,Singapore,utility,0.0646
+2026-10-01,MYR,Singapore,authentication,0.0646
+2026-10-01,MYR,Singapore,service,0.0646
+2026-10-01,MYR,South Africa,marketing,0.1528
+2026-10-01,MYR,South Africa,utility,0.0383
+2026-10-01,MYR,South Africa,authentication,0.0383
+2026-10-01,MYR,South Africa,authentication_international,0.0806
+2026-10-01,MYR,South Africa,service,0.0383
+2026-10-01,MYR,Spain,marketing,0.2851
+2026-10-01,MYR,Spain,utility,0.0806
+2026-10-01,MYR,Spain,authentication,0.0806
+2026-10-01,MYR,Spain,service,0.0806
+2026-10-01,MYR,Sri Lanka,marketing,0.2951
+2026-10-01,MYR,Sri Lanka,utility,0.0081
+2026-10-01,MYR,Sri Lanka,authentication,0.0081
+2026-10-01,MYR,Sri Lanka,authentication_international,0.5811
+2026-10-01,MYR,Sri Lanka,service,0.0081
+2026-10-01,MYR,Turkey,marketing,0.0439
+2026-10-01,MYR,Turkey,utility,0.0036
+2026-10-01,MYR,Turkey,authentication,0.0036
+2026-10-01,MYR,Turkey,service,0.0036
+2026-10-01,MYR,Ukraine,marketing,0.3467
+2026-10-01,MYR,Ukraine,utility,0.1202
+2026-10-01,MYR,Ukraine,authentication,0.1202
+2026-10-01,MYR,Ukraine,authentication_international,0.3009
+2026-10-01,MYR,Ukraine,service,0.1202
+2026-10-01,MYR,United Arab Emirates,marketing,0.2323
+2026-10-01,MYR,United Arab Emirates,utility,0.0633
+2026-10-01,MYR,United Arab Emirates,authentication,0.0633
+2026-10-01,MYR,United Arab Emirates,authentication_international,0.2056
+2026-10-01,MYR,United Arab Emirates,service,0.0633
+2026-10-01,MYR,United Kingdom,marketing,0.256
+2026-10-01,MYR,United Kingdom,utility,0.0887
+2026-10-01,MYR,United Kingdom,authentication,0.0887
+2026-10-01,MYR,United Kingdom,service,0.0887
+2026-10-01,MYR,North America,marketing,0.1008
+2026-10-01,MYR,North America,utility,0.0137
+2026-10-01,MYR,North America,authentication,0.0137
+2026-10-01,MYR,North America,service,0.0137
+2026-10-01,MYR,Rest of Africa,marketing,0.0907
+2026-10-01,MYR,Rest of Africa,utility,0.0161
+2026-10-01,MYR,Rest of Africa,authentication,0.0161
+2026-10-01,MYR,Rest of Africa,service,0.0161
+2026-10-01,MYR,Rest of Asia Pacific,marketing,0.3394
+2026-10-01,MYR,Rest of Asia Pacific,utility,0.0456
+2026-10-01,MYR,Rest of Asia Pacific,authentication,0.0456
+2026-10-01,MYR,Rest of Asia Pacific,service,0.0456
+2026-10-01,MYR,Rest of Central & Eastern Europe,marketing,0.3467
+2026-10-01,MYR,Rest of Central & Eastern Europe,utility,0.0855
+2026-10-01,MYR,Rest of Central & Eastern Europe,authentication,0.0855
+2026-10-01,MYR,Rest of Central & Eastern Europe,service,0.0855
+2026-10-01,MYR,Rest of Latin America,marketing,0.2983
+2026-10-01,MYR,Rest of Latin America,utility,0.0456
+2026-10-01,MYR,Rest of Latin America,authentication,0.0456
+2026-10-01,MYR,Rest of Latin America,service,0.0456
+2026-10-01,MYR,Rest of Middle East,marketing,0.1581
+2026-10-01,MYR,Rest of Middle East,utility,0.0367
+2026-10-01,MYR,Rest of Middle East,authentication,0.0367
+2026-10-01,MYR,Rest of Middle East,service,0.0367
+2026-10-01,MYR,Rest of Western Europe,marketing,0.2387
+2026-10-01,MYR,Rest of Western Europe,utility,0.0689
+2026-10-01,MYR,Rest of Western Europe,authentication,0.0689
+2026-10-01,MYR,Rest of Western Europe,service,0.0689
+2026-10-01,MYR,Other,marketing,0.2435
+2026-10-01,MYR,Other,utility,0.031
+2026-10-01,MYR,Other,authentication,0.031
+2026-10-01,MYR,Other,service,0.031
+2026-10-01,PEN,Argentina,marketing,0.2056
+2026-10-01,PEN,Argentina,utility,0.0865
+2026-10-01,PEN,Argentina,authentication,0.0865
+2026-10-01,PEN,Argentina,service,0.0865
+2026-10-01,PEN,Bangladesh,marketing,0.2435
+2026-10-01,PEN,Bangladesh,utility,0.0123
+2026-10-01,PEN,Bangladesh,authentication,0.0123
+2026-10-01,PEN,Bangladesh,authentication_international,0.3194
+2026-10-01,PEN,Bangladesh,service,0.0123
+2026-10-01,PEN,Brazil,marketing,0.2079
+2026-10-01,PEN,Brazil,utility,0.0226
+2026-10-01,PEN,Brazil,authentication,0.0226
+2026-10-01,PEN,Brazil,service,0.0226
+2026-10-01,PEN,Chile,marketing,0.2958
+2026-10-01,PEN,Chile,utility,0.0665
+2026-10-01,PEN,Chile,authentication,0.0665
+2026-10-01,PEN,Chile,service,0.0665
+2026-10-01,PEN,Colombia,marketing,0.0416
+2026-10-01,PEN,Colombia,utility,0.0027
+2026-10-01,PEN,Colombia,authentication,0.0027
+2026-10-01,PEN,Colombia,service,0.0027
+2026-10-01,PEN,Egypt,marketing,0.2143
+2026-10-01,PEN,Egypt,utility,0.012
+2026-10-01,PEN,Egypt,authentication,0.012
+2026-10-01,PEN,Egypt,authentication_international,0.2162
+2026-10-01,PEN,Egypt,service,0.012
+2026-10-01,PEN,France,marketing,0.2858
+2026-10-01,PEN,France,utility,0.0998
+2026-10-01,PEN,France,authentication,0.0998
+2026-10-01,PEN,France,service,0.0998
+2026-10-01,PEN,Germany,marketing,0.4541
+2026-10-01,PEN,Germany,utility,0.183
+2026-10-01,PEN,Germany,authentication,0.183
+2026-10-01,PEN,Germany,service,0.183
+2026-10-01,PEN,Hong Kong,marketing,0.2435
+2026-10-01,PEN,Hong Kong,utility,0.0865
+2026-10-01,PEN,Hong Kong,authentication,0.0865
+2026-10-01,PEN,Hong Kong,service,0.0865
+2026-10-01,PEN,Hungary,marketing,0.2861
+2026-10-01,PEN,Hungary,utility,0.1164
+2026-10-01,PEN,Hungary,authentication,0.1164
+2026-10-01,PEN,Hungary,service,0.1164
+2026-10-01,PEN,India,marketing,0.0393
+2026-10-01,PEN,India,utility,0.0047
+2026-10-01,PEN,India,authentication,0.0047
+2026-10-01,PEN,India,authentication_international,0.1011
+2026-10-01,PEN,India,service,0.0047
+2026-10-01,PEN,Indonesia,marketing,0.1367
+2026-10-01,PEN,Indonesia,utility,0.0832
+2026-10-01,PEN,Indonesia,authentication,0.0832
+2026-10-01,PEN,Indonesia,authentication_international,0.4525
+2026-10-01,PEN,Indonesia,service,0.0832
+2026-10-01,PEN,Iraq,marketing,0.1134
+2026-10-01,PEN,Iraq,utility,0.0263
+2026-10-01,PEN,Iraq,authentication,0.0263
+2026-10-01,PEN,Iraq,authentication_international,0.4262
+2026-10-01,PEN,Iraq,service,0.0263
+2026-10-01,PEN,Israel,marketing,0.1174
+2026-10-01,PEN,Israel,utility,0.0176
+2026-10-01,PEN,Israel,authentication,0.0176
+2026-10-01,PEN,Israel,service,0.0176
+2026-10-01,PEN,Italy,marketing,0.2644
+2026-10-01,PEN,Italy,utility,0.0998
+2026-10-01,PEN,Italy,authentication,0.0998
+2026-10-01,PEN,Italy,service,0.0998
+2026-10-01,PEN,Kazakhstan,marketing,0.2009
+2026-10-01,PEN,Kazakhstan,utility,0.0598
+2026-10-01,PEN,Kazakhstan,authentication,0.0598
+2026-10-01,PEN,Kazakhstan,authentication_international,0.5319
+2026-10-01,PEN,Kazakhstan,service,0.0598
+2026-10-01,PEN,Kuwait,marketing,0.2634
+2026-10-01,PEN,Kuwait,utility,0.1465
+2026-10-01,PEN,Kuwait,authentication,0.1465
+2026-10-01,PEN,Kuwait,authentication_international,0.3996
+2026-10-01,PEN,Kuwait,service,0.1465
+2026-10-01,PEN,Malaysia,marketing,0.2861
+2026-10-01,PEN,Malaysia,utility,0.0466
+2026-10-01,PEN,Malaysia,authentication,0.0466
+2026-10-01,PEN,Malaysia,authentication_international,0.1391
+2026-10-01,PEN,Malaysia,service,0.0466
+2026-10-01,PEN,Mexico,marketing,0.132
+2026-10-01,PEN,Mexico,utility,0.0283
+2026-10-01,PEN,Mexico,authentication,0.0283
+2026-10-01,PEN,Mexico,service,0.0283
+2026-10-01,PEN,Morocco,marketing,0.1378
+2026-10-01,PEN,Morocco,utility,0.0765
+2026-10-01,PEN,Morocco,authentication,0.0765
+2026-10-01,PEN,Morocco,authentication_international,0.2697
+2026-10-01,PEN,Morocco,service,0.0765
+2026-10-01,PEN,Netherlands,marketing,0.5313
+2026-10-01,PEN,Netherlands,utility,0.1663
+2026-10-01,PEN,Netherlands,authentication,0.1663
+2026-10-01,PEN,Netherlands,service,0.1663
+2026-10-01,PEN,Nepal,marketing,0.2435
+2026-10-01,PEN,Nepal,utility,0.0113
+2026-10-01,PEN,Nepal,authentication,0.0113
+2026-10-01,PEN,Nepal,authentication_international,0.3727
+2026-10-01,PEN,Nepal,service,0.0113
+2026-10-01,PEN,Nigeria,marketing,0.1717
+2026-10-01,PEN,Nigeria,utility,0.0223
+2026-10-01,PEN,Nigeria,authentication,0.0223
+2026-10-01,PEN,Nigeria,authentication_international,0.2495
+2026-10-01,PEN,Nigeria,service,0.0223
+2026-10-01,PEN,Oman,marketing,0.1134
+2026-10-01,PEN,Oman,utility,0.0822
+2026-10-01,PEN,Oman,authentication,0.0822
+2026-10-01,PEN,Oman,authentication_international,0.1998
+2026-10-01,PEN,Oman,service,0.0822
+2026-10-01,PEN,Pakistan,marketing,0.1574
+2026-10-01,PEN,Pakistan,utility,0.05
+2026-10-01,PEN,Pakistan,authentication,0.05
+2026-10-01,PEN,Pakistan,authentication_international,0.2495
+2026-10-01,PEN,Pakistan,service,0.05
+2026-10-01,PEN,Peru,marketing,0.2339
+2026-10-01,PEN,Peru,utility,0.0998
+2026-10-01,PEN,Peru,authentication,0.0998
+2026-10-01,PEN,Peru,service,0.0998
+2026-10-01,PEN,Poland,marketing,0.1218
+2026-10-01,PEN,Poland,utility,0.0406
+2026-10-01,PEN,Poland,authentication,0.0406
+2026-10-01,PEN,Poland,service,0.0406
+2026-10-01,PEN,Qatar,marketing,0.1134
+2026-10-01,PEN,Qatar,utility,0.04
+2026-10-01,PEN,Qatar,authentication,0.04
+2026-10-01,PEN,Qatar,service,0.04
+2026-10-01,PEN,Romania,marketing,0.2861
+2026-10-01,PEN,Romania,utility,0.0964
+2026-10-01,PEN,Romania,authentication,0.0964
+2026-10-01,PEN,Romania,service,0.0964
+2026-10-01,PEN,Russia,marketing,0.2668
+2026-10-01,PEN,Russia,utility,0.1331
+2026-10-01,PEN,Russia,authentication,0.1331
+2026-10-01,PEN,Russia,service,0.1331
+2026-10-01,PEN,Saudi Arabia,marketing,0.1917
+2026-10-01,PEN,Saudi Arabia,utility,0.0356
+2026-10-01,PEN,Saudi Arabia,authentication,0.0356
+2026-10-01,PEN,Saudi Arabia,authentication_international,0.1989
+2026-10-01,PEN,Saudi Arabia,service,0.0356
+2026-10-01,PEN,Singapore,marketing,0.2435
+2026-10-01,PEN,Singapore,utility,0.0532
+2026-10-01,PEN,Singapore,authentication,0.0532
+2026-10-01,PEN,Singapore,service,0.0532
+2026-10-01,PEN,South Africa,marketing,0.1261
+2026-10-01,PEN,South Africa,utility,0.0316
+2026-10-01,PEN,South Africa,authentication,0.0316
+2026-10-01,PEN,South Africa,authentication_international,0.0665
+2026-10-01,PEN,South Africa,service,0.0316
+2026-10-01,PEN,Spain,marketing,0.2353
+2026-10-01,PEN,Spain,utility,0.0665
+2026-10-01,PEN,Spain,authentication,0.0665
+2026-10-01,PEN,Spain,service,0.0665
+2026-10-01,PEN,Sri Lanka,marketing,0.2435
+2026-10-01,PEN,Sri Lanka,utility,0.0067
+2026-10-01,PEN,Sri Lanka,authentication,0.0067
+2026-10-01,PEN,Sri Lanka,authentication_international,0.4792
+2026-10-01,PEN,Sri Lanka,service,0.0067
+2026-10-01,PEN,Turkey,marketing,0.0363
+2026-10-01,PEN,Turkey,utility,0.003
+2026-10-01,PEN,Turkey,authentication,0.003
+2026-10-01,PEN,Turkey,service,0.003
+2026-10-01,PEN,Ukraine,marketing,0.2861
+2026-10-01,PEN,Ukraine,utility,0.0991
+2026-10-01,PEN,Ukraine,authentication,0.0991
+2026-10-01,PEN,Ukraine,authentication_international,0.2481
+2026-10-01,PEN,Ukraine,service,0.0991
+2026-10-01,PEN,United Arab Emirates,marketing,0.1917
+2026-10-01,PEN,United Arab Emirates,utility,0.0522
+2026-10-01,PEN,United Arab Emirates,authentication,0.0522
+2026-10-01,PEN,United Arab Emirates,authentication_international,0.1697
+2026-10-01,PEN,United Arab Emirates,service,0.0522
+2026-10-01,PEN,United Kingdom,marketing,0.2112
+2026-10-01,PEN,United Kingdom,utility,0.0732
+2026-10-01,PEN,United Kingdom,authentication,0.0732
+2026-10-01,PEN,United Kingdom,service,0.0732
+2026-10-01,PEN,North America,marketing,0.0832
+2026-10-01,PEN,North America,utility,0.0113
+2026-10-01,PEN,North America,authentication,0.0113
+2026-10-01,PEN,North America,service,0.0113
+2026-10-01,PEN,Rest of Africa,marketing,0.0749
+2026-10-01,PEN,Rest of Africa,utility,0.0133
+2026-10-01,PEN,Rest of Africa,authentication,0.0133
+2026-10-01,PEN,Rest of Africa,service,0.0133
+2026-10-01,PEN,Rest of Asia Pacific,marketing,0.28
+2026-10-01,PEN,Rest of Asia Pacific,utility,0.0376
+2026-10-01,PEN,Rest of Asia Pacific,authentication,0.0376
+2026-10-01,PEN,Rest of Asia Pacific,service,0.0376
+2026-10-01,PEN,Rest of Central & Eastern Europe,marketing,0.2861
+2026-10-01,PEN,Rest of Central & Eastern Europe,utility,0.0705
+2026-10-01,PEN,Rest of Central & Eastern Europe,authentication,0.0705
+2026-10-01,PEN,Rest of Central & Eastern Europe,service,0.0705
+2026-10-01,PEN,Rest of Latin America,marketing,0.2462
+2026-10-01,PEN,Rest of Latin America,utility,0.0376
+2026-10-01,PEN,Rest of Latin America,authentication,0.0376
+2026-10-01,PEN,Rest of Latin America,service,0.0376
+2026-10-01,PEN,Rest of Middle East,marketing,0.1304
+2026-10-01,PEN,Rest of Middle East,utility,0.0303
+2026-10-01,PEN,Rest of Middle East,authentication,0.0303
+2026-10-01,PEN,Rest of Middle East,service,0.0303
+2026-10-01,PEN,Rest of Western Europe,marketing,0.197
+2026-10-01,PEN,Rest of Western Europe,utility,0.0569
+2026-10-01,PEN,Rest of Western Europe,authentication,0.0569
+2026-10-01,PEN,Rest of Western Europe,service,0.0569
+2026-10-01,PEN,Other,marketing,0.2009
+2026-10-01,PEN,Other,utility,0.0256
+2026-10-01,PEN,Other,authentication,0.0256
+2026-10-01,PEN,Other,service,0.0256
+2026-10-01,SAR,Argentina,marketing,0.2315
+2026-10-01,SAR,Argentina,utility,0.0974
+2026-10-01,SAR,Argentina,authentication,0.0974
+2026-10-01,SAR,Argentina,service,0.0974
+2026-10-01,SAR,Bangladesh,marketing,0.2742
+2026-10-01,SAR,Bangladesh,utility,0.0139
+2026-10-01,SAR,Bangladesh,authentication,0.0139
+2026-10-01,SAR,Bangladesh,authentication_international,0.3594
+2026-10-01,SAR,Bangladesh,service,0.0139
+2026-10-01,SAR,Brazil,marketing,0.2342
+2026-10-01,SAR,Brazil,utility,0.0255
+2026-10-01,SAR,Brazil,authentication,0.0255
+2026-10-01,SAR,Brazil,service,0.0255
+2026-10-01,SAR,Chile,marketing,0.3331
+2026-10-01,SAR,Chile,utility,0.0749
+2026-10-01,SAR,Chile,authentication,0.0749
+2026-10-01,SAR,Chile,service,0.0749
+2026-10-01,SAR,Colombia,marketing,0.0468
+2026-10-01,SAR,Colombia,utility,0.003
+2026-10-01,SAR,Colombia,authentication,0.003
+2026-10-01,SAR,Colombia,service,0.003
+2026-10-01,SAR,Egypt,marketing,0.2413
+2026-10-01,SAR,Egypt,utility,0.0135
+2026-10-01,SAR,Egypt,authentication,0.0135
+2026-10-01,SAR,Egypt,authentication_international,0.2435
+2026-10-01,SAR,Egypt,service,0.0135
+2026-10-01,SAR,France,marketing,0.3218
+2026-10-01,SAR,France,utility,0.1124
+2026-10-01,SAR,France,authentication,0.1124
+2026-10-01,SAR,France,service,0.1124
+2026-10-01,SAR,Germany,marketing,0.5114
+2026-10-01,SAR,Germany,utility,0.2061
+2026-10-01,SAR,Germany,authentication,0.2061
+2026-10-01,SAR,Germany,service,0.2061
+2026-10-01,SAR,Hong Kong,marketing,0.2742
+2026-10-01,SAR,Hong Kong,utility,0.0973
+2026-10-01,SAR,Hong Kong,authentication,0.0973
+2026-10-01,SAR,Hong Kong,service,0.0973
+2026-10-01,SAR,Hungary,marketing,0.3222
+2026-10-01,SAR,Hungary,utility,0.1311
+2026-10-01,SAR,Hungary,authentication,0.1311
+2026-10-01,SAR,Hungary,service,0.1311
+2026-10-01,SAR,India,marketing,0.0442
+2026-10-01,SAR,India,utility,0.0052
+2026-10-01,SAR,India,authentication,0.0052
+2026-10-01,SAR,India,authentication_international,0.1139
+2026-10-01,SAR,India,service,0.0052
+2026-10-01,SAR,Indonesia,marketing,0.154
+2026-10-01,SAR,Indonesia,utility,0.0937
+2026-10-01,SAR,Indonesia,authentication,0.0937
+2026-10-01,SAR,Indonesia,authentication_international,0.5095
+2026-10-01,SAR,Indonesia,service,0.0937
+2026-10-01,SAR,Iraq,marketing,0.1278
+2026-10-01,SAR,Iraq,utility,0.0296
+2026-10-01,SAR,Iraq,authentication,0.0296
+2026-10-01,SAR,Iraq,authentication_international,0.4796
+2026-10-01,SAR,Iraq,service,0.0296
+2026-10-01,SAR,Israel,marketing,0.1322
+2026-10-01,SAR,Israel,utility,0.0199
+2026-10-01,SAR,Israel,authentication,0.0199
+2026-10-01,SAR,Israel,service,0.0199
+2026-10-01,SAR,Italy,marketing,0.2977
+2026-10-01,SAR,Italy,utility,0.1124
+2026-10-01,SAR,Italy,authentication,0.1124
+2026-10-01,SAR,Italy,service,0.1124
+2026-10-01,SAR,Kazakhstan,marketing,0.2263
+2026-10-01,SAR,Kazakhstan,utility,0.0673
+2026-10-01,SAR,Kazakhstan,authentication,0.0673
+2026-10-01,SAR,Kazakhstan,authentication_international,0.5984
+2026-10-01,SAR,Kazakhstan,service,0.0673
+2026-10-01,SAR,Kuwait,marketing,0.2969
+2026-10-01,SAR,Kuwait,utility,0.1649
+2026-10-01,SAR,Kuwait,authentication,0.1649
+2026-10-01,SAR,Kuwait,authentication_international,0.4497
+2026-10-01,SAR,Kuwait,service,0.1649
+2026-10-01,SAR,Malaysia,marketing,0.3222
+2026-10-01,SAR,Malaysia,utility,0.0524
+2026-10-01,SAR,Malaysia,authentication,0.0524
+2026-10-01,SAR,Malaysia,authentication_international,0.1566
+2026-10-01,SAR,Malaysia,service,0.0524
+2026-10-01,SAR,Mexico,marketing,0.1486
+2026-10-01,SAR,Mexico,utility,0.0318
+2026-10-01,SAR,Mexico,authentication,0.0318
+2026-10-01,SAR,Mexico,service,0.0318
+2026-10-01,SAR,Morocco,marketing,0.1551
+2026-10-01,SAR,Morocco,utility,0.0863
+2026-10-01,SAR,Morocco,authentication,0.0863
+2026-10-01,SAR,Morocco,authentication_international,0.3041
+2026-10-01,SAR,Morocco,service,0.0863
+2026-10-01,SAR,Netherlands,marketing,0.5983
+2026-10-01,SAR,Netherlands,utility,0.1873
+2026-10-01,SAR,Netherlands,authentication,0.1873
+2026-10-01,SAR,Netherlands,service,0.1873
+2026-10-01,SAR,Nepal,marketing,0.2742
+2026-10-01,SAR,Nepal,utility,0.0127
+2026-10-01,SAR,Nepal,authentication,0.0127
+2026-10-01,SAR,Nepal,authentication_international,0.4193
+2026-10-01,SAR,Nepal,service,0.0127
+2026-10-01,SAR,Nigeria,marketing,0.1933
+2026-10-01,SAR,Nigeria,utility,0.0251
+2026-10-01,SAR,Nigeria,authentication,0.0251
+2026-10-01,SAR,Nigeria,authentication_international,0.281
+2026-10-01,SAR,Nigeria,service,0.0251
+2026-10-01,SAR,Oman,marketing,0.1278
+2026-10-01,SAR,Oman,utility,0.0926
+2026-10-01,SAR,Oman,authentication,0.0926
+2026-10-01,SAR,Oman,authentication_international,0.2248
+2026-10-01,SAR,Oman,service,0.0926
+2026-10-01,SAR,Pakistan,marketing,0.1772
+2026-10-01,SAR,Pakistan,utility,0.0563
+2026-10-01,SAR,Pakistan,authentication,0.0563
+2026-10-01,SAR,Pakistan,authentication_international,0.281
+2026-10-01,SAR,Pakistan,service,0.0563
+2026-10-01,SAR,Peru,marketing,0.2634
+2026-10-01,SAR,Peru,utility,0.1124
+2026-10-01,SAR,Peru,authentication,0.1124
+2026-10-01,SAR,Peru,service,0.1124
+2026-10-01,SAR,Poland,marketing,0.1371
+2026-10-01,SAR,Poland,utility,0.0457
+2026-10-01,SAR,Poland,authentication,0.0457
+2026-10-01,SAR,Poland,service,0.0457
+2026-10-01,SAR,Qatar,marketing,0.1278
+2026-10-01,SAR,Qatar,utility,0.045
+2026-10-01,SAR,Qatar,authentication,0.045
+2026-10-01,SAR,Qatar,service,0.045
+2026-10-01,SAR,Romania,marketing,0.3222
+2026-10-01,SAR,Romania,utility,0.1086
+2026-10-01,SAR,Romania,authentication,0.1086
+2026-10-01,SAR,Romania,service,0.1086
+2026-10-01,SAR,Russia,marketing,0.3005
+2026-10-01,SAR,Russia,utility,0.1499
+2026-10-01,SAR,Russia,authentication,0.1499
+2026-10-01,SAR,Russia,service,0.1499
+2026-10-01,SAR,Saudi Arabia,marketing,0.2159
+2026-10-01,SAR,Saudi Arabia,utility,0.0401
+2026-10-01,SAR,Saudi Arabia,authentication,0.0401
+2026-10-01,SAR,Saudi Arabia,authentication_international,0.224
+2026-10-01,SAR,Saudi Arabia,service,0.0401
+2026-10-01,SAR,Singapore,marketing,0.2742
+2026-10-01,SAR,Singapore,utility,0.0599
+2026-10-01,SAR,Singapore,authentication,0.0599
+2026-10-01,SAR,Singapore,service,0.0599
+2026-10-01,SAR,South Africa,marketing,0.142
+2026-10-01,SAR,South Africa,utility,0.0356
+2026-10-01,SAR,South Africa,authentication,0.0356
+2026-10-01,SAR,South Africa,authentication_international,0.0749
+2026-10-01,SAR,South Africa,service,0.0356
+2026-10-01,SAR,Spain,marketing,0.265
+2026-10-01,SAR,Spain,utility,0.0749
+2026-10-01,SAR,Spain,authentication,0.0749
+2026-10-01,SAR,Spain,service,0.0749
+2026-10-01,SAR,Sri Lanka,marketing,0.2742
+2026-10-01,SAR,Sri Lanka,utility,0.0075
+2026-10-01,SAR,Sri Lanka,authentication,0.0075
+2026-10-01,SAR,Sri Lanka,authentication_international,0.539
+2026-10-01,SAR,Sri Lanka,service,0.0075
+2026-10-01,SAR,Turkey,marketing,0.0408
+2026-10-01,SAR,Turkey,utility,0.0034
+2026-10-01,SAR,Turkey,authentication,0.0034
+2026-10-01,SAR,Turkey,service,0.0034
+2026-10-01,SAR,Ukraine,marketing,0.3222
+2026-10-01,SAR,Ukraine,utility,0.1116
+2026-10-01,SAR,Ukraine,authentication,0.1116
+2026-10-01,SAR,Ukraine,authentication_international,0.2794
+2026-10-01,SAR,Ukraine,service,0.1116
+2026-10-01,SAR,United Arab Emirates,marketing,0.2159
+2026-10-01,SAR,United Arab Emirates,utility,0.0588
+2026-10-01,SAR,United Arab Emirates,authentication,0.0588
+2026-10-01,SAR,United Arab Emirates,authentication_international,0.1911
+2026-10-01,SAR,United Arab Emirates,service,0.0588
+2026-10-01,SAR,United Kingdom,marketing,0.2378
+2026-10-01,SAR,United Kingdom,utility,0.0824
+2026-10-01,SAR,United Kingdom,authentication,0.0824
+2026-10-01,SAR,United Kingdom,service,0.0824
+2026-10-01,SAR,North America,marketing,0.0937
+2026-10-01,SAR,North America,utility,0.0127
+2026-10-01,SAR,North America,authentication,0.0127
+2026-10-01,SAR,North America,service,0.0127
+2026-10-01,SAR,Rest of Africa,marketing,0.0843
+2026-10-01,SAR,Rest of Africa,utility,0.015
+2026-10-01,SAR,Rest of Africa,authentication,0.015
+2026-10-01,SAR,Rest of Africa,service,0.015
+2026-10-01,SAR,Rest of Asia Pacific,marketing,0.3153
+2026-10-01,SAR,Rest of Asia Pacific,utility,0.0423
+2026-10-01,SAR,Rest of Asia Pacific,authentication,0.0423
+2026-10-01,SAR,Rest of Asia Pacific,service,0.0423
+2026-10-01,SAR,Rest of Central & Eastern Europe,marketing,0.3222
+2026-10-01,SAR,Rest of Central & Eastern Europe,utility,0.0794
+2026-10-01,SAR,Rest of Central & Eastern Europe,authentication,0.0794
+2026-10-01,SAR,Rest of Central & Eastern Europe,service,0.0794
+2026-10-01,SAR,Rest of Latin America,marketing,0.2772
+2026-10-01,SAR,Rest of Latin America,utility,0.0423
+2026-10-01,SAR,Rest of Latin America,authentication,0.0423
+2026-10-01,SAR,Rest of Latin America,service,0.0423
+2026-10-01,SAR,Rest of Middle East,marketing,0.147
+2026-10-01,SAR,Rest of Middle East,utility,0.0341
+2026-10-01,SAR,Rest of Middle East,authentication,0.0341
+2026-10-01,SAR,Rest of Middle East,service,0.0341
+2026-10-01,SAR,Rest of Western Europe,marketing,0.2218
+2026-10-01,SAR,Rest of Western Europe,utility,0.0641
+2026-10-01,SAR,Rest of Western Europe,authentication,0.0641
+2026-10-01,SAR,Rest of Western Europe,service,0.0641
+2026-10-01,SAR,Other,marketing,0.2263
+2026-10-01,SAR,Other,utility,0.0288
+2026-10-01,SAR,Other,authentication,0.0288
+2026-10-01,SAR,Other,service,0.0288
+2026-10-01,SGD,Argentina,marketing,0.0791
+2026-10-01,SGD,Argentina,utility,0.0333
+2026-10-01,SGD,Argentina,authentication,0.0333
+2026-10-01,SGD,Argentina,service,0.0333
+2026-10-01,SGD,Bangladesh,marketing,0.0937
+2026-10-01,SGD,Bangladesh,utility,0.0047
+2026-10-01,SGD,Bangladesh,authentication,0.0047
+2026-10-01,SGD,Bangladesh,authentication_international,0.1232
+2026-10-01,SGD,Bangladesh,service,0.0047
+2026-10-01,SGD,Brazil,marketing,0.08
+2026-10-01,SGD,Brazil,utility,0.0087
+2026-10-01,SGD,Brazil,authentication,0.0087
+2026-10-01,SGD,Brazil,service,0.0087
+2026-10-01,SGD,Chile,marketing,0.1138
+2026-10-01,SGD,Chile,utility,0.0256
+2026-10-01,SGD,Chile,authentication,0.0256
+2026-10-01,SGD,Chile,service,0.0256
+2026-10-01,SGD,Colombia,marketing,0.016
+2026-10-01,SGD,Colombia,utility,0.001
+2026-10-01,SGD,Colombia,authentication,0.001
+2026-10-01,SGD,Colombia,service,0.001
+2026-10-01,SGD,Egypt,marketing,0.0825
+2026-10-01,SGD,Egypt,utility,0.0046
+2026-10-01,SGD,Egypt,authentication,0.0046
+2026-10-01,SGD,Egypt,authentication_international,0.0832
+2026-10-01,SGD,Egypt,service,0.0046
+2026-10-01,SGD,France,marketing,0.11
+2026-10-01,SGD,France,utility,0.0384
+2026-10-01,SGD,France,authentication,0.0384
+2026-10-01,SGD,France,service,0.0384
+2026-10-01,SGD,Germany,marketing,0.1748
+2026-10-01,SGD,Germany,utility,0.0704
+2026-10-01,SGD,Germany,authentication,0.0704
+2026-10-01,SGD,Germany,service,0.0704
+2026-10-01,SGD,Hong Kong,marketing,0.0937
+2026-10-01,SGD,Hong Kong,utility,0.0334
+2026-10-01,SGD,Hong Kong,authentication,0.0334
+2026-10-01,SGD,Hong Kong,service,0.0334
+2026-10-01,SGD,Hungary,marketing,0.1101
+2026-10-01,SGD,Hungary,utility,0.0447
+2026-10-01,SGD,Hungary,authentication,0.0447
+2026-10-01,SGD,Hungary,service,0.0447
+2026-10-01,SGD,India,marketing,0.0151
+2026-10-01,SGD,India,utility,0.0018
+2026-10-01,SGD,India,authentication,0.0018
+2026-10-01,SGD,India,authentication_international,0.0389
+2026-10-01,SGD,India,service,0.0018
+2026-10-01,SGD,Indonesia,marketing,0.0526
+2026-10-01,SGD,Indonesia,utility,0.032
+2026-10-01,SGD,Indonesia,authentication,0.032
+2026-10-01,SGD,Indonesia,authentication_international,0.1741
+2026-10-01,SGD,Indonesia,service,0.032
+2026-10-01,SGD,Iraq,marketing,0.0437
+2026-10-01,SGD,Iraq,utility,0.0102
+2026-10-01,SGD,Iraq,authentication,0.0102
+2026-10-01,SGD,Iraq,authentication_international,0.1646
+2026-10-01,SGD,Iraq,service,0.0102
+2026-10-01,SGD,Israel,marketing,0.0452
+2026-10-01,SGD,Israel,utility,0.0068
+2026-10-01,SGD,Israel,authentication,0.0068
+2026-10-01,SGD,Israel,service,0.0068
+2026-10-01,SGD,Italy,marketing,0.1018
+2026-10-01,SGD,Italy,utility,0.0384
+2026-10-01,SGD,Italy,authentication,0.0384
+2026-10-01,SGD,Italy,service,0.0384
+2026-10-01,SGD,Kazakhstan,marketing,0.0773
+2026-10-01,SGD,Kazakhstan,utility,0.0231
+2026-10-01,SGD,Kazakhstan,authentication,0.0231
+2026-10-01,SGD,Kazakhstan,authentication_international,0.2057
+2026-10-01,SGD,Kazakhstan,service,0.0231
+2026-10-01,SGD,Kuwait,marketing,0.1015
+2026-10-01,SGD,Kuwait,utility,0.0566
+2026-10-01,SGD,Kuwait,authentication,0.0566
+2026-10-01,SGD,Kuwait,authentication_international,0.1543
+2026-10-01,SGD,Kuwait,service,0.0566
+2026-10-01,SGD,Malaysia,marketing,0.1101
+2026-10-01,SGD,Malaysia,utility,0.0179
+2026-10-01,SGD,Malaysia,authentication,0.0179
+2026-10-01,SGD,Malaysia,authentication_international,0.0535
+2026-10-01,SGD,Malaysia,service,0.0179
+2026-10-01,SGD,Mexico,marketing,0.0508
+2026-10-01,SGD,Mexico,utility,0.0109
+2026-10-01,SGD,Mexico,authentication,0.0109
+2026-10-01,SGD,Mexico,service,0.0109
+2026-10-01,SGD,Morocco,marketing,0.053
+2026-10-01,SGD,Morocco,utility,0.0293
+2026-10-01,SGD,Morocco,authentication,0.0293
+2026-10-01,SGD,Morocco,authentication_international,0.1034
+2026-10-01,SGD,Morocco,service,0.0293
+2026-10-01,SGD,Netherlands,marketing,0.2045
+2026-10-01,SGD,Netherlands,utility,0.064
+2026-10-01,SGD,Netherlands,authentication,0.064
+2026-10-01,SGD,Netherlands,service,0.064
+2026-10-01,SGD,Nepal,marketing,0.0937
+2026-10-01,SGD,Nepal,utility,0.0044
+2026-10-01,SGD,Nepal,authentication,0.0044
+2026-10-01,SGD,Nepal,authentication_international,0.1437
+2026-10-01,SGD,Nepal,service,0.0044
+2026-10-01,SGD,Nigeria,marketing,0.0661
+2026-10-01,SGD,Nigeria,utility,0.0086
+2026-10-01,SGD,Nigeria,authentication,0.0086
+2026-10-01,SGD,Nigeria,authentication_international,0.096
+2026-10-01,SGD,Nigeria,service,0.0086
+2026-10-01,SGD,Oman,marketing,0.0437
+2026-10-01,SGD,Oman,utility,0.0318
+2026-10-01,SGD,Oman,authentication,0.0318
+2026-10-01,SGD,Oman,authentication_international,0.0771
+2026-10-01,SGD,Oman,service,0.0318
+2026-10-01,SGD,Pakistan,marketing,0.0606
+2026-10-01,SGD,Pakistan,utility,0.0192
+2026-10-01,SGD,Pakistan,authentication,0.0192
+2026-10-01,SGD,Pakistan,authentication_international,0.096
+2026-10-01,SGD,Pakistan,service,0.0192
+2026-10-01,SGD,Peru,marketing,0.09
+2026-10-01,SGD,Peru,utility,0.0384
+2026-10-01,SGD,Peru,authentication,0.0384
+2026-10-01,SGD,Peru,service,0.0384
+2026-10-01,SGD,Poland,marketing,0.0468
+2026-10-01,SGD,Poland,utility,0.0156
+2026-10-01,SGD,Poland,authentication,0.0156
+2026-10-01,SGD,Poland,service,0.0156
+2026-10-01,SGD,Qatar,marketing,0.0437
+2026-10-01,SGD,Qatar,utility,0.0154
+2026-10-01,SGD,Qatar,authentication,0.0154
+2026-10-01,SGD,Qatar,service,0.0154
+2026-10-01,SGD,Romania,marketing,0.1101
+2026-10-01,SGD,Romania,utility,0.0371
+2026-10-01,SGD,Romania,authentication,0.0371
+2026-10-01,SGD,Romania,service,0.0371
+2026-10-01,SGD,Russia,marketing,0.1027
+2026-10-01,SGD,Russia,utility,0.0512
+2026-10-01,SGD,Russia,authentication,0.0512
+2026-10-01,SGD,Russia,service,0.0512
+2026-10-01,SGD,Saudi Arabia,marketing,0.0737
+2026-10-01,SGD,Saudi Arabia,utility,0.0137
+2026-10-01,SGD,Saudi Arabia,authentication,0.0137
+2026-10-01,SGD,Saudi Arabia,authentication_international,0.0766
+2026-10-01,SGD,Saudi Arabia,service,0.0137
+2026-10-01,SGD,Singapore,marketing,0.0937
+2026-10-01,SGD,Singapore,utility,0.0205
+2026-10-01,SGD,Singapore,authentication,0.0205
+2026-10-01,SGD,Singapore,service,0.0205
+2026-10-01,SGD,South Africa,marketing,0.0485
+2026-10-01,SGD,South Africa,utility,0.0121
+2026-10-01,SGD,South Africa,authentication,0.0121
+2026-10-01,SGD,South Africa,authentication_international,0.0256
+2026-10-01,SGD,South Africa,service,0.0121
+2026-10-01,SGD,Spain,marketing,0.0905
+2026-10-01,SGD,Spain,utility,0.0256
+2026-10-01,SGD,Spain,authentication,0.0256
+2026-10-01,SGD,Spain,service,0.0256
+2026-10-01,SGD,Sri Lanka,marketing,0.0937
+2026-10-01,SGD,Sri Lanka,utility,0.0026
+2026-10-01,SGD,Sri Lanka,authentication,0.0026
+2026-10-01,SGD,Sri Lanka,authentication_international,0.1848
+2026-10-01,SGD,Sri Lanka,service,0.0026
+2026-10-01,SGD,Turkey,marketing,0.014
+2026-10-01,SGD,Turkey,utility,0.0012
+2026-10-01,SGD,Turkey,authentication,0.0012
+2026-10-01,SGD,Turkey,service,0.0012
+2026-10-01,SGD,Ukraine,marketing,0.1101
+2026-10-01,SGD,Ukraine,utility,0.0381
+2026-10-01,SGD,Ukraine,authentication,0.0381
+2026-10-01,SGD,Ukraine,authentication_international,0.0954
+2026-10-01,SGD,Ukraine,service,0.0381
+2026-10-01,SGD,United Arab Emirates,marketing,0.0737
+2026-10-01,SGD,United Arab Emirates,utility,0.0201
+2026-10-01,SGD,United Arab Emirates,authentication,0.0201
+2026-10-01,SGD,United Arab Emirates,authentication_international,0.0653
+2026-10-01,SGD,United Arab Emirates,service,0.0201
+2026-10-01,SGD,United Kingdom,marketing,0.0812
+2026-10-01,SGD,United Kingdom,utility,0.0282
+2026-10-01,SGD,United Kingdom,authentication,0.0282
+2026-10-01,SGD,United Kingdom,service,0.0282
+2026-10-01,SGD,North America,marketing,0.032
+2026-10-01,SGD,North America,utility,0.0044
+2026-10-01,SGD,North America,authentication,0.0044
+2026-10-01,SGD,North America,service,0.0044
+2026-10-01,SGD,Rest of Africa,marketing,0.0288
+2026-10-01,SGD,Rest of Africa,utility,0.0051
+2026-10-01,SGD,Rest of Africa,authentication,0.0051
+2026-10-01,SGD,Rest of Africa,service,0.0051
+2026-10-01,SGD,Rest of Asia Pacific,marketing,0.1078
+2026-10-01,SGD,Rest of Asia Pacific,utility,0.0145
+2026-10-01,SGD,Rest of Asia Pacific,authentication,0.0145
+2026-10-01,SGD,Rest of Asia Pacific,service,0.0145
+2026-10-01,SGD,Rest of Central & Eastern Europe,marketing,0.1101
+2026-10-01,SGD,Rest of Central & Eastern Europe,utility,0.0271
+2026-10-01,SGD,Rest of Central & Eastern Europe,authentication,0.0271
+2026-10-01,SGD,Rest of Central & Eastern Europe,service,0.0271
+2026-10-01,SGD,Rest of Latin America,marketing,0.0947
+2026-10-01,SGD,Rest of Latin America,utility,0.0145
+2026-10-01,SGD,Rest of Latin America,authentication,0.0145
+2026-10-01,SGD,Rest of Latin America,service,0.0145
+2026-10-01,SGD,Rest of Middle East,marketing,0.0503
+2026-10-01,SGD,Rest of Middle East,utility,0.0117
+2026-10-01,SGD,Rest of Middle East,authentication,0.0117
+2026-10-01,SGD,Rest of Middle East,service,0.0117
+2026-10-01,SGD,Rest of Western Europe,marketing,0.0758
+2026-10-01,SGD,Rest of Western Europe,utility,0.0219
+2026-10-01,SGD,Rest of Western Europe,authentication,0.0219
+2026-10-01,SGD,Rest of Western Europe,service,0.0219
+2026-10-01,SGD,Other,marketing,0.0773
+2026-10-01,SGD,Other,utility,0.0099
+2026-10-01,SGD,Other,authentication,0.0099
+2026-10-01,SGD,Other,service,0.0099
+2026-10-01,USD,Argentina,marketing,0.0618
+2026-10-01,USD,Argentina,utility,0.026
+2026-10-01,USD,Argentina,authentication,0.026
+2026-10-01,USD,Argentina,service,0.026
+2026-10-01,USD,Bangladesh,marketing,0.0732
+2026-10-01,USD,Bangladesh,utility,0.0037
+2026-10-01,USD,Bangladesh,authentication,0.0037
+2026-10-01,USD,Bangladesh,authentication_international,0.096
+2026-10-01,USD,Bangladesh,service,0.0037
+2026-10-01,USD,Brazil,marketing,0.0625
+2026-10-01,USD,Brazil,utility,0.0068
+2026-10-01,USD,Brazil,authentication,0.0068
+2026-10-01,USD,Brazil,service,0.0068
+2026-10-01,USD,Chile,marketing,0.0889
+2026-10-01,USD,Chile,utility,0.02
+2026-10-01,USD,Chile,authentication,0.02
+2026-10-01,USD,Chile,service,0.02
+2026-10-01,USD,Colombia,marketing,0.0125
+2026-10-01,USD,Colombia,utility,0.0008
+2026-10-01,USD,Colombia,authentication,0.0008
+2026-10-01,USD,Colombia,service,0.0008
+2026-10-01,USD,Egypt,marketing,0.0644
+2026-10-01,USD,Egypt,utility,0.0036
+2026-10-01,USD,Egypt,authentication,0.0036
+2026-10-01,USD,Egypt,authentication_international,0.065
+2026-10-01,USD,Egypt,service,0.0036
+2026-10-01,USD,France,marketing,0.0859
+2026-10-01,USD,France,utility,0.03
+2026-10-01,USD,France,authentication,0.03
+2026-10-01,USD,France,service,0.03
+2026-10-01,USD,Germany,marketing,0.1365
+2026-10-01,USD,Germany,utility,0.055
+2026-10-01,USD,Germany,authentication,0.055
+2026-10-01,USD,Germany,service,0.055
+2026-10-01,USD,Hong Kong,marketing,0.0732
+2026-10-01,USD,Hong Kong,utility,0.026
+2026-10-01,USD,Hong Kong,authentication,0.026
+2026-10-01,USD,Hong Kong,service,0.026
+2026-10-01,USD,Hungary,marketing,0.086
+2026-10-01,USD,Hungary,utility,0.035
+2026-10-01,USD,Hungary,authentication,0.035
+2026-10-01,USD,Hungary,service,0.035
+2026-10-01,USD,India,marketing,0.0118
+2026-10-01,USD,India,utility,0.0014
+2026-10-01,USD,India,authentication,0.0014
+2026-10-01,USD,India,authentication_international,0.0304
+2026-10-01,USD,India,service,0.0014
+2026-10-01,USD,Indonesia,marketing,0.0411
+2026-10-01,USD,Indonesia,utility,0.025
+2026-10-01,USD,Indonesia,authentication,0.025
+2026-10-01,USD,Indonesia,authentication_international,0.136
+2026-10-01,USD,Indonesia,service,0.025
+2026-10-01,USD,Iraq,marketing,0.0341
+2026-10-01,USD,Iraq,utility,0.0079
+2026-10-01,USD,Iraq,authentication,0.0079
+2026-10-01,USD,Iraq,authentication_international,0.128
+2026-10-01,USD,Iraq,service,0.0079
+2026-10-01,USD,Israel,marketing,0.0353
+2026-10-01,USD,Israel,utility,0.0053
+2026-10-01,USD,Israel,authentication,0.0053
+2026-10-01,USD,Israel,service,0.0053
+2026-10-01,USD,Italy,marketing,0.0795
+2026-10-01,USD,Italy,utility,0.03
+2026-10-01,USD,Italy,authentication,0.03
+2026-10-01,USD,Italy,service,0.03
+2026-10-01,USD,Kazakhstan,marketing,0.0604
+2026-10-01,USD,Kazakhstan,utility,0.018
+2026-10-01,USD,Kazakhstan,authentication,0.018
+2026-10-01,USD,Kazakhstan,authentication_international,0.16
+2026-10-01,USD,Kazakhstan,service,0.018
+2026-10-01,USD,Kuwait,marketing,0.0792
+2026-10-01,USD,Kuwait,utility,0.044
+2026-10-01,USD,Kuwait,authentication,0.044
+2026-10-01,USD,Kuwait,authentication_international,0.12
+2026-10-01,USD,Kuwait,service,0.044
+2026-10-01,USD,Malaysia,marketing,0.086
+2026-10-01,USD,Malaysia,utility,0.014
+2026-10-01,USD,Malaysia,authentication,0.014
+2026-10-01,USD,Malaysia,authentication_international,0.0418
+2026-10-01,USD,Malaysia,service,0.014
+2026-10-01,USD,Mexico,marketing,0.0397
+2026-10-01,USD,Mexico,utility,0.0085
+2026-10-01,USD,Mexico,authentication,0.0085
+2026-10-01,USD,Mexico,service,0.0085
+2026-10-01,USD,Morocco,marketing,0.0414
+2026-10-01,USD,Morocco,utility,0.023
+2026-10-01,USD,Morocco,authentication,0.023
+2026-10-01,USD,Morocco,authentication_international,0.0811
+2026-10-01,USD,Morocco,service,0.023
+2026-10-01,USD,Netherlands,marketing,0.1597
+2026-10-01,USD,Netherlands,utility,0.05
+2026-10-01,USD,Netherlands,authentication,0.05
+2026-10-01,USD,Netherlands,service,0.05
+2026-10-01,USD,Nepal,marketing,0.0732
+2026-10-01,USD,Nepal,utility,0.0034
+2026-10-01,USD,Nepal,authentication,0.0034
+2026-10-01,USD,Nepal,authentication_international,0.112
+2026-10-01,USD,Nepal,service,0.0034
+2026-10-01,USD,Nigeria,marketing,0.0516
+2026-10-01,USD,Nigeria,utility,0.0067
+2026-10-01,USD,Nigeria,authentication,0.0067
+2026-10-01,USD,Nigeria,authentication_international,0.075
+2026-10-01,USD,Nigeria,service,0.0067
+2026-10-01,USD,Oman,marketing,0.0341
+2026-10-01,USD,Oman,utility,0.0247
+2026-10-01,USD,Oman,authentication,0.0247
+2026-10-01,USD,Oman,authentication_international,0.06
+2026-10-01,USD,Oman,service,0.0247
+2026-10-01,USD,Pakistan,marketing,0.0473
+2026-10-01,USD,Pakistan,utility,0.015
+2026-10-01,USD,Pakistan,authentication,0.015
+2026-10-01,USD,Pakistan,authentication_international,0.075
+2026-10-01,USD,Pakistan,service,0.015
+2026-10-01,USD,Peru,marketing,0.0703
+2026-10-01,USD,Peru,utility,0.03
+2026-10-01,USD,Peru,authentication,0.03
+2026-10-01,USD,Peru,service,0.03
+2026-10-01,USD,Poland,marketing,0.0366
+2026-10-01,USD,Poland,utility,0.0122
+2026-10-01,USD,Poland,authentication,0.0122
+2026-10-01,USD,Poland,service,0.0122
+2026-10-01,USD,Qatar,marketing,0.0341
+2026-10-01,USD,Qatar,utility,0.012
+2026-10-01,USD,Qatar,authentication,0.012
+2026-10-01,USD,Qatar,service,0.012
+2026-10-01,USD,Romania,marketing,0.086
+2026-10-01,USD,Romania,utility,0.029
+2026-10-01,USD,Romania,authentication,0.029
+2026-10-01,USD,Romania,service,0.029
+2026-10-01,USD,Russia,marketing,0.0802
+2026-10-01,USD,Russia,utility,0.04
+2026-10-01,USD,Russia,authentication,0.04
+2026-10-01,USD,Russia,service,0.04
+2026-10-01,USD,Saudi Arabia,marketing,0.0576
+2026-10-01,USD,Saudi Arabia,utility,0.0107
+2026-10-01,USD,Saudi Arabia,authentication,0.0107
+2026-10-01,USD,Saudi Arabia,authentication_international,0.0598
+2026-10-01,USD,Saudi Arabia,service,0.0107
+2026-10-01,USD,Singapore,marketing,0.0732
+2026-10-01,USD,Singapore,utility,0.016
+2026-10-01,USD,Singapore,authentication,0.016
+2026-10-01,USD,Singapore,service,0.016
+2026-10-01,USD,South Africa,marketing,0.0379
+2026-10-01,USD,South Africa,utility,0.0095
+2026-10-01,USD,South Africa,authentication,0.0095
+2026-10-01,USD,South Africa,authentication_international,0.02
+2026-10-01,USD,South Africa,service,0.0095
+2026-10-01,USD,Spain,marketing,0.0707
+2026-10-01,USD,Spain,utility,0.02
+2026-10-01,USD,Spain,authentication,0.02
+2026-10-01,USD,Spain,service,0.02
+2026-10-01,USD,Sri Lanka,marketing,0.0732
+2026-10-01,USD,Sri Lanka,utility,0.002
+2026-10-01,USD,Sri Lanka,authentication,0.002
+2026-10-01,USD,Sri Lanka,authentication_international,0.144
+2026-10-01,USD,Sri Lanka,service,0.002
+2026-10-01,USD,Turkey,marketing,0.0109
+2026-10-01,USD,Turkey,utility,0.0009
+2026-10-01,USD,Turkey,authentication,0.0009
+2026-10-01,USD,Turkey,service,0.0009
+2026-10-01,USD,Ukraine,marketing,0.086
+2026-10-01,USD,Ukraine,utility,0.0298
+2026-10-01,USD,Ukraine,authentication,0.0298
+2026-10-01,USD,Ukraine,authentication_international,0.0746
+2026-10-01,USD,Ukraine,service,0.0298
+2026-10-01,USD,United Arab Emirates,marketing,0.0576
+2026-10-01,USD,United Arab Emirates,utility,0.0157
+2026-10-01,USD,United Arab Emirates,authentication,0.0157
+2026-10-01,USD,United Arab Emirates,authentication_international,0.051
+2026-10-01,USD,United Arab Emirates,service,0.0157
+2026-10-01,USD,United Kingdom,marketing,0.0635
+2026-10-01,USD,United Kingdom,utility,0.022
+2026-10-01,USD,United Kingdom,authentication,0.022
+2026-10-01,USD,United Kingdom,service,0.022
+2026-10-01,USD,North America,marketing,0.025
+2026-10-01,USD,North America,utility,0.0034
+2026-10-01,USD,North America,authentication,0.0034
+2026-10-01,USD,North America,service,0.0034
+2026-10-01,USD,Rest of Africa,marketing,0.0225
+2026-10-01,USD,Rest of Africa,utility,0.004
+2026-10-01,USD,Rest of Africa,authentication,0.004
+2026-10-01,USD,Rest of Africa,service,0.004
+2026-10-01,USD,Rest of Asia Pacific,marketing,0.0842
+2026-10-01,USD,Rest of Asia Pacific,utility,0.0113
+2026-10-01,USD,Rest of Asia Pacific,authentication,0.0113
+2026-10-01,USD,Rest of Asia Pacific,service,0.0113
+2026-10-01,USD,Rest of Central & Eastern Europe,marketing,0.086
+2026-10-01,USD,Rest of Central & Eastern Europe,utility,0.0212
+2026-10-01,USD,Rest of Central & Eastern Europe,authentication,0.0212
+2026-10-01,USD,Rest of Central & Eastern Europe,service,0.0212
+2026-10-01,USD,Rest of Latin America,marketing,0.074
+2026-10-01,USD,Rest of Latin America,utility,0.0113
+2026-10-01,USD,Rest of Latin America,authentication,0.0113
+2026-10-01,USD,Rest of Latin America,service,0.0113
+2026-10-01,USD,Rest of Middle East,marketing,0.0392
+2026-10-01,USD,Rest of Middle East,utility,0.0091
+2026-10-01,USD,Rest of Middle East,authentication,0.0091
+2026-10-01,USD,Rest of Middle East,service,0.0091
+2026-10-01,USD,Rest of Western Europe,marketing,0.0592
+2026-10-01,USD,Rest of Western Europe,utility,0.0171
+2026-10-01,USD,Rest of Western Europe,authentication,0.0171
+2026-10-01,USD,Rest of Western Europe,service,0.0171
+2026-10-01,USD,Other,marketing,0.0604
+2026-10-01,USD,Other,utility,0.0077
+2026-10-01,USD,Other,authentication,0.0077
+2026-10-01,USD,Other,service,0.0077

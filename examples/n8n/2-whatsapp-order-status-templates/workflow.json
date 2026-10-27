@@ -1,0 +1,461 @@
+{
+  "name": "Send order status updates with WhatsApp templates and track delivery",
+  "nodes": [
+    {
+      "id": "19e6ac22-117e-430f-ac75-ea5a54a85614",
+      "name": "Overview",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        -60
+      ],
+      "parameters": {
+        "content": "## Order status updates via WhatsApp templates, with delivery log\n\nSends the right approved template when an order changes status and records whether it was delivered or read.\n\n### How it works\n1. Your shop or backend POSTs {order_id, status, phone, name, tracking_url} to the webhook.\n2. A Code node picks the template for the status (confirmed, shipped, delivered).\n3. The WhatsApp node sends the template; the message id is logged in Google Sheets.\n4. A second branch listens to WhatsApp status webhooks (sent, delivered, read, failed) and updates the log row.\n\n### Setup steps\n1. Create three templates named order_confirmed, order_shipped, order_delivered, each with two body variables (name, order id), and wait for approval. Names can be changed in the Code node.\n2. Sheet tab \"Order messages\": order_id, status, phone, message_id, delivery_status, updated_at, error.\n3. Add credentials: WhatsApp Business Cloud, WhatsApp Trigger, Google Sheets. Set your phone number id and spreadsheet.\n4. Call the webhook Production URL from your shop.",
+        "height": 600,
+        "width": 560,
+        "color": 4
+      }
+    },
+    {
+      "id": "29a13696-9f1f-4fe4-9008-ecbe512a535f",
+      "name": "Meta rules",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -760,
+        560
+      ],
+      "parameters": {
+        "content": "## Meta rules to know\n- Order updates usually go out outside a 24 hour window, so they **must be approved templates**. Only send to customers who gave **opt-in** for order updates.\n- Meta decides the category. Order, shipping and delivery updates are normally utility. Promotion inside them can get a template recategorised as marketing, which is billed higher.\n- Template variables cannot be empty.\n- A failed status carries an error code; review failed rows rather than retrying blindly.\n- Cost is per delivered template message, by recipient country and category.",
+        "height": 300,
+        "width": 560,
+        "color": 3
+      }
+    },
+    {
+      "id": "a744d4ce-9528-4de5-9ef9-f2233562a261",
+      "name": "Section: send",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        -40
+      ],
+      "parameters": {
+        "content": "### 1. Send the template",
+        "height": 60,
+        "width": 1580
+      }
+    },
+    {
+      "id": "4cbda961-ed53-462c-8054-d40023f08e3a",
+      "name": "Order webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -40,
+        120
+      ],
+      "webhookId": "4eb8609d-8c7c-44fd-994e-676c29ea0992",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "whatsapp-order-status",
+        "responseMode": "responseNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "25b800f3-7b7c-4e62-87b5-eb6d709a26ac",
+      "name": "Pick template",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        120
+      ],
+      "parameters": {
+        "jsCode": "// Expects: { order_id, status: confirmed|shipped|delivered, phone, name, lang }\nconst b = $input.first().json.body || $input.first().json;\nconst templates = { confirmed: 'order_confirmed', shipped: 'order_shipped', delivered: 'order_delivered' };\nconst status = String(b.status || '').toLowerCase();\nconst phone = String(b.phone || '').replace(/\\D/g, '');\nconst lang = b.lang || 'en';\nif (!templates[status] || phone.length < 8 || !b.order_id) {\n  return [{ json: { ok: false, error: 'Unknown status, missing order_id or invalid phone' } }];\n}\nreturn [{ json: {\n  ok: true, order_id: String(b.order_id), status, phone,\n  template: templates[status] + '|' + lang,\n  name: String(b.name || 'there').trim(),\n} }];"
+      }
+    },
+    {
+      "id": "2c05c626-c305-4d09-944d-fdd33373cd48",
+      "name": "Valid event?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        440,
+        120
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "6172e6d9-4798-4136-89b9-602b642e3ab9",
+              "leftValue": "={{ $json.ok }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "415bdd46-d7f1-4151-a0f9-70d2181ac77a",
+      "name": "Send order template",
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1.1,
+      "position": [
+        680,
+        60
+      ],
+      "parameters": {
+        "resource": "message",
+        "phoneNumberId": "YOUR_PHONE_NUMBER_ID",
+        "operation": "sendTemplate",
+        "recipientPhoneNumber": "={{ $json.phone }}",
+        "template": "={{ $json.template }}",
+        "components": {
+          "component": [
+            {
+              "type": "body",
+              "bodyParameters": {
+                "parameter": [
+                  {
+                    "type": "text",
+                    "text": "={{ $json.name }}"
+                  },
+                  {
+                    "type": "text",
+                    "text": "={{ $json.order_id }}"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ac597078-7043-445f-a1b0-c8aaca5321d4",
+      "name": "Build log row",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        920,
+        60
+      ],
+      "parameters": {
+        "jsCode": "const src = $('Pick template').first().json;\nconst res = $input.first().json;\nreturn [{ json: {\n  order_id: src.order_id, status: src.status, phone: src.phone,\n  message_id: res.messages?.[0]?.id || '',\n  delivery_status: 'accepted', error: '', updated_at: new Date().toISOString(),\n} }];"
+      }
+    },
+    {
+      "id": "1648ef70-d08e-430c-bb30-36e4e1ca7e96",
+      "name": "Log message",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1160,
+        60
+      ],
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_SPREADSHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Order messages",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": []
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "24d2cca8-3324-43f1-bca8-191b0cfb4a52",
+      "name": "Respond OK",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        1400,
+        60
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"ok\": true } }}",
+        "options": {
+          "responseCode": 200
+        }
+      }
+    },
+    {
+      "id": "37e2738b-5a54-4d17-9f44-0ce4cf45a634",
+      "name": "Respond error",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        680,
+        240
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"ok\": false, \"error\": $json.error } }}",
+        "options": {
+          "responseCode": 400
+        }
+      }
+    },
+    {
+      "id": "4029ecb5-540c-4018-9478-2c9ff8b0efc8",
+      "name": "Section: status",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        420
+      ],
+      "parameters": {
+        "content": "### 2. Track delivery status",
+        "height": 60,
+        "width": 1580
+      }
+    },
+    {
+      "id": "dccfe81f-ac24-4781-a17c-1fdca0e85325",
+      "name": "WhatsApp status trigger",
+      "type": "n8n-nodes-base.whatsAppTrigger",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        540
+      ],
+      "webhookId": "e67485dc-b513-449e-8a30-a970a90aaa62",
+      "parameters": {
+        "updates": [
+          "messages"
+        ],
+        "options": {
+          "messageStatusUpdates": [
+            "sent",
+            "delivered",
+            "read",
+            "failed"
+          ]
+        }
+      }
+    },
+    {
+      "id": "33782ee8-3c39-45ee-89bf-1fb05bcde666",
+      "name": "Is status update?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        240,
+        540
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "240fa800-d91e-4b85-a770-b5fcb3f682e9",
+              "leftValue": "={{ !!$json.statuses }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "7bf54202-0019-4415-95b6-f73edff59719",
+      "name": "Map status",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        520
+      ],
+      "parameters": {
+        "jsCode": "const s = $input.first().json.statuses[0];\nreturn [{ json: {\n  message_id: s.id,\n  delivery_status: s.status, // sent | delivered | read | failed\n  error: s.errors?.[0] ? s.errors[0].code + ' ' + (s.errors[0].title || '') : '',\n  updated_at: new Date(Number(s.timestamp) * 1000).toISOString(),\n} }];"
+      }
+    },
+    {
+      "id": "29e43ded-52b3-4c32-bd7b-295da383c986",
+      "name": "Update log row",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        720,
+        520
+      ],
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_SPREADSHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Order messages",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "message_id"
+          ],
+          "schema": []
+        },
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Order webhook": {
+      "main": [
+        [
+          {
+            "node": "Pick template",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pick template": {
+      "main": [
+        [
+          {
+            "node": "Valid event?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valid event?": {
+      "main": [
+        [
+          {
+            "node": "Send order template",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send order template": {
+      "main": [
+        [
+          {
+            "node": "Build log row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build log row": {
+      "main": [
+        [
+          {
+            "node": "Log message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log message": {
+      "main": [
+        [
+          {
+            "node": "Respond OK",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "WhatsApp status trigger": {
+      "main": [
+        [
+          {
+            "node": "Is status update?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is status update?": {
+      "main": [
+        [
+          {
+            "node": "Map status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Map status": {
+      "main": [
+        [
+          {
+            "node": "Update log row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "tags": []
+}

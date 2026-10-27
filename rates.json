@@ -1,0 +1,84 @@
+{
+  "name": "whatsapp-api-rates",
+  "publisher": "Tobachat",
+  "license": "CC-BY-4.0",
+  "source": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+  "latest_effective_date": "2026-10-01",
+  "checked_on": "2026-10-27",
+  "currencies": [
+    {
+      "code": "AED",
+      "latest": "data/latest/AED.csv"
+    },
+    {
+      "code": "ARS",
+      "latest": "data/latest/ARS.csv"
+    },
+    {
+      "code": "AUD",
+      "latest": "data/latest/AUD.csv"
+    },
+    {
+      "code": "BRL",
+      "latest": "data/latest/BRL.csv"
+    },
+    {
+      "code": "CLP",
+      "latest": "data/latest/CLP.csv"
+    },
+    {
+      "code": "COP",
+      "latest": "data/latest/COP.csv"
+    },
+    {
+      "code": "EUR",
+      "latest": "data/latest/EUR.csv"
+    },
+    {
+      "code": "GBP",
+      "latest": "data/latest/GBP.csv"
+    },
+    {
+      "code": "IDR",
+      "latest": "data/latest/IDR.csv"
+    },
+    {
+      "code": "INR",
+      "latest": "data/latest/INR.csv"
+    },
+    {
+      "code": "MXN",
+      "latest": "data/latest/MXN.csv"
+    },
+    {
+      "code": "MYR",
+      "latest": "data/latest/MYR.csv"
+    },
+    {
+      "code": "PEN",
+      "latest": "data/latest/PEN.csv"
+    },
+    {
+      "code": "SAR",
+      "latest": "data/latest/SAR.csv"
+    },
+    {
+      "code": "SGD",
+      "latest": "data/latest/SGD.csv"
+    },
+    {
+      "code": "USD",
+      "latest": "data/latest/USD.csv"
+    }
+  ],
+  "country_market": "data/country_market.csv",
+  "versions": [
+    {
+      "effective_date": "2026-10-01",
+      "rates": "data/rates/2026-10-01.csv",
+      "rates_sha256": "77b943bad010e37c1e4f1a0690db05ef279bfb5f330f8a693b1eadef3737dd5d",
+      "tiers": "data/tiers/2026-10-01.csv",
+      "tiers_sha256": "801c0a6b1489b59930ad71c5746d7b9d764150ba539e9a4c18f4a567da41280f"
+    }
+  ]
+}
