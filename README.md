@@ -79,9 +79,10 @@ is fixed per account.
 - HTML entities in names (`&amp;`) are decoded. "Rest of Central & Eastern Europe" is the name Meta uses.
 - In the volume-tier sheet the market name appears only on the first row of each block and three tier blocks sit side by
   side; we fill the name down and give each block its own rows.
-- The "Service" column is reported as Meta lists it (free service messages inside the customer service window; 1,000 free
-  per business phone number per month since 2026-10-01). Meta's "Meta Business Agent" column is a flat per-million-token
-  price in USD in every row, not a message rate, so it is left out.
+- The "Service" column is reported as Meta lists it. Service messages are free-form replies inside the customer service
+  window; since 2026-10-01 the first 1,000 per business phone number per month are free and the rest are billed at this
+  rate (equal to utility in every market). Meta's "Meta Business Agent" column is a flat per-million-token price in USD
+  in every row, not a message rate, so it is left out.
 - `Other` has no member countries: it is every country not listed in `country_market.csv`.
 - Kazakhstan and Russia share calling code 7; Canada, the United States and several Caribbean countries share code 1, so a
   calling code alone is not enough: use `country_market.csv` (ISO code) and the extra area codes.
