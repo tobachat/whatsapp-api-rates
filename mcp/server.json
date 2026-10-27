@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tobachat/whatsapp-rates",
+  "title": "WhatsApp API rates",
+  "description": "Meta's WhatsApp Business API rates per country, category and currency, with a cost estimate",
+  "websiteUrl": "https://github.com/tobachat/whatsapp-api-rates/tree/main/mcp",
+  "repository": {
+    "url": "https://github.com/tobachat/whatsapp-api-rates",
+    "source": "github",
+    "subfolder": "mcp"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "whatsapp-rates-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "npx",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}
