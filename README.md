@@ -2,18 +2,23 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23710440.svg)](https://doi.org/10.5281/zenodo.23710440)
 
-Meta's per-message rates for the WhatsApp Business Platform, in every currency Meta publishes (16), as clean tidy CSV:
-list rates, volume tiers for utility and authentication, and a table that tells you which rate-card market a country
-belongs to. Rate card in effect: **2026-10-01**, last compared with Meta's files on 2026-10-27.
+Meta's per-message rates for the WhatsApp Business Platform as clean, versioned CSV, in all 16 currencies Meta publishes.
+Rate card in effect: **2026-10-01**, last compared with Meta's files on 2026-10-27.
 
-Meta publishes these as XLSX workbooks that carry a `.csv` name, behind signed links that expire, and overwrites them every
-quarter. This repo is the stable, versioned, documented copy, checked against Meta every week.
+- **Country to market table.** 141 countries with ISO and calling codes, each mapped to the rate-card market it is billed
+  under (its own rate, a "Rest of ..." region or North America), including the shared calling codes (+1, +7).
+- **Meta's original files, archived per quarter** in `raw/<date>/`. Meta publishes XLSX workbooks under a `.csv` name,
+  behind signed links that expire, and overwrites them every quarter; this repo keeps every card.
+- **List rates and volume tiers** for every currency, Meta's own values, never converted.
+- **A weekly watcher** that compares Meta's live files with this repo and opens an issue and a pull request when they change.
+- **Tools:** JavaScript and Python estimators (`packages/`), five n8n templates (`examples/n8n/`).
 
 ## Use it programmatically
 
 Recommended source: the raw files of this repo, for example
-`https://raw.githubusercontent.com/tobachat/whatsapp-api-rates/main/data/latest/EUR.csv`
-(plain `curl` and default Python or Node user agents work; tobachat.nl sits behind a bot check that blocks them).
+`https://raw.githubusercontent.com/tobachat/whatsapp-api-rates/main/data/latest/EUR.csv`.
+They work from any client and send `Access-Control-Allow-Origin: *`, so a browser can fetch them too. (tobachat.nl serves
+the same data to browsers, curl and Node, but refuses Python's default urllib user agent.)
 `rates.json` lists every file, version and hash. A bundled, dependency-free estimator is in `packages/` (EUR only).
 
 ## Files
@@ -73,8 +78,8 @@ files cannot be found, it opens a "Watcher broken" issue instead of failing sile
 
 ## Licence and citation
 
-The compilation (selection, structure, cleaning, documentation) is [CC BY 4.0](LICENSE); the code in `scripts/`,
-`packages/` and `examples/` is MIT. The rates themselves are Meta's published prices. This dataset is not affiliated
+The data and its compilation (selection, structure, cleaning, documentation), compiled by Tobachat, are
+[CC BY 4.0](LICENSE); the code in `scripts/`, `packages/` and `examples/` is MIT ([LICENSE-CODE](LICENSE-CODE)). The rates themselves are Meta's published prices. This dataset is not affiliated
 with, endorsed by or sponsored by Meta Platforms, Inc.; WhatsApp is a trademark of its owner. Check Meta's pricing page
 before relying on a figure for a contract or invoice. Cite via `CITATION.cff` (GitHub's "Cite this repository") or the DOI [10.5281/zenodo.23710440](https://doi.org/10.5281/zenodo.23710440), which always points to the latest version.
 

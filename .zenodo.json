@@ -1,0 +1,13 @@
+{
+  "upload_type": "dataset",
+  "title": "WhatsApp Business Platform per-message rates (all Meta currencies)",
+  "creators": [{ "name": "Tobachat" }],
+  "description": "Meta's published WhatsApp Business Platform rate cards in 16 currencies as tidy CSV and JSON, with volume tiers, a table that maps 141 countries (ISO and calling codes) to their rate-card market, and Meta's original rate-card files archived per quarter. Rates are Meta's; this is a cleaned compilation. Not affiliated with Meta.",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": ["WhatsApp", "pricing", "WhatsApp Business Platform", "open data", "rate card"],
+  "related_identifiers": [
+    { "identifier": "https://github.com/tobachat/whatsapp-api-rates", "relation": "isSupplementTo", "scheme": "url" },
+    { "identifier": "https://tobachat.nl/en/whatsapp-api-pricing-by-country/", "relation": "isDocumentedBy", "scheme": "url" }
+  ]
+}
