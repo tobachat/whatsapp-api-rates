@@ -7,6 +7,14 @@ authors:
     website: "https://tobachat.nl"
 version: "2026-10-01"
 date-released: "2026-10-27"
+doi: "10.5281/zenodo.23710440"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23710440"
+    description: "All versions (concept DOI)"
+  - type: doi
+    value: "10.5281/zenodo.23710441"
+    description: "Version 2.0.0"
 license: CC-BY-4.0
 repository-code: "https://github.com/tobachat/whatsapp-api-rates"
 url: "https://tobachat.nl/en/whatsapp-api-pricing-by-country/"

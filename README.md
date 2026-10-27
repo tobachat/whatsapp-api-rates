@@ -1,5 +1,7 @@
 # WhatsApp Business API rates
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23710440.svg)](https://doi.org/10.5281/zenodo.23710440)
+
 Meta's per-message rates for the WhatsApp Business Platform, in every currency Meta publishes (16), as clean tidy CSV:
 list rates, volume tiers for utility and authentication, and a table that tells you which rate-card market a country
 belongs to. Rate card in effect: **2026-10-01**, last compared with Meta's files on 2026-10-27.
@@ -74,7 +76,7 @@ files cannot be found, it opens a "Watcher broken" issue instead of failing sile
 The compilation (selection, structure, cleaning, documentation) is [CC BY 4.0](LICENSE); the code in `scripts/`,
 `packages/` and `examples/` is MIT. The rates themselves are Meta's published prices. This dataset is not affiliated
 with, endorsed by or sponsored by Meta Platforms, Inc.; WhatsApp is a trademark of its owner. Check Meta's pricing page
-before relying on a figure for a contract or invoice. Cite via `CITATION.cff` (GitHub's "Cite this repository").
+before relying on a figure for a contract or invoice. Cite via `CITATION.cff` (GitHub's "Cite this repository") or the DOI [10.5281/zenodo.23710440](https://doi.org/10.5281/zenodo.23710440), which always points to the latest version.
 
 Maintained by [Tobachat](https://tobachat.nl). The same data as a page:
 [WhatsApp API pricing by country](https://tobachat.nl/en/whatsapp-api-pricing-by-country/).
