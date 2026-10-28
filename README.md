@@ -102,6 +102,13 @@ the archived workbooks and a draft CHANGELOG entry, and an issue that links it; 
 changes the page so that the files cannot be found, it opens a "Watcher broken" issue instead of failing silently.
 Watch this repository's releases to hear about each new rate card. See `MAINTAINING.md`.
 
+## See also
+
+- [WhatsApp Business Platform open data](https://github.com/procom-dev/whatsapp-open-data) by
+  WhaTools (CC BY 4.0): a dated ledger of pricing changes since 2019 and a table of WhatsApp
+  limits, which this dataset does not cover. For AI assistants they run a hosted MCP server
+  ([setup](https://wha.tools/connect)).
+
 ## Licence and citation
 
 The data and its compilation (selection, structure, cleaning, documentation), compiled by Tobachat, are
