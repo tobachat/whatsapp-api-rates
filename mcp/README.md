@@ -16,7 +16,9 @@ Data: Meta rate cards, compiled by Tobachat (https://tobachat.nl/en/whatsapp-api
 | `rate_changes(since?, currency?)` | What changed per quarterly rate card, with Meta's own counts for the quarters before the dataset starts. |
 
 Every answer includes the rate card's effective date, the date it was last compared with Meta, Meta's source URL and the
-attribution line. A country Meta does not list is billed at its "Other" rate; an unknown name is an error, not "Other".
+attribution line. Countries resolve by ISO code (plus `UK` and `EL`), by Meta's or the ISO name, or by a common name
+such as Holland, USA or UAE. A real country Meta does not list (Iceland, Kosovo `XK`) is billed at its "Other" rate; an
+unknown code or name is an error with close matches, never "Other". Categories are case-insensitive.
 
 ## Install
 

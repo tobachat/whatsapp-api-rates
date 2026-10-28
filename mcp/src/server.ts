@@ -18,7 +18,10 @@ function respond(fn: () => unknown): Result {
 }
 
 const country = z.string().describe('ISO 3166-1 alpha-2 code (e.g. "BR"), country name, or rate-card market name')
-const category = z.enum(CATEGORIES).describe('Meta pricing category')
+// Case and separators are forgiven ("Marketing", "authentication-international"); the schema still lists the enum.
+const category = z
+  .preprocess((v) => (typeof v === 'string' ? v.trim().toLowerCase().replace(/[ -]/g, '_') : v), z.enum(CATEGORIES))
+  .describe('Meta pricing category')
 const currency = z
   .string()
   .optional()

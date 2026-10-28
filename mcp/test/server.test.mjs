@@ -43,6 +43,10 @@ test('bad input is a tool error the model can read', async () => {
   const r = await client.callTool({ name: 'get_rate', arguments: { country: 'Atlantis', category: 'marketing' } })
   assert.equal(r.isError, true)
   assert.match(r.content[0].text, /unknown country/)
+  // The schema enum must not reject "Marketing" before the tool sees it.
+  const ok = await client.callTool({ name: 'get_rate', arguments: { country: 'UK', category: 'Marketing', currency: 'GBP' } })
+  assert.ok(!ok.isError, ok.content[0].text)
+  assert.equal(JSON.parse(ok.content[0].text).market, 'United Kingdom')
   await client.close()
 })
 

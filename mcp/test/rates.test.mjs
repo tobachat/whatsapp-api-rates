@@ -36,10 +36,39 @@ test('every country in country_market.csv resolves to its market in every curren
   }
 })
 
-test('unlisted ISO code prices as Other; an unknown name is an error, never Other', () => {
-  assert.equal(resolveCountry('ZZ').market, 'Other')
-  assert.throws(() => resolveCountry('Brasil'), InputError)
+// Class guarded: an input that is not a real country silently priced at "Other" (UK came back as Other GBP 0.0435
+// instead of United Kingdom GBP 0.0458). Real countries resolve by code or common name; anything else errors.
+test('unknown codes and names are errors with close matches, never Other', () => {
+  for (const bad of ['ZZ', 'QQ', 'Brasil', 'Atlantis']) assert.throws(() => resolveCountry(bad), InputError, bad)
+  assert.throws(() => resolveCountry('ZZ'), /did you mean .*\(ZA\)/)
+  assert.throws(() => resolveCountry('Brasil'), /did you mean Brazil \(BR\)/)
+  assert.throws(() => resolveCountry('Congo'), /\(CD\).*\(CG\)/)
   assert.throws(() => getRate('NL', 'marketing', 'XYZ'), InputError)
+})
+
+test('aliases and common names resolve to the Meta market of that country', () => {
+  const cases = {
+    UK: 'United Kingdom', uk: 'United Kingdom', EL: 'Rest of Central & Eastern Europe', Holland: 'Netherlands',
+    USA: 'North America', UAE: 'United Arab Emirates', 'Türkiye': 'Turkey', Turkiye: 'Turkey', Czechia: 'Rest of Central & Eastern Europe',
+    CD: 'Other', CG: 'Rest of Africa',
+  }
+  for (const [input, market] of Object.entries(cases)) assert.equal(resolveCountry(input).market, market, input)
+  assert.equal(getRate('UK', 'marketing', 'GBP').rate, getRate('GB', 'marketing', 'GBP').rate)
+  assert.equal(resolveCountry('EL').country.iso2, 'GR')
+})
+
+test('real countries Meta does not list resolve by code and name to Other', () => {
+  for (const [input, iso2] of [['XK', 'XK'], ['Kosovo', 'XK'], ['Iceland', 'IS'], ['IS', 'IS'], ['South Korea', 'KR']]) {
+    const r = resolveCountry(input)
+    assert.equal(r.market, 'Other', input)
+    assert.equal(r.country.iso2, iso2, input)
+  }
+})
+
+test('category is case-insensitive', () => {
+  assert.equal(getRate('NL', 'Marketing').category, 'marketing')
+  assert.equal(getRate('NL', 'Authentication International').category, 'authentication_international')
+  assert.throws(() => getRate('NL', 'promo'), InputError)
 })
 
 test('free service allowance: per phone number, pooled over lines, service only', () => {
