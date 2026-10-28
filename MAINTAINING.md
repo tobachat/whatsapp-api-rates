@@ -53,8 +53,8 @@ Optional, only when the rates changed (the packages bundle EUR only):
 ## MCP server (`mcp/`)
 
 `whatsapp-rates-mcp` bundles `data/latest/*.json`, the country table, the rate cards and the CHANGELOG notes at build
-time, so a new rate card needs a new release (minor bump), nothing else. Not yet published: npm and the MCP Registry
-both wait for a token.
+time, so a new rate card needs a new release (minor bump), nothing else. Not published, by decision: the source stays
+in the repo and the steps below are kept for reference only.
 
 1. `cd mcp && npm install && npm test` (regenerates `src/data.generated.ts`, compiles, runs the tests).
 2. Bump the version in three places that a test keeps equal: `mcp/package.json`, `VERSION` in `mcp/src/server.ts`,

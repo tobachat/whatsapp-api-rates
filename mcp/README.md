@@ -1,3 +1,5 @@
+Not published. Source only.
+
 # whatsapp-rates-mcp
 
 A read-only [MCP](https://modelcontextprotocol.io) server that gives AI assistants Meta's WhatsApp Business API rates:

@@ -149,7 +149,7 @@ def main():
             f"- [ ] The number of changed USD rates ({len(changed)}) matches the count in Meta's changelog.",
             "- [ ] CHANGELOG entry reviewed and the draft line removed.",
             "- [ ] After merging: GitHub Release `v" + eff.replace("-", ".") + "` (Zenodo picks it up), then the package "
-            "and MCP releases in MAINTAINING.md.", "",
+            "releases in MAINTAINING.md.", "",
             "## Draft social post (not published)", "", "```", social_post(eff, changed, added, removed), "```", "",
             "## Watcher report", "", report]
     (work / "pr-title.txt").write_text(title + "\n", encoding="utf8")

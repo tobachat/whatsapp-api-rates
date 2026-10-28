@@ -11,8 +11,7 @@ Rate card in effect: **2026-10-01**, last compared with Meta's files on 2026-10-
   behind signed links that expire, and overwrites them every quarter; this repo keeps every card.
 - **List rates and volume tiers** for every currency, Meta's own values, never converted.
 - **A weekly watcher** that compares Meta's live files with this repo and opens an issue and a pull request when they change.
-- **Tools:** an MCP server for AI assistants (`mcp/`), JavaScript and Python estimators (`packages/`), five n8n
-  templates (`examples/n8n/`).
+- **Tools:** JavaScript and Python estimators (`packages/`), five n8n templates (`examples/n8n/`).
 
 ## Use it programmatically
 
@@ -60,7 +59,6 @@ Rates are numbers; `null` means Meta does not publish that rate for the market. 
 | `scripts/` | `fetch.py`, `build.py`, `validate.py`, `watch.py`, `propose.py` (watcher update), `test_watch.py`. |
 | `packages/js`, `packages/python` | `whatsapp-pricing`: lookup and monthly cost estimator (EUR). |
 | `examples/n8n/` | Five n8n workflow templates. |
-| `mcp/` | `whatsapp-rates-mcp`: read-only MCP server (rates, markets, cost estimate, rate changes) with the data bundled. |
 
 ## Rates and currencies
 
@@ -107,7 +105,7 @@ Watch this repository's releases to hear about each new rate card. See `MAINTAIN
 ## Licence and citation
 
 The data and its compilation (selection, structure, cleaning, documentation), compiled by Tobachat, are
-[CC BY 4.0](LICENSE); the code in `scripts/`, `packages/`, `mcp/` and `examples/` is MIT ([LICENSE-CODE](LICENSE-CODE)). The rates themselves are Meta's published prices. This dataset is not affiliated
+[CC BY 4.0](LICENSE); all code in this repository (`scripts/`, `packages/`, `examples/` and others) is MIT ([LICENSE-CODE](LICENSE-CODE)). The rates themselves are Meta's published prices. This dataset is not affiliated
 with, endorsed by or sponsored by Meta Platforms, Inc.; WhatsApp is a trademark of its owner. Check Meta's pricing page
 before relying on a figure for a contract or invoice. Cite via `CITATION.cff` (GitHub's "Cite this repository") or the DOI [10.5281/zenodo.23710440](https://doi.org/10.5281/zenodo.23710440), which always points to the latest version.
 
