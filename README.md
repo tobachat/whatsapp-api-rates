@@ -11,7 +11,7 @@ Rate card in effect: **2026-10-01**, last compared with Meta's files on 2026-10-
   behind signed links that expire, and overwrites them every quarter; this repo keeps every card.
 - **List rates and volume tiers** for every currency, Meta's own values, never converted.
 - **A weekly watcher** that compares Meta's live files with this repo and opens an issue and a pull request when they change.
-- **Tools:** JavaScript and Python estimators (`packages/`), five n8n templates (`examples/n8n/`).
+- **Tools:** JavaScript and Python estimators (`packages/`), six n8n templates (`examples/n8n/`).
 
 ## Use it programmatically
 
@@ -58,7 +58,7 @@ Rates are numbers; `null` means Meta does not publish that rate for the market. 
 | `CHANGELOG.md` | What changed per rate card. |
 | `scripts/` | `fetch.py`, `build.py`, `validate.py`, `watch.py`, `propose.py` (watcher update), `test_watch.py`. |
 | `packages/js`, `packages/python` | `whatsapp-pricing`: lookup and monthly cost estimator (EUR). |
-| `examples/n8n/` | Five n8n workflow templates. |
+| `examples/n8n/` | Six n8n workflow templates. |
 
 ## Rates and currencies
 
