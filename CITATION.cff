@@ -4,7 +4,7 @@ title: "WhatsApp Business Platform per-message rates (all Meta currencies)"
 type: dataset
 authors:
   - name: "Tobachat"
-    website: "https://tobachat.nl"
+    website: "https://tobachat.com"
 version: "2026-10-01"
 date-released: "2026-10-27"
 doi: "10.5281/zenodo.23710440"
@@ -17,7 +17,7 @@ identifiers:
     description: "Version 2.0.0"
 license: CC-BY-4.0
 repository-code: "https://github.com/tobachat/whatsapp-api-rates"
-url: "https://tobachat.nl/en/whatsapp-api-pricing-by-country/"
+url: "https://tobachat.com/en/whatsapp-api-pricing-by-country/"
 abstract: "Meta's published WhatsApp Business Platform rate cards in 16 currencies as tidy CSV, with volume tiers and a country to market table. Rates are Meta's; this is a cleaned compilation. Not affiliated with Meta."
 keywords:
   - WhatsApp

@@ -21,6 +21,6 @@ Anyone sending WhatsApp notifications or campaigns with the official WhatsApp Bu
 ## Notes
 Meta requires opt-in before messaging; this workflow stores the evidence and is not legal advice. Only one WhatsApp Trigger can exist per Meta app.
 
-Rates data: [Tobachat open dataset](https://tobachat.nl/en/whatsapp-api-pricing-by-country/)
+Rates data: [Tobachat open dataset](https://tobachat.com/en/whatsapp-api-pricing-by-country/)
 
 Author: Tobachat

@@ -29,6 +29,6 @@ invoice arrives, including those billed through a partner (BSP), where Meta's AP
 An estimate at list prices, excluding VAT and partner fees; Meta's invoice is leading. Tested on n8n Cloud (November 2026)
 against a live WABA. Submitted to the n8n template library as workflow 21896 (resubmitted 2026-11-05).
 
-Rates data: [Tobachat open dataset](https://tobachat.nl/en/whatsapp-api-pricing-by-country/)
+Rates data: [Tobachat open dataset](https://tobachat.com/en/whatsapp-api-pricing-by-country/)
 
 Author: Tobachat

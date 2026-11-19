@@ -16,7 +16,7 @@ classifiers = ["Typing :: Typed", "Programming Language :: Python :: 3"]
 dependencies = []
 
 [project.urls]
-Homepage = "https://tobachat.nl/en/whatsapp-api-pricing-by-country/"
+Homepage = "https://tobachat.com/en/whatsapp-api-pricing-by-country/"
 Repository = "https://github.com/tobachat/whatsapp-api-rates"
 
 [tool.hatch.build.targets.wheel]

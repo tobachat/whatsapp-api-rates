@@ -19,6 +19,6 @@ Small teams that want WhatsApp questions in Slack before they invest in an inbox
 ## Notes
 Free-form replies only work inside the 24 hour window; after it closes use an approved template. Only one WhatsApp Trigger can exist per Meta app. Replying from Slack back to the customer is not included, to keep the template simple.
 
-Rates data: [Tobachat open dataset](https://tobachat.nl/en/whatsapp-api-pricing-by-country/)
+Rates data: [Tobachat open dataset](https://tobachat.com/en/whatsapp-api-pricing-by-country/)
 
 Author: Tobachat

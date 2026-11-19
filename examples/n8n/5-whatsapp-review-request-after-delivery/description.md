@@ -18,6 +18,6 @@ Shops and service businesses that want more reviews and already use the WhatsApp
 ## Notes
 Meta may categorise review requests as marketing, so collect marketing opt-in and expect the marketing rate. The Wait node stores executions, so keep execution data saving enabled in your instance.
 
-Rates data: [Tobachat open dataset](https://tobachat.nl/en/whatsapp-api-pricing-by-country/)
+Rates data: [Tobachat open dataset](https://tobachat.com/en/whatsapp-api-pricing-by-country/)
 
 Author: Tobachat

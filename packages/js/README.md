@@ -28,6 +28,6 @@ Source: [Meta's pricing page](https://developers.facebook.com/documentation/busi
 
 Code is MIT. The data is CC BY 4.0: attribute Meta as the source and Tobachat as the compiler.
 
-Maintained by [Tobachat](https://tobachat.nl/en/whatsapp-api-pricing-by-country/). Repo: https://github.com/tobachat/whatsapp-api-rates. Not affiliated with Meta.
+Maintained by [Tobachat](https://tobachat.com/en/whatsapp-api-pricing-by-country/). Repo: https://github.com/tobachat/whatsapp-api-rates. Not affiliated with Meta.
 
 Data source: the open dataset https://github.com/tobachat/whatsapp-api-rates (raw files at raw.githubusercontent.com are the recommended programmatic source; this package bundles the EUR card and makes no network calls).

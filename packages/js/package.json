@@ -4,7 +4,7 @@
   "description": "Meta WhatsApp Business API per-message rates by country and category, with a monthly cost estimator. Zero dependencies, no network calls.",
   "license": "MIT",
   "author": "Tobachat",
-  "homepage": "https://tobachat.nl/en/whatsapp-api-pricing-by-country/",
+  "homepage": "https://tobachat.com/en/whatsapp-api-pricing-by-country/",
   "repository": { "type": "git", "url": "git+https://github.com/tobachat/whatsapp-api-rates.git", "directory": "js" },
   "keywords": ["whatsapp", "whatsapp-business-api", "pricing", "meta", "cost-calculator", "rates"],
   "type": "module",

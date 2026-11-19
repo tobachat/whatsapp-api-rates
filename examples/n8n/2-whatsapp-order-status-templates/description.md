@@ -18,6 +18,6 @@ Shops and service businesses on the WhatsApp Business Cloud API that want order 
 ## Notes
 Only message customers who opted in, and keep utility templates free of promotion. Only one WhatsApp Trigger can exist per Meta app, so if you combine this with other templates, merge the trigger branches into one workflow.
 
-Rates data: [Tobachat open dataset](https://tobachat.nl/en/whatsapp-api-pricing-by-country/)
+Rates data: [Tobachat open dataset](https://tobachat.com/en/whatsapp-api-pricing-by-country/)
 
 Author: Tobachat

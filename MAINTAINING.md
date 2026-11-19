@@ -88,7 +88,7 @@ Five templates. The details of what was verified:
   Meta API changes (template component format, status webhook payload) and Google Sheets node schema changes.
 - Template 4 reads `data/latest/EUR.csv` from raw.githubusercontent.com and depends on the columns `market`, `iso_codes`,
   `marketing`, `utility`, `authentication`, `effective_date`. Do not rename them without updating that template. The copy
-  submitted to the n8n library reads https://tobachat.nl/data/whatsapp-api-rates-eur.csv with the same columns.
+  submitted to the n8n library reads https://tobachat.com/data/whatsapp-api-rates-eur.csv with the same columns.
 - Only one WhatsApp Trigger can exist per Meta app; templates 1, 2 and 3 each include one (said in their overview notes).
 - Submission: the creator portal (https://creators.n8n.io, account "tobachat") takes only the workflow JSON, runs an AI
   check, generates the title and description for you to edit, then a human review (3 to 5 business days). No screenshot

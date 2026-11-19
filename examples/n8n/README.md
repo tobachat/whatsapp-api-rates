@@ -12,4 +12,4 @@ Six importable workflows (`workflow.json`) with a description each. Import via n
 | `6-whatsapp-monthly-cost-report` | Monthly email with last month's WhatsApp cost from Meta's pricing analytics, priced with the rate card and volume tiers in your account currency, plus a budget alert |
 
 Only one WhatsApp Trigger can exist per Meta app; templates 1 to 3 each contain one, so merge them if you use several.
-Rates data: [Tobachat open dataset](https://tobachat.nl/en/whatsapp-api-pricing-by-country/).
+Rates data: [Tobachat open dataset](https://tobachat.com/en/whatsapp-api-pricing-by-country/).

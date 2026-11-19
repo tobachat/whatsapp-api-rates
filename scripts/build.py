@@ -28,7 +28,7 @@ LIST_COLS = {"marketing": 2, "utility": 3, "authentication": 4, "authentication_
 TIER_BLOCKS = {"utility": 2, "authentication": 7, "authentication_international": 12}
 SOURCE = ms.PAGE
 LICENSE = "CC-BY-4.0"
-ATTRIBUTION = "Data: Meta rate cards, compiled by Tobachat (https://tobachat.nl/en/whatsapp-api-pricing-by-country/)"
+ATTRIBUTION = "Data: Meta rate cards, compiled by Tobachat (https://tobachat.com/en/whatsapp-api-pricing-by-country/)"
 
 
 def dec(v):

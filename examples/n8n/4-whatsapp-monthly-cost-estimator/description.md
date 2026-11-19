@@ -16,6 +16,6 @@ None. Run it manually, then connect Slack, Gmail or Sheets after the last node i
 ## Notes
 Rates are list prices and an estimate. Check the effective date in the output and Meta's own pricing page before you commit to a budget. Utility templates are billed inside an open customer service window too (since 1 October 2026). The 1,000 free service messages per business phone number per month and volume tiers are not modelled, so the estimate is a ceiling.
 
-Rates data: [Tobachat open dataset](https://tobachat.nl/en/whatsapp-api-pricing-by-country/) (CSV: https://raw.githubusercontent.com/tobachat/whatsapp-api-rates/main/data/latest/EUR.csv)
+Rates data: [Tobachat open dataset](https://tobachat.com/en/whatsapp-api-pricing-by-country/) (CSV: https://raw.githubusercontent.com/tobachat/whatsapp-api-rates/main/data/latest/EUR.csv)
 
 Author: Tobachat

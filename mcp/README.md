@@ -6,7 +6,7 @@ A read-only [MCP](https://modelcontextprotocol.io) server that gives AI assistan
 per country, per category, in any of the 16 currencies Meta bills in, plus a monthly cost estimate. The rate card is
 bundled from this repository's dataset at build time, so the server makes no network calls and needs no keys.
 
-Data: Meta rate cards, compiled by Tobachat (https://tobachat.nl/en/whatsapp-api-pricing-by-country/).
+Data: Meta rate cards, compiled by Tobachat (https://tobachat.com/en/whatsapp-api-pricing-by-country/).
 
 ## Tools
 
@@ -72,4 +72,4 @@ endorsed by or sponsored by Meta Platforms, Inc.
 ## Licence
 
 Code: MIT. Bundled data: CC BY 4.0, attribute as "Data: Meta rate cards, compiled by Tobachat
-(https://tobachat.nl/en/whatsapp-api-pricing-by-country/)".
+(https://tobachat.com/en/whatsapp-api-pricing-by-country/)".
