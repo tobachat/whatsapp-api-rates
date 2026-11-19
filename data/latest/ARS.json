@@ -4,7 +4,7 @@
  "checked_on": "2026-10-27",
  "source": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
  "license": "CC-BY-4.0",
- "attribution": "Data: Meta rate cards, compiled by Tobachat (https://tobachat.nl/en/whatsapp-api-pricing-by-country/)",
+ "attribution": "Data: Meta rate cards, compiled by Tobachat (https://tobachat.com/en/whatsapp-api-pricing-by-country/)",
  "unit": "per delivered message, excluding VAT",
  "markets": [
   {
