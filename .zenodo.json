@@ -8,6 +8,6 @@
   "keywords": ["WhatsApp", "pricing", "WhatsApp Business Platform", "open data", "rate card"],
   "related_identifiers": [
     { "identifier": "https://github.com/tobachat/whatsapp-api-rates", "relation": "isSupplementTo", "scheme": "url" },
-    { "identifier": "https://tobachat.nl/en/whatsapp-api-pricing-by-country/", "relation": "isDocumentedBy", "scheme": "url" }
+    { "identifier": "https://tobachat.com/en/whatsapp-api-pricing-by-country/", "relation": "isDocumentedBy", "scheme": "url" }
   ]
 }
