@@ -17,7 +17,7 @@ Rate card in effect: **2026-10-01**, last compared with Meta's files on 2026-10-
 
 Recommended source: the raw files of this repo, for example
 `https://raw.githubusercontent.com/tobachat/whatsapp-api-rates/main/data/latest/EUR.csv`.
-They work from any client and send `Access-Control-Allow-Origin: *`, so a browser can fetch them too. (tobachat.nl serves
+They work from any client and send `Access-Control-Allow-Origin: *`, so a browser can fetch them too. (tobachat.com serves
 the same data to browsers, curl and Node, but refuses Python's default urllib user agent.)
 `rates.json` lists every file, version and hash. A bundled, dependency-free estimator is in `packages/` (EUR only).
 
@@ -116,5 +116,5 @@ The data and its compilation (selection, structure, cleaning, documentation), co
 with, endorsed by or sponsored by Meta Platforms, Inc.; WhatsApp is a trademark of its owner. Check Meta's pricing page
 before relying on a figure for a contract or invoice. Cite via `CITATION.cff` (GitHub's "Cite this repository") or the DOI [10.5281/zenodo.23710440](https://doi.org/10.5281/zenodo.23710440), which always points to the latest version.
 
-Maintained by [Tobachat](https://tobachat.nl). The same data as a page:
-[WhatsApp API pricing by country](https://tobachat.nl/en/whatsapp-api-pricing-by-country/).
+Maintained by [Tobachat](https://tobachat.com). The same data as a page:
+[WhatsApp API pricing by country](https://tobachat.com/en/whatsapp-api-pricing-by-country/).
